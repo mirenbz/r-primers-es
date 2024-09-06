@@ -94,7 +94,7 @@ check_question(
     "amount"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   right = c("Correct! Two properties are being measured in this data: 1) the amount of small particulate in the air, and 2) the amount of large particulate.")
 )
 ```
@@ -120,7 +120,7 @@ check_question(
     "amount"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   right = c("Correct! What do these numbers represent? You can only tell when you match them with the variable names large (for large particulate) and small (for small particulate).")
 )
 ```

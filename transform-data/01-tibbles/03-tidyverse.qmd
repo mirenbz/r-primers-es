@@ -127,7 +127,7 @@ check_question(
    "babynames"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 1,
   right = c("Correct!")
 )

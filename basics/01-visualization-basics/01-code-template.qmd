@@ -61,7 +61,7 @@ check_question(
    "Cars with bigger engines use less fuel."
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 1,
   right = c("It could go either way! In other words, there might be a positive or a negative relationship between engine size and fuel efficiency. Now let's test your hypothesis with data.")
 )

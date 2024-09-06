@@ -110,7 +110,7 @@ check_question(
     "Yes. Long eruptions are associated with a _long_ wait before the eruption"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 1,
   right = c("Correct! The data seems to suggest that a long build up before an eruption is associated with a long eruption. The plot also shows the two clusters that we saw before: there are long eruptions with a long build up and short eruptions with a short build up.")
 )

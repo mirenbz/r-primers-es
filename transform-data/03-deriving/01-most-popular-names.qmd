@@ -54,7 +54,7 @@ check_question(
    "Yes. We can use the information in `babynames` to compute the values we want."
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 1,
   right = c("Correct!")
 )

@@ -130,7 +130,7 @@ check_question(
     "We are trying to plot more than one line with a single line."
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   right = c("Correct! As a result, our single line needs to connect multiple points for each x value before moving to the next x value.")
 )
 ```

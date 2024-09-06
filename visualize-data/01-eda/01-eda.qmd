@@ -1,5 +1,5 @@
 ---
-title: "Exploratory data analysis"
+title: "Análisis exploratorio de datos"
 format:
   html: 
     toc: false
@@ -33,117 +33,113 @@ source(here::here("R", "helpers.R"))
 ```
 
 
-### What is EDA? {.no-hide}
+### ¿Qué es el análisis exploratorio de datos? {.no-hide}
 
-EDA is an iterative cycle that helps you understand what your data says. When you do EDA, you:
+El análisis exploratorio de datos (o EDA) es un ciclo iterativo que te ayuda a comprender lo que dicen tus datos. Cuando haces un análisis exploratorio de datos:
 
-1. Generate questions about your data
+1. Generas preguntas acerca de tus datos
+2. Buscas respuestas visualizando, transformando y/o modelando tus datos
+3. Utilizas lo aprendido para refinar tus preguntas y/o generar nuevas preguntas
 
-1. Search for answers by visualizing, transforming, and/or modeling your data
+El EDA es una parte importante de cualquier análisis de datos. Puedes usar EDA para hacer descubrimientos acerca del mundo; o puedes hacer EDA para asegurar la calidad de tus datos, haciendo preguntas acerca de si los datos cumplen tus estándares o no.
 
-1. Use what you learn to refine your questions and/or generate new questions
+### La actitud EDA
 
-EDA is an important part of any data analysis. You can use EDA to make discoveries about the world; or you can use EDA to ensure the quality of your data, asking questions about whether the data meets your standards or not.
+El EDA no es un proceso formal con una serie de normas estrictas. Más que nada, el EDA es un estado mental. Durante las fases iniciales del EDA, deberías sentirte libre de investigar cualquiér idea que se te ocurra. Algunas de esas ideas resultarán en algo, y algunas no te llevarán a ningún sitio. A medida que avances en tu exploración, encontrarás líneas de investigación que te descubrirán perspectivas que valga la pena redactar y comunicar a otras personas.
 
-### The EDA mindset
+### Preguntas
 
-EDA is not a formal process with a strict set of rules. More than anything, EDA is a state of mind. During the initial phases of EDA, you should feel free to investigate every idea that occurs to you. Some of these ideas will pan out, and some will be dead ends. As your exploration continues, you will home in on lines of inquiry that reveal insights worth writing up and communicating to others.
+Tu objetivo durante el EDA es llegar a comprender tus datos. La manera más fácil de hacer esto es utilizar preguntas como herramientas que guíen tu investigación. Cuando haces una pregunta, la pregunta centra tu atención en una parte específica de tu conjunto de datos y te ayuda a decidir qué gráficos, modelos o transformaciones realizar.
 
-### Questions
-
-Your goal during EDA is to develop an understanding of your data. The easiest way to do this is to use questions as tools to guide your investigation. When you ask a question, the question focuses your attention on a specific part of your dataset and helps you decide which graphs, models, or transformations to make.
-
-> "Far better an approximate answer to the right question, which is often
-> vague, than an exact answer to the wrong question, which can always be made
-> precise." 
-> 
+> «Es mucho mejor una respuesta aproximada a la pregunta correcta, aunque
+> normalmente sea vaga, que la respuesta correcta a la pregunta errónea, que 
+> siempre puede hacerse de forma precisa».
+>
 > --- John Tukey
 
-### Quantity vs Quality
+### Cantidad _vs._ calidad
 
-EDA is, fundamentally, a creative process. And like most creative processes, the key to asking _quality_ questions is to generate a large _quantity_ of questions. It is difficult to ask revealing questions at the start of your analysis because you do not know what insights are contained in your dataset. On the other hand, each new question that you ask will highlight a new aspect of your data and increase your chance of making a discovery. You can quickly drill down into the most interesting parts of your data---and develop a set of thought-provoking questions---if you follow up each question with a new question based on what you find.
+El EDA es, fundamentalmente, un proceso creativo. Y como la mayoría de los procesos creativos, la clave para hacer preguntas de _calidad_ es generar una gran _cantidad_ de preguntas. Es difícil hacer preguntas reveladoras al comienzo de tu análisis porque no sabes qué perspectivas o informaciones puede contener tu conjunto de datos. Por otro lado, cada nueva pregunta que haces resaltará un nuevo aspecto de tus datos y aumentará tus posibilidades de hacer un descubrimiento. 
 
-> "There are no routine statistical questions, only questionable statistical
-> routines." 
+EDA is, fundamentally, a creative process. And like most creative processes, the key to asking _quality_ questions is to generate a large _quantity_ of questions. It is difficult to ask revealing questions at the start of your analysis because you do not know what insights are contained in your dataset. On the other hand, each new question that you ask will highlight a new aspect of your data and increase your chance of making a discovery. Puedes desglosar rápidamente las partes más interesantes de tus datos---y plantear una serie de preguntas que inviten a la reflexión---si continúas, después de cada pregunta, planteando nuevas preguntas basadas en lo que descubras.
+
+> «No hay preguntas estadísticas rutinarias, sólo rutinas estadísticas cuestionables». 
 > 
 > --- Sir David Cox
 
-### Two useful questions
+### Dos preguntas útiles
 
-There is no rule about which questions you should ask to guide your research. However, two types of questions will always be useful for making discoveries within your data. You can loosely word these questions as:
+No hay normas acerca de qué preguntas deberías realizar para orientar tu investigación. Sin embargo, hay dos tipos de preguntas que siempre serán útiles para realizar descubrimientos en tus datos. Podrían redactarse aproximadamente de la siguiente manera:
 
-1. What type of **variation** occurs **within** my variables?
+1. ¿Qué tipo de **variación** ocurre **dentro** de mis variables?
+2. ¿Qué tipo de **covariación** ocurre **entre** mis variables?
 
-1. What type of **covariation** occurs **between** my variables?
+El resto de este tutorial revisará estas preguntas. Para hacer que la conversación sea más sencilla, vamos a definir algunos términos...
 
-The rest of this tutorial will look at these two questions. To make the discussion easier, let's define some terms...
+### Definiciones
 
-### Definitions
+- Una **variable** es una cantidad, cualidad o propiedad que puedes medir.
+- Un **valor** es el estado de una variable cuando la mides. El valor de una variable puede cambiar de medición a medición.
+- Una **observación** o un **caso** es un conjunto de mediciones realizadas bajo condiciones similares (normalmente, haces todas las mediciones acerca de una observación al mismo tiempo y sobre el mismo objeto). Una observación contendrá varios valores, cada uno asociado a una variable distinta. Algunas veces nos referiremos a una observación como un _caso_ o un _punto_ en los datos.
+- Los **datos tabulares** son tablas de valores, cada uno asociado a una variable y una observación. Los datos tabulares están **ordenados** (o _tidy_) si cada valor está ubicado en su propia celda, cada variable en su propia columna, y cada observación en su propia fila.
 
-* A __variable__ is a quantity, quality, or property that you can measure. 
-
-* A __value__ is the state of a variable when you measure it. The value of a variable may change from measurement to measurement.
-  
-* An __observation__ or __case__ is a set of measurements made under similar conditions (you usually make all of the measurements in an observation at the same time and on the same object). An observation will contain several values, each associated with a different variable. I'll sometimes refer to an observation as a case or data point.
-
-* __Tabular data__ is a table of values, each associated with a variable and an observation. Tabular data is __tidy__ if each value is placed in its own cell, each variable in its own column, and each observation in its own row. 
-    
-  So far, all of the data that you've seen has been tidy. In real-life, most data isn't tidy, so we'll come back to these ideas again in [Data Wrangling](/tidy-data/01-reshape-data/index.qmd).
+Hasta ahora, todos los datos que han visto han sido ordenados. En la vida real, los datos generalmente no estarán ordenados, así que volveremos a estas ideas otra vez en [Manipulación de datos](/tidy-data/01-reshape-data/index.qmd).
 
 
-### Review 1: Discovery or Confirmation?
+### Repaso 1: ¿Descubrimiento o confirmación?
 
-You can think of science as a process with two steps: _discovery_ and _confirmation_. Scientists first observe the world to discover a hypothesis to test. Then, they devise a test to confirm the hypotheses against new data. If a hypothesis survives many tests, scientists begin to trust that it is a reliable explanation of the data.
+Puedes pensar en la ciencia como un proceso de dos fases: _descubrimiento_ y _confirmación_. Los científicos primero observan el mundo para descubrir una hipótesis que comprobar. Entonces diseñan experimentos para confirmar sus hipótesis con nuevos datos. Si una hipótesis sobrevive a muchos experimentos, los científicos empiezan a confiar en que su hipótesis es una explicación confiable de los datos.
 
-The separation between discovery and confirmation is especially important for data scientists. It is easy for patterns to appear in data by coincidence. As a result, data scientists first look for patterns, and then try to confirm that the patterns exist in the real world. Sometimes this confirmation requires computing the probability that the pattern is due to random chance, a task that often involves collecting new data.
+La separación entre descubrimiento y confirmación es especialmente importante para lal ciencia de datos. Es fácil que aparezcan patrones en los datos por coincidencia. Como resultado, los científicos de datos primero buscan patrones, y entonces intentan confirmar que los patrones existen en el mundo real. A veces esta confirmación requiere calcular la probabilidad de que un patrón ocurra debido al azar, una tarea que a menudo supone recopilar nuevos datos.
+
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-**Is EDA a tool for discovery or confirmation?**
+**¿Es el EDA una herramienta para el descubrimiento, o para la confirmación?**
 
 ```{r echo=FALSE}
 check_question(
-  answer = "Discovery", 
+  answer = "Descubrimiento", 
   options = c(
-    "Discovery",
-    "Confirmation"
+    "Descubrimiento",
+    "Confirmación"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 1,
-  right = c("Correct! EDA is a tool for discovery; in fact, EDA is one of the most fruitful tools for discovery in science. We'll focus on discovery throughout this primer, but remember that you should test any pattern that you discover before you rely on it."),
-  wrong = "Not quite. EDA reveals patterns, but it does not confirm that those patterns exist beyond your data set."
+  right = c("¡Correcto! El EDA es una herramienta de descubrimiento; de hecho, el EDA es una de las herramientas de descubrimiento más fructíferas para la ciencia. Nos centraremos en el descubrimiento a lo largo de este manual básico, pero recuerda que deberías poner a prueba cualquier patrón que descubras antes de confiar en él."),
+  wrong = "No exactamente. El EDA revela patrones, pero no confirma que esos patrones realmente existan más allá de tu conjunto de datos."
 )
 ```
 :::
 
 
-### Review 2: Quality or Quantity?
+### Repaso 2: ¿Calidad o cantidad?
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-**When you begin to explore data, is it better to formulate one or two high-quality questions to ask, or many, many questions to explore?**
+**Cuando empiezas a explorar datos, ¿es mejor formular una o dos preguntas de gran calidad, o muchas, muchas preguntas para explorar?**
 
 ```{r echo=FALSE}
 check_question(
-  answer = "Many, many questions", 
+  answer = "Muchas, muchas preguntas", 
   options = c(
-    "One or two high-quality questions",
-    "Many, many questions"
+    "Una o dos preguntas de alta calidad",
+    "Muchas, muchas preguntas"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 25,
-  right = c("Correct! Each question you ask creates a new opportunity to discover something surprising. You can lead yourself to high-value questions by iterating on questions that reveal unexpected results."),
-  wrong = "Not quite. It is hard to spot useful questions ahead of time because you don't know which discoveries are waiting in your data."
+  right = c("¡Correcto! Cada pregunta que planteas crea una nueva oportunidad de descubrir algo sorprendente. Puedes encaminarte hacia las preguntas de mayor valor desarrollando las preguntas que revelan resultados inesperados."),
+  wrong = "No exactamente. Es difícil acertar con las preguntas útiles al prinicpio porque no sabes qué descubrimientos te esperan en los datos."
 )
 ```
 :::
 
 
-### Review 3: Definitions
+### Repaso 3: Definiciones
 
-`penguins` is a fun example dataset that comes with [the {palmerpenguins} package](https://allisonhorst.github.io/palmerpenguins/). The data set describes 344 penguins spread across 3 islands in the Palmer Archipelago, Antarctica. Each row in `penguins` displays a details about a bird, including the island it lives on, its bill length, its bill depth (i.e. how tall the bill is), its flipper length, its body mass, its sex, and the year its measurements were taken. You can use these measurements to deduce the penguin's species, which is also included in `penguins`.
+`penguins` es un divertido conjunto de datos de ejemplo que viene con [el paquete {palmerpenguins}](https://allisonhorst.github.io/palmerpenguins/). El conjunto de datos describe 344 pingüinos distribuidos por 3 islas en el archipiélago Palmer, en la Antártida. Cada fila en `penguins` muestra detalles sobre un pingüino, incluyendo la isla en la que vive, la longitud de su pico, la altura de su pico, la longitud de sus aletas, su masa corporal, su sexo y el año en el que se tomaron sus medidas Puedes usar estas mediciones para deducir la especie del pingüino, que también está incluida en `penguins`.
 
 ```{r}
 penguins
@@ -151,7 +147,7 @@ penguins
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-**Which of these is a *variable* in the `penguins` dataset?**
+**¿Cuál de estas es una _variable_ en el conjunto de datos `penguins`?**
 
 ```{r echo=FALSE}
 check_question(
@@ -159,20 +155,22 @@ check_question(
   options = c(
     "Torgerson",
     "bill_length_mm",
-    "bird",
+    "pingüino",
     "18.1"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 2,
-  right = c("Correct!")
+  right = c("¡Correcto!"),
+  wrong = "Pues no."
 )
 ```
 
 :::
 
 ::: {.callout-note appearance="simple" icon=false .question}
-**Which of these is a *value* in the `penguins` dataset?**
+
+**¿Cuál de estos es un _valor_ en el conjunto de datos `penguins`?**
 
 ```{r echo=FALSE}
 check_question(
@@ -184,29 +182,31 @@ check_question(
     "bird"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 3,
-  right = c("Correct!")
+  right = c("¡Correcto!"),
+  wrong = "Pues no."
 )
 ```
 
 :::
 
 ::: {.callout-note appearance="simple" icon=false .question}
-**Which of these is an *observation* in the `penguins` dataset?**
+**¿Cuál de estas es una _observación_ en el conjunto de datos `penguins`?**
 
 ```{r echo=FALSE}
 check_question(
-  answer = "The collection of measurements, `Adelie`, `Torgerson`, `39.1`, `18.7`, `181`, `3750`, `male`, and `2007`, which describe the first penguin in the dataset.", 
+  answer = "El conjunto de mediciones `Adelie`, `Torgerson`, `39.1`, `18.7`, `181`, `3750`, `male` y `2007`, que describen al primer pingüino en el conjunto de datos.", 
   options = c(
-    "The collection of measurements, `39.1`, `39.5`, `40.3`, and so on, which are all of the values in the `bill_length_mm` column.",
-    "The collection of names, `species`, `island`, `bill_length_mm`, `bill_depth_mm`, `flipper_length_mm`, `body_mass_g`, `sex`, and `year`.",
-    "The collection of measurements, `Adelie`, `Torgerson`, `39.1`, `18.7`, `181`, `3750`, `male`, and `2007`, which describe the first penguin in the dataset."
+    "El conjunto de mediciones `39.1`, `39.5`, `40.3` etc., que son todos los valores de la columna `bill_length_mm`.",
+    "El conjunto de nombres `species`, `island`, `bill_length_mm`, `bill_depth_mm`, `flipper_length_mm`, `body_mass_g`, `sex` y `year`.",
+    "El conjunto de mediciones `Adelie`, `Torgerson`, `39.1`, `18.7`, `181`, `3750`, `male` y `2007`, que describen al primer pingüino en el conjunto de datos."
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 4,
-  right = c("Correct! These measurements were all collected under similar circumstances: on the same penguin, presumably at the same time. If a relationship exists between the variables that these values describe, we would expect the relationship to also exist between these values.")
+  right = c("¡Correcto! Estas medidas se tomaron bajo circunstancias parecidas: el mismo pingüino, presumiblemente al mismo tiempo. Si existe una relación entre las variables que describen estos valores, deberíamos esperar que la relación también exista entre estos valores."),
+  wrong = "Pues no."
 )
 ```
 :::

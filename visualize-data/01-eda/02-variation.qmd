@@ -27,11 +27,11 @@ source(here::here("R", "helpers.R"))
 ```
 
 
-### What is variation? {.no-hide}
+### ¿Qué es la variación? {.no-hide}
 
-**Variation** is the tendency of the values of a variable to change from measurement to measurement. You can see variation easily in real life; if you measure any continuous variable twice---and precisely enough---you will get two different results. This is true even if you measure quantities that are constant, like the speed of light. Each of your measurements will include a small amount of error that varies from measurement to measurement. Categorical variables can also vary if you measure across different objects (e.g. the eye colors of different people), or different times (e.g. the energy levels of an electron at different moments). 
+La **variación** es la tendencia de los valores a cambiar de medición en medición. Puedes ver variación muy fácilmente en la vida real: si mides cualquier variable continua dos veces, y de manera muy precisa, obtendrás dos resultados diferentes. Esto es cierto incluso si mides cantidades que son constantes, como la velocidad de la luz. Cada una de tus mediciones incluye una pequeña cantidad de error que varía de medición a medición. Las variables categóricas también pueden variar si las mides a lo largo de diferentes objetos (por ejemplo, el color de los ojos de diferentes personas) o en diferentes momentos (por ejemplo, los niveles de energía de un electrón en diferentes momentos).
 
-Every variable has its own pattern of variation, which can reveal useful information. The best way to understand that pattern is to visualize the distribution of the variable's values. How you visualize the distribution of a variable will depend on whether the variable is **categorical** or **continuous**. 
+Cada variable tiene sus propios patrones de variación, que pueden revelarnos informacion útil. La mejor manera de entender un patrón es visualizar la distribución de los valores de la variable. Cómo visualizar la distribución de una variable dependerá de si la variable es **categórica** o **continua**.
 
 ### Categorical variables
 
@@ -98,7 +98,7 @@ check_question(
     "suv"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 3,
   right = c("Correct!")
 )
@@ -122,7 +122,7 @@ check_question(
     "suv"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 4,
   right = c("Correct!")
 )
@@ -174,7 +174,7 @@ check_question(
     "Yes. Four clusters."
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 5,
   right = c("Correct! Eruption lengths appear to be clustered into two groups: there are short eruptions (of around 2 minutes) and long eruptions (4-5 minutes), but few eruptions in between.")
 )

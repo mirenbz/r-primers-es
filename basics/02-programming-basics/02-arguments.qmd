@@ -77,7 +77,7 @@ check_question(
    "sd"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 1,
   right = c("Correct! `n` is not an optional argument because it does not have a default value.")
 )

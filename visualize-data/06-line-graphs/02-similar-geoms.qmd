@@ -293,7 +293,7 @@ check_question(
     "The programmer used a line plot instead of a polygon plot."
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   right = c("Correct! It looks like someone messed with tx. tx and datasets like it will have an order variable that you can use to ensure that the data is in the correct order before you plot it.")
 )
 ```

@@ -178,7 +178,7 @@ check_question(
     "The graph doesn't contain enough information to make an estimate."
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 1,
   right = c("Correct! In a stacked bar chart, you can calculate the number of observations in each bar by subtracting the y value at the bottom of the bar from the y value at the top.")
 )
@@ -199,7 +199,7 @@ check_question(
     "The graph doesn't contain enough information to make an estimate."
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 2,
   right = c("Correct! Here the green bar extends all the way from 5000 to 0; most of the bar is behind the blue, purple, and magenta bars. In practice, you would never construct a bar chart like this.")
 )

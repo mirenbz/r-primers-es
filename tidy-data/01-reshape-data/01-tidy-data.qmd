@@ -74,7 +74,7 @@ check_question(
     "type"
   ), 
   type = "checkbox", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   right = c("Correct! The dataset contains four variables measured on six observations: country, year, cases, and population.")
 )
 ```
@@ -101,7 +101,7 @@ check_question(
     "No"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   right = c("Correct! If you look closely, you will see that this is the same data set as before, but organized in a new way."),
   wrong = "Don't be mislead by the two new column names: a variable and a column name are not necessarily the same thing."
 )

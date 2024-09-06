@@ -91,7 +91,7 @@ check_question(
     "Approximately 2 carats"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 1,
   right = c("Correct! More than 15,000 diamonds in the data have a value in the bin near 0.3 and 0.4. That's more than any other bin. How do we know? Because the bar above 0.3 to 0.4 goes to 15,000, higher than any other bar in the plot.")
 )
@@ -251,7 +251,7 @@ check_question(
     "fill"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 2,
   right = c('Correct! For geoms with "substance", like bars, fill controls the color of the interior of the geom. Color controls the outline.'),
   wrong = "Not quite. For histograms, color controls color of the outline of each bar."

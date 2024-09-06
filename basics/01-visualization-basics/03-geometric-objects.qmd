@@ -107,7 +107,7 @@ check_question(
    "Adds or removes a standard error ribbon around the smooth line"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 1,
   right = c("Correct!")
 )

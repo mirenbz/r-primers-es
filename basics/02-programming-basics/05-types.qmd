@@ -56,7 +56,7 @@ check_question(
    "simple"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 1,
   right = c("Correct!")
 )
@@ -80,7 +80,7 @@ check_question(
    "logical"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 2,
   right = c("Correct! This was tricky because of the quotes. 1L by itself would be an integer, but values become characters when they're in quotes.")
 )
@@ -150,7 +150,7 @@ check_question(
    "As many as you like"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 3,
   right = c("Correct!")
 )
@@ -178,7 +178,7 @@ check_question(
    "a"
   ), 
   type = "checkbox", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 4,
   right = c("Correct! Character strings are surrounded by quotation marks, object names are not.")
 )

@@ -65,7 +65,7 @@ check_question(
     "C"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 1,
   right = c("Correct!"),
   wrong = "Good try, but this is tricky. With A, the middle of the box is near the middle of the range of the data, but it is not the median. The median depends on how many observations are on each side of the value. With B, the box extends the entire range of the data. This could be a useful plot, ggplot2 calls it a crossbar, but it is not a boxplot"
@@ -125,7 +125,7 @@ check_question(
     "suv"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 2,
   right = c("Correct!")
 )

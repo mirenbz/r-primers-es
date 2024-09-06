@@ -52,7 +52,7 @@ check_question(
    "neither"
   ), 
   type = "radio", 
-  button_label = "Submit answer", 
+  button_label = "Registrar respuesta", 
   q_id = 1,
   right = c("Correct! Lists can contain elements that are different types.")
 )

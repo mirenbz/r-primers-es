@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Acerca de este sitio"
 sidebar: false
 
 engine: knitr
@@ -12,6 +12,12 @@ webr:
     fig-height: 3.7
     out-width: "70%"
 ---
+
+:::{.callout-note}
+## Nota
+Esta versión de R Primers está traducida por [Miren BZ](https://miren.bz). A continuación se recoge la información _Acerca de_ original de Andrew Heiss.
+:::
+
 
 ## A brief (and probably inaccurate) history of the RStudio/Posit Primers
 
@@ -108,4 +114,4 @@ The original primers were developed by the RStudio/Posit Education Team and made
 
 The primers are derived from the book [*R for Data Science*](https://r4ds.had.co.nz/) from O'Reilly Media, Inc. Copyright © 2017 Garrett Grolemund, Hadley Wickham. Used with permission.
 
-[See here for the full license.](https://github.com/andrewheiss/r-primers/blob/main/LICENSE.md)
+[See here for the full license.](https://github.com/mirenbz/r-primers/blob/main/LICENSE.md)
