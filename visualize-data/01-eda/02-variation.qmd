@@ -33,45 +33,42 @@ La **variación** es la tendencia de los valores a cambiar de medición en medic
 
 Cada variable tiene sus propios patrones de variación, que pueden revelarnos informacion útil. La mejor manera de entender un patrón es visualizar la distribución de los valores de la variable. Cómo visualizar la distribución de una variable dependerá de si la variable es **categórica** o **continua**.
 
-### Categorical variables
+### Variables categóricas
 
-A variable is **categorical** if it can take only one of a small set of values. In R, categorical variables are usually saved as factors or character vectors. You can visualize the distribution of a categorical variable with a bar chart, like the one below. 
+Una variable es **categórica** si sólo puede tomar uno de un pequeño conjunto de valores. En R, las variables categóricas suelen guardarse como factores o vectores de texto. Puede visualizar la distribución de una variable categórica con un gráfico de barras, como el siguiente.
 
 ```{r echo=FALSE, out.width="80%"}
 ggplot(data = mpg) +
   geom_bar(aes(x = class)) + 
-  labs(title = "Classes of cars in mpg")
+  labs(title = "Clases de coches en mpg")
 ```
 
-Don't worry if you cannot make or interpret a bar chart. We'll survey several types of charts in this tutorial, as we create a strategy for EDA. You'll learn how to build each type of chart in the tutorials that follow.
+No te preocupes si no sabes hacer o interpretar un gráfico de barras. Estudiaremos varios tipos de gráficos en este tutorial, al mismo tiempo que creamos una estrategia para el EDA. Aprenderás a construir cada tipo de gráfico en los tutoriales siguientes.
 
-### Continuous variables
+### Variables continuas
 
-A variable is **continuous** if it can take any of an infinite set of smooth, ordered values. Here, smooth means that if you order the values on a line, an infinite number of values would exist between any two points on the line. For example, an infinite number of values exists between 0 and 1, e.g. 0.9, 0.99, 0.999, and so on. 
+Una variable es **continua** si puede tomar cualquiera de un conjunto infinito de valores suaves y ordenados. Aquí, _suave_ significa que si ordenas los valores en una línea, existiría un número infinito de valores entre dos puntos cualesquiera de la línea. Por ejemplo, existe un número infinito de valores entre 0 y 1, por ejemplo, 0,9, 0,99, 0,999, etc. 
 
-Numbers and date-times are two examples of continuous variables. You can visualize the distribution of a continuous variable with a histogram, like the one below:
+Los números y las fechas y horas son dos ejemplos de variables continuas. Puedes visualizar la distribución de una variable continua con un histograma, como el que se muestra a continuación:
 
 ```{r echo=FALSE, message=FALSE, out.width="80%"}
 ggplot(data = faithful) +
   geom_histogram(aes(x = eruptions), binwidth = 0.25, color = "white", linewidth = 0.25) + 
-  labs(title = "Lengths of 272 eruptions of Old Faithful")
+  labs(title = "Longitud de 272 erupciones de Old Faithful")
 ```
 
-### Frequencies
+### Frecuencias
 
-In both bar charts and histograms, tall bars show the common values of a variable, i.e. the values that appear frequently. Shorter bars show less-common values, i.e. values that appear infrequently. Places that do not have bars reveal values that were not seen in your data. To turn this information into useful questions, look for anything unexpected:
+Tanto en los gráficos de barras como en los histogramas, las barras altas representan los valores más comunes de una variable, es decir, los valores que aparecen con mayor frecuencia. Las barras más cortas representan valores menos comunes, es decir, valores que aparecen con menos frecuencia. Los lugares que no tienen barras revelan valores que no se observan en tus datos. Para convertir esta información en preguntas útiles, intenta identificar cualquier cosa inesperada:
 
-* Which values are the most common? Why?
+- ¿Qué valores son los más comunes? ¿Por qué?
+- ¿Qué valores son poco habituales? ¿Encaja esto con tus expectativas?
+- ¿Puedes ver algún patrón extraño? ¿Qué podría explicarlos, si los ves?
+- ¿Hay algún **valor atípico** (_outlier_, en inglés), que son puntos que no encajan en el patrón o aparecen muy alejados del resto de los datos? ¿Son resultado de algún error en la introducción o registro de datos, o se deben a algún otro motivo?
 
-* Which values are rare? Why? Does that match your expectations?
+Muchas de estas preguntas te llevarán a explorar relaciones _entre_ variables, para comprobar si los valores de una variable pueden explicar los valores de otra variable. Llegaremos a esto en seguida.
 
-* Can you see any unusual patterns? What might explain them?
-
-* Are there any **outliers**, which are points that don't fit the pattern or fall far away from the rest of the data? Are they the result of data entry errors or something else?
-
-Many of the questions above will prompt you to explore a relationship *between* variables, to see if the values of one variable can explain the values of another variable. We'll get to that shortly.
-
-### Review 4: Frequencies
+### Repaso 4: Frecuencias
 
 The bar chart below visualizes the distribution of the `class` variable in the `mpg` data set, which comes in the {ggplot2} package. The height of the bars reveal how many cars in the data set come from each class. 
 
