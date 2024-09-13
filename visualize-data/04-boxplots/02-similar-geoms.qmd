@@ -45,7 +45,7 @@ The first is `geom_dotplot()`. If you set the `binaxis` parameter of `geom_dotpl
 Here each group functions like a vertical histogram. Add the parameter `stackdir = "center"` then re-run the code. Can you interpret the results?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) +
@@ -56,7 +56,7 @@ ggplot(data = mpg) +
 ```
 
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg) +
@@ -82,7 +82,7 @@ You can think of a violin plot as an outline drawn around the edges of a centere
 Convert the plot below from a boxplot to a violin plot. Note that violin plots do not use the parameters you saw for dotplots.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) +
@@ -91,7 +91,7 @@ ggplot(data = mpg) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg) +
@@ -111,7 +111,7 @@ You can further enhance violin plots by adding the parameter `draw_quantiles = c
 Add these lines to the violin plot below.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) +
@@ -120,7 +120,7 @@ ggplot(data = mpg) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg) +

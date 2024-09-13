@@ -63,7 +63,7 @@ ggplot(diamonds, aes(x = carat, y = price)) +
 ```
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -71,7 +71,7 @@ ggplot(diamonds, aes(x = carat, y = price)) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds, mapping = aes(x = carat, y = price)) +

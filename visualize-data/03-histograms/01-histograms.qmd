@@ -40,7 +40,7 @@ source(here::here("R", "helpers.R"))
 
 ### Introduction {.no-hide}
 
-Watch [this video](https://vimeo.com/221607341):
+Mira [este video](https://vimeo.com/221607341):
 
 ```{=html}
 <div class="ratio ratio-4x3">
@@ -53,7 +53,7 @@ Watch [this video](https://vimeo.com/221607341):
 To make a histogram with {ggplot2}, add `geom_histogram()` to the [ggplot2 template](/basics/01-visualization-basics/01-code-template.qmd). For example, the code below plots a histogram of the `carat` variable in the `diamonds` dataset, which comes with {ggplot2}.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = diamonds) +
@@ -104,7 +104,7 @@ check_question(
 By default, {ggplot2} will choose a binwidth for your histogram that results in about 30 bins. You can set the binwidth manually with the `binwidth` argument, which is interpreted in the units of the x axis:
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = diamonds) +
@@ -120,7 +120,7 @@ ggplot(data = diamonds) +
 Alternatively, you can set the binwidth with the `bins` argument which takes the total number of bins to use:
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = diamonds) +
@@ -138,7 +138,7 @@ It can be hard to determine what the actual binwidths are when you use `bins`, s
 You can move the bins left and right along the $x$ axis with the `boundary` argument. `boundary` takes an $x$ value to use as the boundary between two bins ({ggplot2} will align the rest of the bins accordingly): 
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = diamonds) +
@@ -156,7 +156,7 @@ When you use `geom_histogram()`, you should always experiment with different bin
 To see an example of this, make a histogram of the `carat` variable in the `diamonds` dataset. Use a bin size of 0.5 carats. What does the overall shape of the distribution look like?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = diamonds) +
@@ -165,7 +165,7 @@ ggplot(data = diamonds) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds) +
@@ -184,7 +184,7 @@ Good job! The most common diamond size is about 0.5 carats. Larger sizes become 
 Recreate your histogram of `carat` but this time use a `binwidth` of 0.1. Does your plot reveal new information? Look closely. Is there more than one peak? Where do the peaks occur?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -192,7 +192,7 @@ Recreate your histogram of `carat` but this time use a `binwidth` of 0.1. Does y
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds) +
@@ -211,7 +211,7 @@ Good job! The new `binwidth` reveals a new phenomena: carat sizes like 0.5, 0.75
 Recreate your histogram of `carat` a final time, but this time use a `binwidth` of 0.01 and set the first boundary to zero. Try to find one new pattern in the results.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -219,7 +219,7 @@ Recreate your histogram of `carat` a final time, but this time use a `binwidth` 
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds) +
@@ -270,7 +270,7 @@ ggplot(data = diamonds) +
 ```
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -278,7 +278,7 @@ ggplot(data = diamonds) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds) +

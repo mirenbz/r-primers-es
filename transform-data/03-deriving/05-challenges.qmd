@@ -65,7 +65,7 @@ Apply your knowledge of dplyr to do the following two challenges.
 How many distinct boys names achieved a rank of Number 1 in any year?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -73,7 +73,7 @@ How many distinct boys names achieved a rank of Number 1 in any year?
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 babynames |> 
@@ -91,7 +91,7 @@ babynames |>
 How many distinct girls names achieved a rank of Number 1 in any year?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -99,7 +99,7 @@ How many distinct girls names achieved a rank of Number 1 in any year?
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 babynames |> 
@@ -130,7 +130,7 @@ babynames |>
 ```
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -138,7 +138,7 @@ babynames |>
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 babynames |> 
@@ -157,7 +157,7 @@ Which gender uses more names?
 In the chunk below, calculate and then plot the number of distinct names used each year for boys and girls. Place year on the x axis, the number of distinct names on they y axis and color the lines by sex.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -166,7 +166,7 @@ In the chunk below, calculate and then plot the number of distinct names used ea
 ```
 
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 babynames |> 
@@ -184,7 +184,7 @@ babynames |>
 Let's make sure that we're not confounding our search with the total number of boys and girls born each year. With the chunk below, calculate and then plot over time the total number of boys and girls by year. Is the relative number of boys and girls constant?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -192,7 +192,7 @@ Let's make sure that we're not confounding our search with the total number of b
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 babynames |> 
@@ -214,7 +214,7 @@ If girls have a smaller number of children per name, that would imply that they 
 In the chunk below, calculate and plot the average number of children per name by year and sex over time. How do you interpret the results?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -222,7 +222,7 @@ In the chunk below, calculate and plot the average number of children per name b
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 babynames |> 

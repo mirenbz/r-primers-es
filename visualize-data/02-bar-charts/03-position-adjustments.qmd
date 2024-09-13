@@ -112,7 +112,7 @@ ggplot(data = diamonds) +
 ```
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -120,7 +120,7 @@ ggplot(data = diamonds) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds) +
@@ -139,7 +139,7 @@ ggplot(data = diamonds) +
 ```
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -147,7 +147,7 @@ ggplot(data = diamonds) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds) +

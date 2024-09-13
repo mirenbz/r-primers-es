@@ -81,7 +81,7 @@ To change the theme of your plot, add a `theme_` function to your plot call. The
 Use the box below to plot `p1` with each of the themes. Which theme do you prefer? Which theme does {ggplot2} apply by default?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 p1 + theme_bw()
@@ -123,7 +123,7 @@ If you would like to give your graph a more complete makeover, the {ggthemes} pa
 Try plotting `p1` with at least two or three of the themes mentioned above.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 p1
@@ -131,7 +131,7 @@ p1
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 p1 + theme_wsj()

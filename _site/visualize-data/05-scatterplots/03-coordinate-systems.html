@@ -429,11 +429,11 @@ function displayStartupMessage(showStartupMessage, showHeaderMessage) {
   const firstInnerDiv = document.createElement("div");
   firstInnerDiv.setAttribute("id", "qwebr-status-message-area");
 
-  // Create the second inner div element for "WebR Status" heading and contents
+  // Create the second inner div element for "Estado de WebR" heading and contents
   const secondInnerDiv = document.createElement("div");
   secondInnerDiv.setAttribute("id", "qwebr-status-message-title");
   secondInnerDiv.classList.add("quarto-title-meta-heading");
-  secondInnerDiv.innerText = "WebR Status";
+  secondInnerDiv.innerText = "Estado de WebR";
 
   // Create another inner div for contents
   const secondInnerDivContents = document.createElement("div");
@@ -575,8 +575,8 @@ globalThis.qwebrCreateInteractiveElement = function (qwebrCounter, qwebrOptions)
   runCodeButton.disabled = true;
   runCodeButton.type = 'button';
   runCodeButton.id = 'qwebr-button-run-' + qwebrCounter;
-  runCodeButton.textContent = '🟡 Loading webR...';
-  runCodeButton.title = `Run code (Shift + Enter)`;
+  runCodeButton.textContent = '🟡 Cargando webR...';
+  runCodeButton.title = `Ejecutar código (Mayus + Enter)`;
 
   // Append buttons to the leftButtonsDiv
   leftButtonsDiv.appendChild(runCodeButton);
@@ -729,7 +729,7 @@ globalThis.createLoadingContainer = function(qwebrCounter) {
   const statusText = document.createElement('p');
   statusText.id = `qwebr-status-text-${qwebrCounter}`;
   statusText.className = `qwebr-status-text qwebr-cell-needs-evaluation`;
-  statusText.innerText = 'Loading webR...';
+  statusText.innerText = 'Cargando webR...';
 
   // Incorporate an inner container
   const innerContainer = document.createElement('div');
@@ -1124,7 +1124,7 @@ globalThis.qwebrExecuteCode = async function (
 
     if (options.context == EvalTypes.Interactive) {
         // Emphasize the active code cell
-        elements.runButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin qwebr-icon-status-spinner"></i> <span>Run Code</span>';
+        elements.runButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin qwebr-icon-status-spinner"></i> <span>Ejecutar código</span>';
     }
 
     // Evaluate the code and parse the output into the document
@@ -1137,7 +1137,7 @@ globalThis.qwebrExecuteCode = async function (
 
     if (options.context == EvalTypes.Interactive) {
         // Revert to the initial code cell state
-        elements.runButton.innerHTML = '<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Run Code</span>';
+        elements.runButton.innerHTML = '<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Ejecutar código</span>';
     }
 }
 
@@ -2556,7 +2556,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/andrewheiss/r-primers/edit/main/visualize-data/05-scatterplots/03-coordinate-systems.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/andrewheiss/r-primers/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script src="../../js/progressive-reveal.js"></script>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/andrewheiss/r-primers/edit/main/visualize-data/05-scatterplots/03-coordinate-systems.qmd" class="toc-action"><i class="bi bi-github"></i>Edita esta página</a></li><li><a href="https://github.com/andrewheiss/r-primers/issues/new" class="toc-action"><i class="bi empty"></i>Reporta un problema</a></li></ul></div></div></div></footer><script src="../../js/progressive-reveal.js"></script>
 <script type="module">
 // Handle cell initialization initialization
 qwebrCellDetails.map(
@@ -2659,11 +2659,11 @@ qwebrInstance.then(
     // Release document status as ready
 
     if (qwebrShowStartupMessage) {
-      qwebrStartupMessage.innerText = "🟢 Ready!"
+      qwebrStartupMessage.innerText = "🟢 Listo"
     }
   
     qwebrSetInteractiveButtonState(
-      `<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Run Code</span>`, 
+      `<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Ejecutar código</span>`, 
       true
     );  
   }

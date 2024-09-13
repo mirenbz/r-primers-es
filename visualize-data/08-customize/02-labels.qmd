@@ -112,7 +112,7 @@ ggplot(diamonds) +
 Plot `p` with a set of informative labels. For learning purposes, be sure to use a title, subtitle, caption, and axis labels.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 p
@@ -120,7 +120,7 @@ p
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 p + labs(title = "Diamond prices by cut",
@@ -145,7 +145,7 @@ Make a plot that displays the relationship between carat size, price, and cut fo
 If you are looking for a way to start, I recommend using a smooth line with color mapped to cut, perhaps overlaid on the background data.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -153,7 +153,7 @@ If you are looking for a way to start, I recommend using a smooth line with colo
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds, mapping = aes(x = carat, y = price)) +

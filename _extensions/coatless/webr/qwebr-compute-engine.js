@@ -279,7 +279,7 @@ globalThis.qwebrExecuteCode = async function (
 
     if (options.context == EvalTypes.Interactive) {
         // Emphasize the active code cell
-        elements.runButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin qwebr-icon-status-spinner"></i> <span>Run Code</span>';
+        elements.runButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin qwebr-icon-status-spinner"></i> <span>Ejecutar código</span>';
     }
 
     // Evaluate the code and parse the output into the document
@@ -292,6 +292,6 @@ globalThis.qwebrExecuteCode = async function (
 
     if (options.context == EvalTypes.Interactive) {
         // Revert to the initial code cell state
-        elements.runButton.innerHTML = '<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Run Code</span>';
+        elements.runButton.innerHTML = '<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Ejecutar código</span>';
     }
 }

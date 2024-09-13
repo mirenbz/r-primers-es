@@ -75,7 +75,7 @@ Use the `geom_line()` function to make line graphs. Like `geom_point()`, it requ
 Use `geom_line()` in the chunk below to recreate the graph above. The graph uses the `economics` dataset that comes with {ggplot2} and maps the `date` and `unemploy` variables to the $x$ and $y$ axes. See [Visualization Basics](basics/01-visualization-basics/) if you are completely stuck.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -83,7 +83,7 @@ Use `geom_line()` in the chunk below to recreate the graph above. The graph uses
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(economics) +
@@ -142,7 +142,7 @@ check_question(
 Redraw our graph as a scatterplot. Can you spot more than one "line" in the data?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -150,7 +150,7 @@ Redraw our graph as a scatterplot. Can you spot more than one "line" in the data
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(asia) +
@@ -170,7 +170,7 @@ Many geoms, like lines, boxplots, and smooth lines, use a single object to displ
 For example, in the code below, you can map `group` to the grouping variable `country` to create a separate line for each country. Try it. Be sure to place the group mapping inside of `aes()`.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(asia) +
@@ -179,7 +179,7 @@ ggplot(asia) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(asia) +
@@ -208,7 +208,7 @@ ggplot(asia) +
 Lines recognize a useful aesthetic that we haven't encountered before, `linetype`. Change `color` to `linetype` below and inspect the results. What happens if you map _both_ a `color` and a `linetype` to country?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(asia) +
@@ -217,7 +217,7 @@ ggplot(asia) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(asia) +
@@ -235,7 +235,7 @@ Good job! If you map two aesthetics to the same variable, {ggplot2} will combine
 Use what you've learned to plot the life expectancy of each country over time. Life expectancy is saved in the `asia` data set as `lifeExp`. Which country has the highest life expectancy? The lowest?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -243,7 +243,7 @@ Use what you've learned to plot the life expectancy of each country over time. L
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(asia) +

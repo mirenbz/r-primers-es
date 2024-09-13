@@ -59,17 +59,17 @@ To simulate {learnr}'s hint and solution functionality, I use Quarto's [Tabset P
 
 ````default
 ::: {.panel-tabset}
-## {{{< fa code >}}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 # Calculate 1 + 2
 ```
 
-## {{{< fa lightbulb >}}}&ensp;Hint
+## {{< fa lightbulb >}}&ensp;Pista
 
-**Hint:** Think about addition
+**Pista:** Think about addition
 
-## {{{< fa circle-check >}}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 1 + 2
@@ -79,7 +79,7 @@ To simulate {learnr}'s hint and solution functionality, I use Quarto's [Tabset P
 ````
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 # Calculate 1 + 2
@@ -88,11 +88,11 @@ To simulate {learnr}'s hint and solution functionality, I use Quarto's [Tabset P
 
 ```
 
-## {{< fa lightbulb >}}&ensp;Hint
+## {{< fa lightbulb >}}&ensp;Pista
 
-**Hint:** Think about addition
+**Pista:** Think about addition
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 1 + 2

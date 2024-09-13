@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R Primers - Rounding</title>
+<title>Manual básico de R - Rounding</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -306,7 +306,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"options":{"classes":"","message":"true","fig-cap":"","results":"markup","fig-height":"3.7","fig-width":"6","editor-max-height":"","warning":"true","context":"interactive","autorun":"false","editor-quick-suggestions":"false","dpi":72,"out-height":"","out-width":"70%","output":"true","comment":"","editor-font-scale":"0.85","read-only":"false","label":"unnamed-chunk-1"},"id":1,"code":"ggplot(data = mpg) +\n  geom_point(mapping = aes(x = displ, y = hwy))\n"},{"options":{"classes":"","message":"true","fig-cap":"","results":"markup","fig-height":"3.7","fig-width":"6","editor-max-height":"","warning":"true","context":"interactive","autorun":"false","editor-quick-suggestions":"false","dpi":72,"out-height":"","out-width":"70%","output":"true","comment":"","editor-font-scale":"0.85","read-only":"false","label":"unnamed-chunk-2"},"id":2,"code":"ggplot(data = mpg) +\n  geom_point(mapping = aes(x = displ, y = hwy), position = \"jitter\")\n"}];
+globalThis.qwebrCellDetails = [{"code":"ggplot(data = mpg) +\n  geom_point(mapping = aes(x = displ, y = hwy))\n","options":{"editor-max-height":"","autorun":"false","fig-cap":"","warning":"true","editor-font-scale":"0.85","label":"unnamed-chunk-1","classes":"","fig-width":"6","out-width":"70%","output":"true","fig-height":"3.7","comment":"","message":"true","results":"markup","out-height":"","context":"interactive","read-only":"false","dpi":72,"editor-quick-suggestions":"false"},"id":1},{"code":"ggplot(data = mpg) +\n  geom_point(mapping = aes(x = displ, y = hwy), position = \"jitter\")\n","options":{"editor-max-height":"","autorun":"false","fig-cap":"","warning":"true","editor-font-scale":"0.85","label":"unnamed-chunk-2","classes":"","fig-width":"6","out-width":"70%","output":"true","fig-height":"3.7","comment":"","message":"true","results":"markup","out-height":"","context":"interactive","read-only":"false","dpi":72,"editor-quick-suggestions":"false"},"id":2}];
 
 </script>
 <script type="module">
@@ -429,11 +429,11 @@ function displayStartupMessage(showStartupMessage, showHeaderMessage) {
   const firstInnerDiv = document.createElement("div");
   firstInnerDiv.setAttribute("id", "qwebr-status-message-area");
 
-  // Create the second inner div element for "WebR Status" heading and contents
+  // Create the second inner div element for "Estado de WebR" heading and contents
   const secondInnerDiv = document.createElement("div");
   secondInnerDiv.setAttribute("id", "qwebr-status-message-title");
   secondInnerDiv.classList.add("quarto-title-meta-heading");
-  secondInnerDiv.innerText = "WebR Status";
+  secondInnerDiv.innerText = "Estado de WebR";
 
   // Create another inner div for contents
   const secondInnerDivContents = document.createElement("div");
@@ -575,8 +575,8 @@ globalThis.qwebrCreateInteractiveElement = function (qwebrCounter, qwebrOptions)
   runCodeButton.disabled = true;
   runCodeButton.type = 'button';
   runCodeButton.id = 'qwebr-button-run-' + qwebrCounter;
-  runCodeButton.textContent = '🟡 Loading webR...';
-  runCodeButton.title = `Run code (Shift + Enter)`;
+  runCodeButton.textContent = '🟡 Cargando webR...';
+  runCodeButton.title = `Ejecutar código (Mayus + Enter)`;
 
   // Append buttons to the leftButtonsDiv
   leftButtonsDiv.appendChild(runCodeButton);
@@ -729,7 +729,7 @@ globalThis.createLoadingContainer = function(qwebrCounter) {
   const statusText = document.createElement('p');
   statusText.id = `qwebr-status-text-${qwebrCounter}`;
   statusText.className = `qwebr-status-text qwebr-cell-needs-evaluation`;
-  statusText.innerText = 'Loading webR...';
+  statusText.innerText = 'Cargando webR...';
 
   // Incorporate an inner container
   const innerContainer = document.createElement('div');
@@ -1124,7 +1124,7 @@ globalThis.qwebrExecuteCode = async function (
 
     if (options.context == EvalTypes.Interactive) {
         // Emphasize the active code cell
-        elements.runButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin qwebr-icon-status-spinner"></i> <span>Run Code</span>';
+        elements.runButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin qwebr-icon-status-spinner"></i> <span>Ejecutar código</span>';
     }
 
     // Evaluate the code and parse the output into the document
@@ -1137,7 +1137,7 @@ globalThis.qwebrExecuteCode = async function (
 
     if (options.context == EvalTypes.Interactive) {
         // Revert to the initial code cell state
-        elements.runButton.innerHTML = '<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Run Code</span>';
+        elements.runButton.innerHTML = '<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Ejecutar código</span>';
     }
 }
 
@@ -1154,7 +1154,7 @@ globalThis.qwebrExecuteCode = async function (
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">R Primers</span>
+    <span class="navbar-title">Manual básico de R</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -1165,12 +1165,12 @@ globalThis.qwebrExecuteCode = async function (
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">About</span></a>
+<span class="menu-text">Acerca de este sitio</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/andrewheiss/r-primers"> <i class="bi bi-github" role="img" aria-label="github">
+    <a class="nav-link" href="https://github.com/mirenbz/r-primers"> <i class="bi bi-github" role="img" aria-label="github">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -1200,7 +1200,7 @@ globalThis.qwebrExecuteCode = async function (
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Basics</span></a>
+ <span class="menu-text">Conceptos básicos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -1244,7 +1244,7 @@ globalThis.qwebrExecuteCode = async function (
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../basics/02-programming-basics/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Programming basics</span></a>
+ <span class="menu-text">Fundamentos de programación</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -1253,7 +1253,7 @@ globalThis.qwebrExecuteCode = async function (
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../basics/02-programming-basics/01-functions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Functions</span></a>
+ <span class="menu-text">Funciones</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -1299,7 +1299,7 @@ globalThis.qwebrExecuteCode = async function (
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
- <span class="menu-text">Transform data</span></a>
+ <span class="menu-text">Transformar datos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -1421,7 +1421,7 @@ globalThis.qwebrExecuteCode = async function (
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">
- <span class="menu-text">Visualize data</span></a>
+ <span class="menu-text">Visualizar datos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -1430,7 +1430,7 @@ globalThis.qwebrExecuteCode = async function (
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../visualize-data/01-eda/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exploratory data analysis</span></a>
+ <span class="menu-text">Análisis exploratorio de datos</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -1439,7 +1439,7 @@ globalThis.qwebrExecuteCode = async function (
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../visualize-data/01-eda/01-eda.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exploratory data analysis</span></a>
+ <span class="menu-text">Análisis exploratorio de datos</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -1682,7 +1682,7 @@ globalThis.qwebrExecuteCode = async function (
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="true">
- <span class="menu-text">Tidy data</span></a>
+ <span class="menu-text">Ordenar datos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -1979,14 +1979,14 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <p>If your overplotting is due to rounding, you can obtain a better picture of the data by making each point semi-transparent. For example you could <em>set</em> the <code>alpha</code> aesthetic of the plot below to a <em>value</em> less than one, which will make the points transparent.</p>
 <p>Try this now. Set the points to an alpha of 0.25, which will make each point 25% opaque (i.e.&nbsp;four points staked on top of each other will create a solid black).</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false"><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> Hint</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solution</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false"><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> Pista</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solución</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div id="qwebr-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p><strong>Hint:</strong> Make sure you set <code>alpha = 0.25</code> <em>outside</em> of <code>aes()</code>.</p>
+<p><strong>Pista:</strong> Make sure you set <code>alpha = 0.25</code> <em>outside</em> of <code>aes()</code>.</p>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> mpg) <span class="sc">+</span></span>
@@ -2020,7 +2020,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <p>In the <a href="../../visualize-data/05-scatterplots/02-layers.html">Scatterplots tutorial</a>, you learned of a geom that displays the equivalent of <code>geom_point()</code> with a <code>position = "jitter"</code> adjustment.</p>
 <p>Rewrite the code below to use that geom. Do you obtain similar results?</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solution</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solución</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <div id="qwebr-insertion-location-2"></div>
@@ -2042,9 +2042,9 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <div class="cell" data-layout-align="center">
 <section id="buttons">
 <button id="continueButton" class="btn btn-primary float-start me-2">
-Continue
+Continuar
 </button>
-<a id="nextTopicButton" class="btn btn-danger disabled" href="03-large-data.html" role="button">Next topic</a> <button id="resetButton" class="btn btn-outline-warning btn-sm float-end">Start over</button>
+<a id="nextTopicButton" class="btn btn-danger disabled" href="03-large-data.html" role="button">Siguiente tema</a> <button id="resetButton" class="btn btn-outline-warning btn-sm float-end">Volver a empezar</button>
 </section>
 </div>
 
@@ -2462,7 +2462,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/andrewheiss/r-primers/edit/main/visualize-data/07-overplotting/02-rounding.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/andrewheiss/r-primers/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script src="../../js/progressive-reveal.js"></script>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/mirenbz/r-primers/edit/main/visualize-data/07-overplotting/02-rounding.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mirenbz/r-primers/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script src="../../js/progressive-reveal.js"></script>
 <script type="module">
 // Handle cell initialization initialization
 qwebrCellDetails.map(
@@ -2565,11 +2565,11 @@ qwebrInstance.then(
     // Release document status as ready
 
     if (qwebrShowStartupMessage) {
-      qwebrStartupMessage.innerText = "🟢 Ready!"
+      qwebrStartupMessage.innerText = "🟢 Listo"
     }
   
     qwebrSetInteractiveButtonState(
-      `<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Run Code</span>`, 
+      `<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Ejecutar código</span>`, 
       true
     );  
   }

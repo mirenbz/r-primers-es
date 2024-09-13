@@ -99,11 +99,11 @@ qwebrInstance.then(
     // Release document status as ready
 
     if (qwebrShowStartupMessage) {
-      qwebrStartupMessage.innerText = "🟢 Ready!"
+      qwebrStartupMessage.innerText = "🟢 Listo"
     }
   
     qwebrSetInteractiveButtonState(
-      `<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Run Code</span>`, 
+      `<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Ejecutar código</span>`, 
       true
     );  
   }

@@ -78,18 +78,18 @@ We can add the `class` variable to the plot by mapping the levels of an aestheti
 Let's give this a try. Fill in the blank piece of code below with `color = class`. What happens? Delete the underline characters (`_____`) before running your code. (If you prefer British English, you can use `colour` instead of `color`.)
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy, ____________))
 ```
 
-## {{< fa lightbulb >}}&ensp;Hint
+## {{< fa lightbulb >}}&ensp;Pista
 
-**Hint:** Be sure to remove all of the underlines and hashtags from the code.
+**Pista:** Be sure to remove all of the underlines and hashtags from the code.
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg) + 
@@ -121,18 +121,18 @@ In the above example, we mapped color to `class`, but we could have mapped size 
 Change the code below to map `size` to `class`. What happens? 
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy, color = class))
 ```
 
-## {{< fa lightbulb >}}&ensp;Hint
+## {{< fa lightbulb >}}&ensp;Pista
 
-**Hint:** If `color` controls the _aesthetic_, what word do you suppose controls the _size_ aesthetic?
+**Pista:** If `color` controls the _aesthetic_, what word do you suppose controls the _size_ aesthetic?
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg) + 
@@ -151,18 +151,18 @@ Great Job! Now the size of a point represents its class. Did you notice the warn
 You can also map `class` to the `alpha` aesthetic, which controls the transparency of the points. Try it below.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy))
 ```
 
-## {{< fa lightbulb >}}&ensp;Hint
+## {{< fa lightbulb >}}&ensp;Pista
 
-**Hint:** If `color` controls the _aesthetic_, what word do you suppose controls the _alpha_ aesthetic?
+**Pista:** If `color` controls the _aesthetic_, what word do you suppose controls the _alpha_ aesthetic?
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg) + 
@@ -180,18 +180,18 @@ Great Job! If you look closely, you can spot something subtle: many locations co
 Let's try one more aesthetic. This time map the class of the points to `shape`, then look for the SUVs. What happened?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy))
 ```
 
-## {{< fa lightbulb >}}&ensp;Hint
+## {{< fa lightbulb >}}&ensp;Pista
 
-**Hint:** If `color` controls the _aesthetic_, what word do you suppose controls the _shape_ aesthetic?
+**Pista:** If `color` controls the _aesthetic_, what word do you suppose controls the _shape_ aesthetic?
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg) + 
@@ -209,7 +209,7 @@ Good work! What happened to the SUVs? ggplot2 will only use six shapes at a time
 In the code below, map `cty`, which is a continuous variable, to `color`, `size`, and `shape`. How do these aesthetics behave differently for continuous variables, like `cty`, vs. categorical variables, like `class`? 
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 # Map cty to color
@@ -225,7 +225,7 @@ ggplot(data = mpg) +
   geom_point(mapping = aes(x = displ, y = hwy))
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 # Map cty to color
@@ -252,18 +252,18 @@ Very nice! ggplot2 treats continuous and categorical variables differently. Note
 Map `class` to `color`, `size`, and `shape` all in the same plot. Does it work?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy))
 ```
 
-## {{< fa lightbulb >}}&ensp;Hint
+## {{< fa lightbulb >}}&ensp;Pista
 
-**Hint:** Be sure to set each mapping separately, e.g. `color = class`, `size = class`, etc.
+**Pista:** Be sure to set each mapping separately, e.g. `color = class`, `size = class`, etc.
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg) + 
@@ -281,14 +281,14 @@ Very nice! ggplot2 can map the same variable to multiple aesthetics.
 What happens if you map an aesthetic to something other than a variable name, like `aes(colour = displ < 5)`?  Try it.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy))
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg) + 
@@ -313,7 +313,7 @@ ggplot(mpg) +
 You can do this by setting the color aesthetic _outside_ of the `aes()` function, like this
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) +
@@ -328,7 +328,7 @@ ggplot(data = mpg) +
 Setting works for every aesthetic in ggplot2. If you want to manually set the aesthetic to a **value** in the visual space, set the aesthetic outside of `aes()`. 
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) +
@@ -340,7 +340,7 @@ ggplot(data = mpg) +
 If you want to map the aesthetic to a **variable** in the data space, map the aesthetic inside `aes()`.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) +
@@ -355,14 +355,14 @@ ggplot(data = mpg) +
 What do you think went wrong in the code below? Fix the code so it does something sensible.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) +
   geom_point(mapping = aes(x = displ, y = hwy, color = "blue"))
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg) +

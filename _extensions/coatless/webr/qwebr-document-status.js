@@ -117,11 +117,11 @@ function displayStartupMessage(showStartupMessage, showHeaderMessage) {
   const firstInnerDiv = document.createElement("div");
   firstInnerDiv.setAttribute("id", "qwebr-status-message-area");
 
-  // Create the second inner div element for "WebR Status" heading and contents
+  // Create the second inner div element for "Estado de WebR" heading and contents
   const secondInnerDiv = document.createElement("div");
   secondInnerDiv.setAttribute("id", "qwebr-status-message-title");
   secondInnerDiv.classList.add("quarto-title-meta-heading");
-  secondInnerDiv.innerText = "WebR Status";
+  secondInnerDiv.innerText = "Estado de WebR";
 
   // Create another inner div for contents
   const secondInnerDivContents = document.createElement("div");

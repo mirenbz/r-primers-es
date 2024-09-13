@@ -100,7 +100,7 @@ Watch these animations to see what happens with one group:
 Let's see what happens when we group with two columns:
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 babynames |>
@@ -178,7 +178,7 @@ You now know enough to calculate the most popular names by total children (it ma
 In the code chunk below, use `group_by()`, `summarize()`, and `arrange()` to display the ten most popular names. Compute popularity as the total number of children of a single gender given a name. In other words, the total number of boys named "Kelly" should be computed separately from the total number of girls named "Kelly".
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -186,7 +186,7 @@ In the code chunk below, use `group_by()`, `summarize()`, and `arrange()` to dis
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 babynames |>
@@ -211,7 +211,7 @@ top_10
 Use the code block below to plot a line graph of `prop` vs `year` for each name in `top_10`. Be sure to color the lines by name to make the graph interpretable.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -219,7 +219,7 @@ Use the code block below to plot a line graph of `prop` vs `year` for each name 
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 top_10 |>
@@ -234,7 +234,7 @@ top_10 |>
 Now use `top_10` to plot `n` vs `year` for each of the names. How are the plots different? Why might that be? How does this affect our decision to use total children as a measure of popularity?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -242,7 +242,7 @@ Now use `top_10` to plot `n` vs `year` for each of the names. How are the plots 
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 top_10 |>

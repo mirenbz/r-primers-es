@@ -1,5 +1,5 @@
 ---
-title: "Programming basics"
+title: "Fundamentos de programación"
 format:
   html: 
     toc: false
@@ -13,15 +13,15 @@ format:
 source(here::here("R", "helpers.R"))
 ```
 
-### Welcome to R! {.no-hide}
+### ¡Bienvenida/o a R! {.no-hide}
 
-R is easiest to use when you know how the R language works. This tutorial will teach you the implicit background knowledge that informs every piece of R code. You'll learn about:
+R es más fácil de usar cuando sabes cómo funciona el lenguaje R. Este tutorial te enseñará el conocimiento implícito que resulta en cada fragmento del código R. Aprenderás acerca de:
 
-* **functions** and their **arguments**
-* **objects**
-* R's basic **data types** 
-* R's basic data structures including **vectors** and **lists**
-* R's **package system**
+- **funciones** y sus **argumentos**
+- **objetos**
+- los **tipos de datos** básicos en R
+- las estructuras de datos básicas en R incluyendo **vectores** y **listas**
+- el **sistema de paquetes** de R
 
 ##
 

@@ -75,7 +75,7 @@ Note that the bars are not part of the frequency polygon; they are just there fo
 Create the frequency polygon depicted above. It has a `binwidth` of 0.25 and starts at the `boundary` zero.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -83,7 +83,7 @@ Create the frequency polygon depicted above. It has a `binwidth` of 0.25 and sta
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds) +
@@ -107,7 +107,7 @@ ggplot(data = diamonds) +
 ```
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -115,7 +115,7 @@ ggplot(data = diamonds) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds) +
@@ -171,7 +171,7 @@ ggplot(data = diamonds) +
 ```
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -179,7 +179,7 @@ ggplot(data = diamonds) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds) +
@@ -205,7 +205,7 @@ ggplot2 provides a final geom for displaying one dimensional distributions: `geo
 Dotplots can provide an intuitive display of the data, but they have several shortcomings. Dotplots are not ideal for large data sets like `diamonds`, and provide meaningless $y$ axis labels. I also find that the tuning parameters of `geom_dotplot()` make dotplots too slow to work with for EDA.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) +
@@ -221,7 +221,7 @@ ggplot(data = mpg) +
 Instead of changing geoms, you can make the subgroups in our original plot easier to compare by facetting the data. Extend the code below to facet by cut.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = diamonds) +
@@ -230,7 +230,7 @@ ggplot(data = diamonds) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds) +

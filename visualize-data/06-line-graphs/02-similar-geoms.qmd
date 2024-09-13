@@ -65,7 +65,7 @@ tx <- map_data("state", region = "texas")
 `geom_step()` draws a line chart in a stepwise fashion. To see what I mean, change the geom in the plot below and rerun the code.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(asia) +
@@ -74,7 +74,7 @@ ggplot(asia) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(asia) +
@@ -92,7 +92,7 @@ Good job! You can control whether the steps move horizontally first and then ver
 `geom_area()` is similar to a line graph, but it fills in the area under the line. To see `geom_area()` in action, change the geom in the plot below and rerun the code.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(economics) +
@@ -101,7 +101,7 @@ ggplot(economics) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(economics) +
@@ -120,7 +120,7 @@ Good job! Filling the space under the line gives you a new way to customize your
 Do you recall from [Visualization Basics](/basics/01-visualization-basics/) how you would set the fill of our plot to blue (instead of, say, map the `fill` to a variable)? Give it a try.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(economics) +
@@ -129,7 +129,7 @@ ggplot(economics) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(economics) +
@@ -150,7 +150,7 @@ Good job! Remember that you map aesthetics to variables inside of `aes()`. You s
 Perhaps because of this, `geom_area()` can be quirky when you have multiple groups. Run the code below. Can you tell what happens here?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(asia) +
@@ -171,7 +171,7 @@ If you answered that people in China were living to be 300 years old, you guesse
 You can fix this by changing the position adjustment for `geom_area()`. Give it a try below. Change the position parameter from "stack" (the implied default) to `"identity"`. See [Bar Charts](/visualize-data/02-bar-charts/) if you'd like to learn more about position adjustments.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(asia) +
@@ -180,7 +180,7 @@ ggplot(asia) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(asia) +
@@ -243,7 +243,7 @@ as_tibble(tx)
 What do you think happens when you plot the data in `tx`? Run the code to find out.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(tx) +

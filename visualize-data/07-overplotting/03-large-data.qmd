@@ -71,7 +71,7 @@ Boxplots efficiently summarize data, which make them a useful tool for large dat
 Modify the code below to cut the carat axis into intervals with width 0.2. Then set the group aesthetic of `geom_boxplot()` to the result.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = diamonds) +
@@ -80,7 +80,7 @@ ggplot(data = diamonds) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds) +
@@ -112,7 +112,7 @@ Like histograms, bin2d use `bins` and `binwidth` arguments. Each should be set t
 Use one of these parameters to modify the graph below to use 40 bins on the x axis and 50 on the y axis.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = diamonds) +
@@ -121,7 +121,7 @@ ggplot(data = diamonds) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds) +
@@ -139,7 +139,7 @@ Our eyes are drawn to straight vertical and horizontal lines, which makes it eas
 One way to avoid this, if you like, is to use `geom_hex()`. `geom_hex()` functions like `geom_bin2d()` but uses hexagonal bins. Adjust the graph below to use `geom_hex()`.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = diamonds) +
@@ -148,7 +148,7 @@ ggplot(data = diamonds) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds) +
@@ -193,7 +193,7 @@ ggplot(data = diamonds) +
 Often density2d plots are easiest to read when you plot them on top of the original data. In the chunk below create a plot of diamond carat size vs. price. The plot should contain density2d lines superimposed _on top of_ the raw points. Make the raw points transparent with an alpha of 0.1.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -201,7 +201,7 @@ Often density2d plots are easiest to read when you plot them on top of the origi
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds, mapping = aes(x = carat, y = price)) +

@@ -29,7 +29,9 @@ source(here::here("R", "helpers.R"))
 
 ### Lists {.no-hide}
 
-Watch [this video](https://vimeo.com/220490360):
+Mira [este video](https://vimeo.com/220490360):
+
+[**Nota:** Puedes activar los subtítulos (en inglés) con el botón _CC_ (CC/Subtitles) o visualizar la transcripción del video con el botón _Transcript_.]{style="font-size:.8em;opacity:.6"}
 
 ```{=html}
 <div class="ratio ratio-4x3">
@@ -66,7 +68,7 @@ check_question(
 Make a list that contains the elements `1001`, `TRUE`, and `"stories"`. Give each element a name.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -74,7 +76,7 @@ Make a list that contains the elements `1001`, `TRUE`, and `"stories"`. Give eac
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 list(number = 1001, logical = TRUE, string = "stories")
@@ -88,7 +90,7 @@ list(number = 1001, logical = TRUE, string = "stories")
 Extract the number 1001 from the list below.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 things <- list(number = 1001, logical = TRUE, string = "stories")
@@ -96,7 +98,7 @@ things <- list(number = 1001, logical = TRUE, string = "stories")
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 things <- list(number = 1001, logical = TRUE, string = "stories")
@@ -110,7 +112,7 @@ things$number
 You can make a data frame with the `data.frame()` function, which works similar to `c()`, and `list()`. Assemble the vectors below into a data frame with the column names `numbers`, `logicals`, `strings`.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 nums <- c(1, 2, 3, 4)
@@ -120,7 +122,7 @@ strs <- c("apple", "banana", "carrot", "duck")
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 nums <- c(1, 2, 3, 4)
@@ -141,7 +143,7 @@ Good job. When you make a data frame, you must follow one rule: each column vect
 Given that a data frame is a type of list (with named elements), how could you extract the strings column of the `df` data frame below? Do it.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 nums <- c(1, 2, 3, 4)
@@ -152,7 +154,7 @@ df <- data.frame(numbers = nums, logicals = logs, strings = strs)
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 df$strings

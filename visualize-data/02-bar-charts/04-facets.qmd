@@ -55,7 +55,7 @@ ggplot(data = diamonds) +
 The code chunks below show three ways to facet with `facet_grid()`. Spot the differences between the chunks, then run the code to learn what the differences do.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = diamonds) +
@@ -68,7 +68,7 @@ ggplot(data = diamonds) +
 :::
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = diamonds) +
@@ -81,7 +81,7 @@ ggplot(data = diamonds) +
 :::
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = diamonds) +
@@ -112,7 +112,7 @@ To use `facet_wrap()` pass it a variable name inside `vars()`, e.g. `facet_wrap(
 Add `facet_wrap()` to the code below to create the graph that appeared at the start of this section. Facet by `cut`.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = diamonds) +
@@ -121,7 +121,7 @@ ggplot(data = diamonds) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds) +
@@ -143,7 +143,7 @@ By default, each facet in your plot will share the same $x$ and $y$ ranges. You 
 Try changing the `scales` argument from `free` to `free_x` to `free_y` to see how it works:
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = diamonds) +

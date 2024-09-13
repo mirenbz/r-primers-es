@@ -306,7 +306,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"options":{"context":"interactive","dpi":72,"editor-quick-suggestions":"false","fig-cap":"","results":"markup","editor-max-height":"","out-width":"70%","read-only":"false","message":"true","fig-height":"3.7","fig-width":"6","autorun":"false","out-height":"","classes":"","comment":"","label":"unnamed-chunk-1","editor-font-scale":"0.85","output":"true","warning":"true"},"code":"\n","id":1},{"options":{"context":"interactive","dpi":72,"editor-quick-suggestions":"false","fig-cap":"","results":"markup","editor-max-height":"","out-width":"70%","read-only":"false","message":"true","fig-height":"3.7","fig-width":"6","autorun":"false","out-height":"","classes":"","comment":"","label":"unnamed-chunk-2","editor-font-scale":"0.85","output":"true","warning":"true"},"code":"\n","id":2},{"options":{"context":"interactive","dpi":72,"editor-quick-suggestions":"false","fig-cap":"","results":"markup","editor-max-height":"","out-width":"70%","read-only":"false","message":"true","fig-height":"3.7","fig-width":"6","autorun":"false","out-height":"","classes":"","comment":"","label":"unnamed-chunk-3","editor-font-scale":"0.85","output":"true","warning":"true"},"code":"rnorm(100, mu = 100, sd = 15)\n","id":3}];
+globalThis.qwebrCellDetails = [{"code":"","options":{"message":"true","editor-max-height":"","editor-font-scale":"0.85","fig-cap":"","fig-height":"3.7","out-width":"70%","output":"true","read-only":"false","fig-width":"6","warning":"true","results":"markup","dpi":72,"context":"interactive","autorun":"false","label":"unnamed-chunk-1","classes":"","comment":"","out-height":"","editor-quick-suggestions":"false"},"id":1},{"code":"","options":{"message":"true","editor-max-height":"","editor-font-scale":"0.85","fig-cap":"","fig-height":"3.7","out-width":"70%","output":"true","read-only":"false","fig-width":"6","warning":"true","results":"markup","dpi":72,"context":"interactive","autorun":"false","label":"unnamed-chunk-2","classes":"","comment":"","out-height":"","editor-quick-suggestions":"false"},"id":2},{"code":"rnorm(100, mu = 100, sd = 15)","options":{"message":"true","editor-max-height":"","editor-font-scale":"0.85","fig-cap":"","fig-height":"3.7","out-width":"70%","output":"true","read-only":"false","fig-width":"6","warning":"true","results":"markup","dpi":72,"context":"interactive","autorun":"false","label":"unnamed-chunk-3","classes":"","comment":"","out-height":"","editor-quick-suggestions":"false"},"id":3}];
 
 </script>
 <script type="module">
@@ -429,11 +429,11 @@ function displayStartupMessage(showStartupMessage, showHeaderMessage) {
   const firstInnerDiv = document.createElement("div");
   firstInnerDiv.setAttribute("id", "qwebr-status-message-area");
 
-  // Create the second inner div element for "WebR Status" heading and contents
+  // Create the second inner div element for "Estado de WebR" heading and contents
   const secondInnerDiv = document.createElement("div");
   secondInnerDiv.setAttribute("id", "qwebr-status-message-title");
   secondInnerDiv.classList.add("quarto-title-meta-heading");
-  secondInnerDiv.innerText = "WebR Status";
+  secondInnerDiv.innerText = "Estado de WebR";
 
   // Create another inner div for contents
   const secondInnerDivContents = document.createElement("div");
@@ -575,8 +575,8 @@ globalThis.qwebrCreateInteractiveElement = function (qwebrCounter, qwebrOptions)
   runCodeButton.disabled = true;
   runCodeButton.type = 'button';
   runCodeButton.id = 'qwebr-button-run-' + qwebrCounter;
-  runCodeButton.textContent = '🟡 Loading webR...';
-  runCodeButton.title = `Run code (Shift + Enter)`;
+  runCodeButton.textContent = '🟡 Cargando webR...';
+  runCodeButton.title = `Ejecutar código (Mayus + Enter)`;
 
   // Append buttons to the leftButtonsDiv
   leftButtonsDiv.appendChild(runCodeButton);
@@ -729,7 +729,7 @@ globalThis.createLoadingContainer = function(qwebrCounter) {
   const statusText = document.createElement('p');
   statusText.id = `qwebr-status-text-${qwebrCounter}`;
   statusText.className = `qwebr-status-text qwebr-cell-needs-evaluation`;
-  statusText.innerText = 'Loading webR...';
+  statusText.innerText = 'Cargando webR...';
 
   // Incorporate an inner container
   const innerContainer = document.createElement('div');
@@ -1124,7 +1124,7 @@ globalThis.qwebrExecuteCode = async function (
 
     if (options.context == EvalTypes.Interactive) {
         // Emphasize the active code cell
-        elements.runButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin qwebr-icon-status-spinner"></i> <span>Run Code</span>';
+        elements.runButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin qwebr-icon-status-spinner"></i> <span>Ejecutar código</span>';
     }
 
     // Evaluate the code and parse the output into the document
@@ -1137,7 +1137,7 @@ globalThis.qwebrExecuteCode = async function (
 
     if (options.context == EvalTypes.Interactive) {
         // Revert to the initial code cell state
-        elements.runButton.innerHTML = '<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Run Code</span>';
+        elements.runButton.innerHTML = '<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Ejecutar código</span>';
     }
 }
 
@@ -1273,7 +1273,7 @@ window.Quarto = {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../basics/02-programming-basics/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Programming basics</span></a>
+ <span class="menu-text">Fundamentos de programación</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -1282,7 +1282,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../basics/02-programming-basics/01-functions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Functions</span></a>
+ <span class="menu-text">Funciones</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -1711,7 +1711,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="true">
- <span class="menu-text">Ordenar data</span></a>
+ <span class="menu-text">Ordenar datos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -2003,18 +2003,19 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </header>
 
 
-<section id="arguments" class="level3 no-hide">
-<h3 class="no-hide anchored" data-anchor-id="arguments">Arguments</h3>
-<p>Watch <a href="https://vimeo.com/220490157">this video</a>:</p>
+<section id="argumentos" class="level3 no-hide">
+<h3 class="no-hide anchored" data-anchor-id="argumentos">Argumentos</h3>
+<p>Mira <a href="https://vimeo.com/220490157">este video</a>:</p>
 <div class="ratio ratio-4x3">
 <iframe src="https://player.vimeo.com/video/220490157" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
 </div>
+<p><span style="font-size:.8em;opacity:.6"><strong>Nota:</strong> Puedes activar los subtítulos (en inglés) con el botón <em>CC</em> (CC/Subtitles) o visualizar la transcripción del video con el botón <em>Transcript</em>.</span></p>
 </section>
 <section id="args" class="level3">
 <h3 class="anchored" data-anchor-id="args"><code>args()</code></h3>
-<p><code>rnorm()</code> is a function that generates random variables from a normal distribution. Find the arguments of <code>rnorm()</code> using the <code>args()</code> function.</p>
+<p><code>rnorm()</code> es una función que genera variables aleatorias de una distribución normal. Averigua los argumentos de <code>rnorm()</code> usando la función <code>args()</code>.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solution</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solución</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div id="qwebr-insertion-location-1"></div>
@@ -2028,17 +2029,17 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </section>
 <section id="section" class="level3">
 <h3 class="anchored" data-anchor-id="section"></h3>
-<p>Good job! <code>n</code> specifies the number of random normal variables to generate. <code>mean</code> and <code>sd</code> describe the distribution to generate the random values with.</p>
+<p>¡Bueno trabajo! <code>n</code> especifica el número de variables normales aleatorias a generar. <code>mean</code> y <code>sd</code> describen la distribución con la que generar los valores aleatorios.</p>
 </section>
-<section id="optional-arguments" class="level3">
-<h3 class="anchored" data-anchor-id="optional-arguments">Optional arguments</h3>
+<section id="argumentos-opcionales" class="level3">
+<h3 class="anchored" data-anchor-id="argumentos-opcionales">Argumentos opcionales</h3>
 <div class="question callout callout-style-simple callout-note no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<p><strong>Which arguments of <code>rnorm()</code> are not optional?</strong></p>
+<p><strong>¿Qué argumentos de <code>rnorm()</code> NO son opcionales?</strong></p>
 <div class="cell">
 <div class="cell-output-display">
 <form name="form_1" onsubmit="return validate_form_1()" method="post">
@@ -2054,9 +2055,9 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <input type="submit" value="Registrar respuesta">
 <div id="result_1"></div>
 </form>
-<script>function validate_form_1() {var x, text; var x = document.forms['form_1']['answer_1'].value;if (x == 'n'){text = 'Correct! <code>n</code> is not an optional argument because it does not have a default value.';} else {text = 'I have a different answer';} document.getElementById('result_1').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_1() {var x, text; var x = document.forms['form_1']['answer_1'].value;if (x == 'n'){text = '¡Correcto! <code>n</code> no es un argumento opcional porque no tiene un valor por defecto.';} else {text = 'I have a different answer';} document.getElementById('result_1').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_1').innerText == 'Correct! n is not an optional argument because it does not have a default value.';text = res1;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_1').innerText == '¡Correcto! n no es un argumento opcional porque no tiene un valor por defecto.';text = res1;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -2067,9 +2068,9 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </section>
 <section id="rnorm-1" class="level3">
 <h3 class="anchored" data-anchor-id="rnorm-1"><code>rnorm()</code> 1</h3>
-<p>Use <code>rnrom()</code> to generate 100 random normal values with a mean of 100 and a standard deviation of 15.</p>
+<p>Utiliza <code>rnrom()</code> para generar 100 valores aleatorios con una media de 100 y una desviación estándar de 15.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solution</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solución</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <div id="qwebr-insertion-location-2"></div>
@@ -2083,16 +2084,16 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </section>
 <section id="rnorm-2" class="level3">
 <h3 class="anchored" data-anchor-id="rnorm-2"><code>rnorm()</code> 2</h3>
-<p>Can you spot the error in the code below? Fix the code and then re-run it.</p>
+<p>¿Puedes localizar el error en el código de debajo? Arregla el código y entonces vuelve a ejecutarlo.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false"><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> Hint</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solution</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false"><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> Pista</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solución</a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <div id="qwebr-insertion-location-3"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </div>
 <div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
-<p><strong>Hint:</strong> In math, <span class="math inline">\(\mu\)</span> (mu, pronounced “mew” or “moo”) is a Greek letter that stands for the mean of a distribution.</p>
+<p><strong>Pista:</strong> En matemáticas, <span class="math inline">\(\mu\)</span> (“mu”) es una letra griega que se utiliza para representar la media de una distribución.</p>
 </div>
 <div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
 <div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rnorm</span>(<span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">100</span>, <span class="at">sd =</span> <span class="dv">15</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -2627,11 +2628,11 @@ qwebrInstance.then(
     // Release document status as ready
 
     if (qwebrShowStartupMessage) {
-      qwebrStartupMessage.innerText = "🟢 Ready!"
+      qwebrStartupMessage.innerText = "🟢 Listo"
     }
   
     qwebrSetInteractiveButtonState(
-      `<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Run Code</span>`, 
+      `<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Ejecutar código</span>`, 
       true
     );  
   }

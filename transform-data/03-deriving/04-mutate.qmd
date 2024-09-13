@@ -48,7 +48,7 @@ An obvious culprit could be the total number of children born per year. If more 
 Test this theory in the chunk below. Use `babynames` and groupwise summaries to compute the total number of children born each year and then to plot that number vs. year in a line graph.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -56,7 +56,7 @@ Test this theory in the chunk below. Use `babynames` and groupwise summaries to 
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 babynames |> 
@@ -110,7 +110,7 @@ The syntax of mutate is similar to `summarize()`. `mutate()` takes first a data 
 Use `mutate()` in the chunk below to create a `births` column, the result of dividing `n` by `prop`. You can think of `births` as a sanity check; it uses each row to double check the number of boys or girls that were born each year. If all is well, the numbers will agree across rows (allowing for rounding errors).
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -118,7 +118,7 @@ Use `mutate()` in the chunk below to create a `births` column, the result of div
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 babynames |> 
@@ -161,7 +161,7 @@ min_rank(desc(c(50, 100, 1000)))
 Let's practice by ranking the entire dataset based on `prop`. In the chunk below, use `mutate()` and `min_rank()` to rank each row based on its `prop` value, with the highest values receiving the top ranks.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -169,7 +169,7 @@ Let's practice by ranking the entire dataset based on `prop`. In the chunk below
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 babynames |> 
@@ -198,7 +198,7 @@ Watch this animation to help with the intuition:
 Add `group_by()` to our code from above, to calculate ranking within year and sex combinations. Do you notice the numbers change?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 babynames |> 
@@ -207,7 +207,7 @@ babynames |>
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 babynames |> 
@@ -228,7 +228,7 @@ babynames |>
 1. Arrange the results so the names with the lowest sum appear at the top of the data set.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -236,7 +236,7 @@ babynames |>
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 babynames |> 

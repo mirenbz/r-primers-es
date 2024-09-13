@@ -81,7 +81,7 @@ ggplot(fl) +
 Alter the code to retrieve and plot your home state (Try Idaho if you are outside of the US). Notice the capitalization.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -89,7 +89,7 @@ Alter the code to retrieve and plot your home state (Try Idaho if you are outsid
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 id <- map_data("state", region = "idaho")
@@ -136,7 +136,7 @@ By default, `geom_polygon()` tries to plot a single polygon, which causes it to 
 Which aesthetic can you use to plot multiple polygons? In the code below, map the `group` aesthetic to the `group` variable in the `state` dataset. This variable contains all of the grouping information needed to make a coherent map. Then rerun the code.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(us) +
@@ -145,7 +145,7 @@ ggplot(us) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(us) +
@@ -209,7 +209,7 @@ That `geometry` column is special. When we use it with `geom_sf()`, {ggplot2} wi
 Try running this to see what happens:
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot() +
@@ -229,7 +229,7 @@ That's really neat! We didn't need to worry about the order of the rows in the d
 Because {sf}-enabled datasets are tibbles, all our {dplyr} verbs work on them. For example, we can use `filter()` to select and plot just Texas:
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 us_states |> 
@@ -283,7 +283,7 @@ We've now added four new columns to `us_states`, including `UrbanPop`.
 Now that we have `UrbanPop` in our data, we can use it as an aesthetic. Try adding `aes(fill = UrbanPop)` to `geom_sf()` here:
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(us_states_merged) +
@@ -292,7 +292,7 @@ ggplot(us_states_merged) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(us_states_merged) +
@@ -332,7 +332,7 @@ To use a different projection, set the `crs` argument of `coord_sf()` to a proje
 For example, here's our US map with an [Albers projection](https://epsg.io/102003), which is [specifically designed for North America](https://en.wikipedia.org/wiki/Albers_projection):
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(us_states_merged) +

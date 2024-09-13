@@ -75,7 +75,7 @@ See if you can use the logical operators to manipulate our code below to show:
 * All of the names that have a missing value for `n` (Hint: this should return an empty data set).
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 filter(babynames, name == "Sea")
@@ -83,7 +83,7 @@ filter(babynames, name == "Sea")
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 filter(babynames, prop >= 0.08)
@@ -98,7 +98,7 @@ filter(babynames, is.na(n))
 When you use logical tests, be sure to look out for two common mistakes. One appears in each code chunk below. Can you find them? When you spot a mistake, fix it and then run the chunk to confirm that it works.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 filter(babynames, name = "Sea")
@@ -106,7 +106,7 @@ filter(babynames, name = "Sea")
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 filter(babynames, name == "Sea")
@@ -121,7 +121,7 @@ Good job! Remember to use `==` instead of `=` when testing for equality.
 ###
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 filter(babynames, name == Sea)
@@ -129,7 +129,7 @@ filter(babynames, name == Sea)
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 filter(babynames, name == "Sea")
@@ -185,7 +185,7 @@ Use Boolean operators to alter the code chunk below to return only the rows that
 * Names that are one of Acura, Lexus, or Yugo
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 filter(babynames, name == "Sea" | name == "Anemone")
@@ -193,7 +193,7 @@ filter(babynames, name == "Sea" | name == "Anemone")
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 filter(babynames, name == "Sea", sex == "F")
@@ -208,7 +208,7 @@ filter(babynames, name %in% c("Acura", "Lexus", "Yugo"))
 Logical tests also invite two common mistakes that you should look out for. Each is displayed in a code chunk below, one produces an error and the other is needlessly verbose. Diagnose the chunks and then fix the code.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 filter(babynames, 10 < n < 20)
@@ -216,7 +216,7 @@ filter(babynames, 10 < n < 20)
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 filter(babynames, 10 < n, n < 20)
@@ -229,7 +229,7 @@ filter(babynames, 10 < n, n < 20)
 Good job! You cannot combine two logical tests in R without using a Boolean operator (or at least a comma between filter arguments).
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 filter(babynames, n == 5 | n == 6 | n == 7 | n == 8 | n == 9)
@@ -237,7 +237,7 @@ filter(babynames, n == 5 | n == 6 | n == 7 | n == 8 | n == 9)
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 filter(babynames, n %in% c(5, 6, 7, 8, 9))

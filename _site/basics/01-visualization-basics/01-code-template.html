@@ -306,7 +306,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"options":{"autorun":"false","context":"interactive","fig-cap":"","fig-width":"6","output":"true","results":"markup","message":"true","comment":"","warning":"true","editor-font-scale":"0.85","classes":"","out-width":"70%","out-height":"","dpi":72,"fig-height":"3.7","label":"unnamed-chunk-1","editor-max-height":"","read-only":"false","editor-quick-suggestions":"false"},"code":"\n","id":1},{"options":{"autorun":"false","context":"interactive","fig-cap":"","fig-width":"6","output":"true","results":"markup","message":"true","comment":"","warning":"true","editor-font-scale":"0.85","classes":"","out-width":"70%","out-height":"","dpi":72,"fig-height":"3.7","label":"unnamed-chunk-2","editor-max-height":"","read-only":"false","editor-quick-suggestions":"false"},"code":"ggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy))","id":2},{"options":{"autorun":"false","context":"interactive","fig-cap":"","fig-width":"6","output":"true","results":"markup","message":"true","comment":"","warning":"true","editor-font-scale":"0.85","classes":"","out-width":"70%","out-height":"","dpi":72,"fig-height":"3.7","label":"unnamed-chunk-3","editor-max-height":"","read-only":"false","editor-quick-suggestions":"false"},"code":"# ggplot(data = <DATA>) + \n#  <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>))","id":3},{"options":{"autorun":"false","context":"interactive","fig-cap":"","fig-width":"6","output":"true","results":"markup","message":"true","comment":"","warning":"true","editor-font-scale":"0.85","classes":"","out-width":"70%","out-height":"","dpi":72,"fig-height":"3.7","label":"unnamed-chunk-4","editor-max-height":"","read-only":"false","editor-quick-suggestions":"false"},"code":"\n","id":4},{"options":{"autorun":"false","context":"interactive","fig-cap":"","fig-width":"6","output":"true","results":"markup","message":"true","comment":"","warning":"true","editor-font-scale":"0.85","classes":"","out-width":"70%","out-height":"","dpi":72,"fig-height":"3.7","label":"unnamed-chunk-5","editor-max-height":"","read-only":"false","editor-quick-suggestions":"false"},"code":"\n","id":5},{"options":{"autorun":"false","context":"interactive","fig-cap":"","fig-width":"6","output":"true","results":"markup","message":"true","comment":"","warning":"true","editor-font-scale":"0.85","classes":"","out-width":"70%","out-height":"","dpi":72,"fig-height":"3.7","label":"unnamed-chunk-6","editor-max-height":"","read-only":"false","editor-quick-suggestions":"false"},"code":"\n","id":6}];
+globalThis.qwebrCellDetails = [{"code":"\n","options":{"out-height":"","out-width":"70%","fig-height":"3.7","fig-cap":"","results":"markup","output":"true","dpi":72,"classes":"","comment":"","editor-max-height":"","autorun":"false","context":"interactive","read-only":"false","editor-quick-suggestions":"false","label":"unnamed-chunk-1","warning":"true","editor-font-scale":"0.85","message":"true","fig-width":"6"},"id":1},{"code":"ggplot(data = mpg) + \n  geom_point(mapping = aes(x = displ, y = hwy))","options":{"out-height":"","out-width":"70%","fig-height":"3.7","fig-cap":"","results":"markup","output":"true","dpi":72,"classes":"","comment":"","editor-max-height":"","autorun":"false","context":"interactive","read-only":"false","editor-quick-suggestions":"false","label":"unnamed-chunk-2","warning":"true","editor-font-scale":"0.85","message":"true","fig-width":"6"},"id":2},{"code":"# ggplot(data = <DATA>) + \n#  <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>))","options":{"out-height":"","out-width":"70%","fig-height":"3.7","fig-cap":"","results":"markup","output":"true","dpi":72,"classes":"","comment":"","editor-max-height":"","autorun":"false","context":"interactive","read-only":"false","editor-quick-suggestions":"false","label":"unnamed-chunk-3","warning":"true","editor-font-scale":"0.85","message":"true","fig-width":"6"},"id":3},{"code":"\n","options":{"out-height":"","out-width":"70%","fig-height":"3.7","fig-cap":"","results":"markup","output":"true","dpi":72,"classes":"","comment":"","editor-max-height":"","autorun":"false","context":"interactive","read-only":"false","editor-quick-suggestions":"false","label":"unnamed-chunk-4","warning":"true","editor-font-scale":"0.85","message":"true","fig-width":"6"},"id":4},{"code":"\n","options":{"out-height":"","out-width":"70%","fig-height":"3.7","fig-cap":"","results":"markup","output":"true","dpi":72,"classes":"","comment":"","editor-max-height":"","autorun":"false","context":"interactive","read-only":"false","editor-quick-suggestions":"false","label":"unnamed-chunk-5","warning":"true","editor-font-scale":"0.85","message":"true","fig-width":"6"},"id":5},{"code":"\n","options":{"out-height":"","out-width":"70%","fig-height":"3.7","fig-cap":"","results":"markup","output":"true","dpi":72,"classes":"","comment":"","editor-max-height":"","autorun":"false","context":"interactive","read-only":"false","editor-quick-suggestions":"false","label":"unnamed-chunk-6","warning":"true","editor-font-scale":"0.85","message":"true","fig-width":"6"},"id":6}];
 
 </script>
 <script type="module">
@@ -429,11 +429,11 @@ function displayStartupMessage(showStartupMessage, showHeaderMessage) {
   const firstInnerDiv = document.createElement("div");
   firstInnerDiv.setAttribute("id", "qwebr-status-message-area");
 
-  // Create the second inner div element for "WebR Status" heading and contents
+  // Create the second inner div element for "Estado de WebR" heading and contents
   const secondInnerDiv = document.createElement("div");
   secondInnerDiv.setAttribute("id", "qwebr-status-message-title");
   secondInnerDiv.classList.add("quarto-title-meta-heading");
-  secondInnerDiv.innerText = "WebR Status";
+  secondInnerDiv.innerText = "Estado de WebR";
 
   // Create another inner div for contents
   const secondInnerDivContents = document.createElement("div");
@@ -575,8 +575,8 @@ globalThis.qwebrCreateInteractiveElement = function (qwebrCounter, qwebrOptions)
   runCodeButton.disabled = true;
   runCodeButton.type = 'button';
   runCodeButton.id = 'qwebr-button-run-' + qwebrCounter;
-  runCodeButton.textContent = '🟡 Loading webR...';
-  runCodeButton.title = `Run code (Shift + Enter)`;
+  runCodeButton.textContent = '🟡 Cargando webR...';
+  runCodeButton.title = `Ejecutar código (Mayus + Enter)`;
 
   // Append buttons to the leftButtonsDiv
   leftButtonsDiv.appendChild(runCodeButton);
@@ -729,7 +729,7 @@ globalThis.createLoadingContainer = function(qwebrCounter) {
   const statusText = document.createElement('p');
   statusText.id = `qwebr-status-text-${qwebrCounter}`;
   statusText.className = `qwebr-status-text qwebr-cell-needs-evaluation`;
-  statusText.innerText = 'Loading webR...';
+  statusText.innerText = 'Cargando webR...';
 
   // Incorporate an inner container
   const innerContainer = document.createElement('div');
@@ -1124,7 +1124,7 @@ globalThis.qwebrExecuteCode = async function (
 
     if (options.context == EvalTypes.Interactive) {
         // Emphasize the active code cell
-        elements.runButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin qwebr-icon-status-spinner"></i> <span>Run Code</span>';
+        elements.runButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin qwebr-icon-status-spinner"></i> <span>Ejecutar código</span>';
     }
 
     // Evaluate the code and parse the output into the document
@@ -1137,7 +1137,7 @@ globalThis.qwebrExecuteCode = async function (
 
     if (options.context == EvalTypes.Interactive) {
         // Revert to the initial code cell state
-        elements.runButton.innerHTML = '<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Run Code</span>';
+        elements.runButton.innerHTML = '<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Ejecutar código</span>';
     }
 }
 
@@ -1244,7 +1244,7 @@ globalThis.qwebrExecuteCode = async function (
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../basics/02-programming-basics/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Programming basics</span></a>
+ <span class="menu-text">Fundamentos de programación</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -1253,7 +1253,7 @@ globalThis.qwebrExecuteCode = async function (
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../basics/02-programming-basics/01-functions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Functions</span></a>
+ <span class="menu-text">Funciones</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -1682,7 +1682,7 @@ globalThis.qwebrExecuteCode = async function (
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="true">
- <span class="menu-text">Ordenar data</span></a>
+ <span class="menu-text">Ordenar datos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -2016,7 +2016,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <p>You can test your hypothesis with the <code>mpg</code> dataset that comes in the <code>ggplot2</code> package. <code>mpg</code> contains observations collected on 38 models of cars by the US Environmental Protection Agency.</p>
 <p>To see the <code>mpg</code> data frame, type <code>mpg</code> in the code block below and click “Run Code”.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solution</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solución</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div id="qwebr-insertion-location-1"></div>
@@ -2117,7 +2117,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <p>In fact, you can turn our code into a reusable template for making graphs. To make a graph, replace the bracketed sections in the code below with a data set, a <code>geom_</code> function, or a collection of mappings.</p>
 <p>Give it a try! Replace the bracketed sections with <code>mpg</code>, <code>geom_boxplot</code>, and <code>x = class, y = hwy</code> to make a slightly different graph. Be sure to delete the <code>#</code> symbols before you run the code.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solution</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solución</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <div id="qwebr-insertion-location-3"></div>
@@ -2154,7 +2154,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <h3 class="anchored" data-anchor-id="exercise-1">Exercise 1</h3>
 <p>Run <code>ggplot(data = mpg)</code>. What do you see?</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <div id="qwebr-insertion-location-4"></div>
@@ -2171,14 +2171,14 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <h3 class="anchored" data-anchor-id="exercise-2">Exercise 2</h3>
 <p>Make a scatterplot of <code>cty</code> vs <code>hwy</code>.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false"><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> Hint</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solution</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false"><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> Pista</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solución</a></li></ul>
 <div class="tab-content">
 <div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
 <div id="qwebr-insertion-location-5"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </div>
 <div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
-<p><strong>Hint:</strong> Scatterplots are also called points plots and bubble plots. They use the point geom.</p>
+<p><strong>Pista:</strong> Scatterplots are also called points plots and bubble plots. They use the point geom.</p>
 </div>
 <div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
 <div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> mpg) <span class="sc">+</span> </span>
@@ -2195,7 +2195,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <h3 class="anchored" data-anchor-id="exercise-3">Exercise 3</h3>
 <p>What happens if you make a scatterplot of <code>class</code> vs <code>drv</code>. Try it. Why is the plot not useful?</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solution</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solución</a></li></ul>
 <div class="tab-content">
 <div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
 <div id="qwebr-insertion-location-6"></div>
@@ -2741,11 +2741,11 @@ qwebrInstance.then(
     // Release document status as ready
 
     if (qwebrShowStartupMessage) {
-      qwebrStartupMessage.innerText = "🟢 Ready!"
+      qwebrStartupMessage.innerText = "🟢 Listo"
     }
   
     qwebrSetInteractiveButtonState(
-      `<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Run Code</span>`, 
+      `<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Ejecutar código</span>`, 
       true
     );  
   }

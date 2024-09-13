@@ -119,7 +119,7 @@ This video uses older function names:
 - Old `spread()` is now `pivot_wider()`
 :::
 
-Watch [this video](https://vimeo.com/229581247) (you'll need to click on the link; the video's privacy settings make it so it can't be embedded here)
+Mira [este video](https://vimeo.com/229581247) (you'll need to click on the link; the video's privacy settings make it so it can't be embedded here)
 
 ### `pivot_longer()`
 
@@ -176,7 +176,7 @@ table4a
 The result should contain three columns: `country`, `year`, and `cases`. Begin by modifying our code below.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 cases |> 
@@ -186,7 +186,7 @@ cases |>
   )
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 table4a |> 
@@ -238,7 +238,7 @@ table4b
 ```
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -246,7 +246,7 @@ table4b
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 table4b |> 
@@ -270,7 +270,7 @@ If you looked closely at your results in the previous exercises, you may have no
 For example, `names_transform = list(week = as.integer)` would convert a character variable called `week` to an integer.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 table4b |> 
@@ -283,7 +283,7 @@ table4b |>
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 table4b |> 
@@ -316,7 +316,7 @@ cases2
 To tidy this data, you would want to keep the first three columns as they are. Can you tidy this data with `pivot_longer()`? Yes, and you already know how. Think about the problem and then tidy `cases2` into a data set with five columns: `city`, `country`, `continent`, `year` (as an integer), and `cases`.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -324,7 +324,7 @@ To tidy this data, you would want to keep the first three columns as they are. C
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 cases2 |> 

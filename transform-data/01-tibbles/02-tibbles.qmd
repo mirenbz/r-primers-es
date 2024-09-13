@@ -60,7 +60,7 @@ You can transform a data frame to a tibble with the `as_tibble()` function in th
 To see what I mean, use `library()` to load the tibble package in the chunk below and then call `babynames`.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -68,7 +68,7 @@ To see what I mean, use `library()` to load the tibble package in the chunk belo
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 library(tibble)

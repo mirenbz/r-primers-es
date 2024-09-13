@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R Primers - Objects</title>
+<title>Manual básico de R - Objects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -306,7 +306,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"options":{"dpi":72,"comment":"","warning":"true","autorun":"false","editor-max-height":"","fig-width":"6","out-height":"","out-width":"70%","editor-quick-suggestions":"false","read-only":"false","editor-font-scale":"0.85","fig-height":"3.7","fig-cap":"","output":"true","context":"interactive","results":"markup","label":"unnamed-chunk-1","message":"true","classes":""},"id":1,"code":"\n"},{"options":{"dpi":72,"comment":"","warning":"true","autorun":"false","editor-max-height":"","fig-width":"6","out-height":"","out-width":"70%","editor-quick-suggestions":"false","read-only":"false","editor-font-scale":"0.85","fig-height":"3.7","fig-cap":"","output":"true","context":"interactive","results":"markup","label":"unnamed-chunk-2","message":"true","classes":""},"id":2,"code":"data <- rnorm(100, mean = 100, sd = 15)\ncopy <- data\n"},{"options":{"dpi":72,"comment":"","warning":"true","autorun":"false","editor-max-height":"","fig-width":"6","out-height":"","out-width":"70%","editor-quick-suggestions":"false","read-only":"false","editor-font-scale":"0.85","fig-height":"3.7","fig-cap":"","output":"true","context":"interactive","results":"markup","label":"unnamed-chunk-3","message":"true","classes":""},"id":3,"code":"\n"},{"options":{"dpi":72,"comment":"","warning":"true","autorun":"false","editor-max-height":"","fig-width":"6","out-height":"","out-width":"70%","editor-quick-suggestions":"false","read-only":"false","editor-font-scale":"0.85","fig-height":"3.7","fig-cap":"","output":"true","context":"interactive","results":"markup","label":"unnamed-chunk-4","message":"true","classes":""},"id":4,"code":"mtcars <- 1\nmtcars\n"}];
+globalThis.qwebrCellDetails = [{"options":{"editor-font-scale":"0.85","editor-max-height":"","output":"true","editor-quick-suggestions":"false","out-width":"70%","results":"markup","read-only":"false","fig-cap":"","label":"unnamed-chunk-1","out-height":"","fig-height":"3.7","message":"true","classes":"","dpi":72,"warning":"true","context":"interactive","autorun":"false","fig-width":"6","comment":""},"id":1,"code":"\n"},{"options":{"editor-font-scale":"0.85","editor-max-height":"","output":"true","editor-quick-suggestions":"false","out-width":"70%","results":"markup","read-only":"false","fig-cap":"","label":"unnamed-chunk-2","out-height":"","fig-height":"3.7","message":"true","classes":"","dpi":72,"warning":"true","context":"interactive","autorun":"false","fig-width":"6","comment":""},"id":2,"code":"datos <- rnorm(100, mean = 100, sd = 15)\ncopia <- datos\n"},{"options":{"editor-font-scale":"0.85","editor-max-height":"","output":"true","editor-quick-suggestions":"false","out-width":"70%","results":"markup","read-only":"false","fig-cap":"","label":"unnamed-chunk-3","out-height":"","fig-height":"3.7","message":"true","classes":"","dpi":72,"warning":"true","context":"interactive","autorun":"false","fig-width":"6","comment":""},"id":3,"code":"\n"},{"options":{"editor-font-scale":"0.85","editor-max-height":"","output":"true","editor-quick-suggestions":"false","out-width":"70%","results":"markup","read-only":"false","fig-cap":"","label":"unnamed-chunk-4","out-height":"","fig-height":"3.7","message":"true","classes":"","dpi":72,"warning":"true","context":"interactive","autorun":"false","fig-width":"6","comment":""},"id":4,"code":"mtcars <- 1\nmtcars\n"}];
 
 </script>
 <script type="module">
@@ -429,11 +429,11 @@ function displayStartupMessage(showStartupMessage, showHeaderMessage) {
   const firstInnerDiv = document.createElement("div");
   firstInnerDiv.setAttribute("id", "qwebr-status-message-area");
 
-  // Create the second inner div element for "WebR Status" heading and contents
+  // Create the second inner div element for "Estado de WebR" heading and contents
   const secondInnerDiv = document.createElement("div");
   secondInnerDiv.setAttribute("id", "qwebr-status-message-title");
   secondInnerDiv.classList.add("quarto-title-meta-heading");
-  secondInnerDiv.innerText = "WebR Status";
+  secondInnerDiv.innerText = "Estado de WebR";
 
   // Create another inner div for contents
   const secondInnerDivContents = document.createElement("div");
@@ -575,8 +575,8 @@ globalThis.qwebrCreateInteractiveElement = function (qwebrCounter, qwebrOptions)
   runCodeButton.disabled = true;
   runCodeButton.type = 'button';
   runCodeButton.id = 'qwebr-button-run-' + qwebrCounter;
-  runCodeButton.textContent = '🟡 Loading webR...';
-  runCodeButton.title = `Run code (Shift + Enter)`;
+  runCodeButton.textContent = '🟡 Cargando webR...';
+  runCodeButton.title = `Ejecutar código (Mayus + Enter)`;
 
   // Append buttons to the leftButtonsDiv
   leftButtonsDiv.appendChild(runCodeButton);
@@ -729,7 +729,7 @@ globalThis.createLoadingContainer = function(qwebrCounter) {
   const statusText = document.createElement('p');
   statusText.id = `qwebr-status-text-${qwebrCounter}`;
   statusText.className = `qwebr-status-text qwebr-cell-needs-evaluation`;
-  statusText.innerText = 'Loading webR...';
+  statusText.innerText = 'Cargando webR...';
 
   // Incorporate an inner container
   const innerContainer = document.createElement('div');
@@ -1124,7 +1124,7 @@ globalThis.qwebrExecuteCode = async function (
 
     if (options.context == EvalTypes.Interactive) {
         // Emphasize the active code cell
-        elements.runButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin qwebr-icon-status-spinner"></i> <span>Run Code</span>';
+        elements.runButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin qwebr-icon-status-spinner"></i> <span>Ejecutar código</span>';
     }
 
     // Evaluate the code and parse the output into the document
@@ -1137,7 +1137,7 @@ globalThis.qwebrExecuteCode = async function (
 
     if (options.context == EvalTypes.Interactive) {
         // Revert to the initial code cell state
-        elements.runButton.innerHTML = '<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Run Code</span>';
+        elements.runButton.innerHTML = '<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Ejecutar código</span>';
     }
 }
 
@@ -1154,7 +1154,7 @@ globalThis.qwebrExecuteCode = async function (
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">R Primers</span>
+    <span class="navbar-title">Manual básico de R</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -1165,12 +1165,12 @@ globalThis.qwebrExecuteCode = async function (
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">About</span></a>
+<span class="menu-text">Acerca de este sitio</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/andrewheiss/r-primers"> <i class="bi bi-github" role="img" aria-label="github">
+    <a class="nav-link" href="https://github.com/mirenbz/r-primers"> <i class="bi bi-github" role="img" aria-label="github">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -1200,7 +1200,7 @@ globalThis.qwebrExecuteCode = async function (
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Basics</span></a>
+ <span class="menu-text">Conceptos básicos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -1244,7 +1244,7 @@ globalThis.qwebrExecuteCode = async function (
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../basics/02-programming-basics/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Programming basics</span></a>
+ <span class="menu-text">Fundamentos de programación</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -1253,7 +1253,7 @@ globalThis.qwebrExecuteCode = async function (
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../basics/02-programming-basics/01-functions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Functions</span></a>
+ <span class="menu-text">Funciones</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -1299,7 +1299,7 @@ globalThis.qwebrExecuteCode = async function (
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
- <span class="menu-text">Transform data</span></a>
+ <span class="menu-text">Transformar datos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -1421,7 +1421,7 @@ globalThis.qwebrExecuteCode = async function (
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">
- <span class="menu-text">Visualize data</span></a>
+ <span class="menu-text">Visualizar datos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -1430,7 +1430,7 @@ globalThis.qwebrExecuteCode = async function (
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../visualize-data/01-eda/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exploratory data analysis</span></a>
+ <span class="menu-text">Análisis exploratorio de datos</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -1439,7 +1439,7 @@ globalThis.qwebrExecuteCode = async function (
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../visualize-data/01-eda/01-eda.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exploratory data analysis</span></a>
+ <span class="menu-text">Análisis exploratorio de datos</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -1682,7 +1682,7 @@ globalThis.qwebrExecuteCode = async function (
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="true">
- <span class="menu-text">Tidy data</span></a>
+ <span class="menu-text">Ordenar datos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -1974,71 +1974,72 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </header>
 
 
-<section id="objects" class="level3 no-hide">
-<h3 class="no-hide anchored" data-anchor-id="objects">Objects</h3>
-<p>Watch <a href="https://vimeo.com/220493412">this video</a>:</p>
+<section id="objetos" class="level3 no-hide">
+<h3 class="no-hide anchored" data-anchor-id="objetos">Objetos</h3>
+<p>Mira <a href="https://vimeo.com/220493412">este video</a>:</p>
 <div class="ratio ratio-4x3">
 <iframe src="https://player.vimeo.com/video/220493412" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
 </div>
+<p><span style="font-size:.8em;opacity:.6"><strong>Nota:</strong> Puedes activar los subtítulos (en inglés) con el botón <em>CC</em> (CC/Subtitles) o visualizar la transcripción del video con el botón <em>Transcript</em>.</span></p>
 </section>
-<section id="object-names" class="level3">
-<h3 class="anchored" data-anchor-id="object-names">Object names</h3>
-<p>You can choose almost any name you like for an object, as long as the name does not begin with a number or a special character like <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>^</code>, <code>!</code>, <code>@</code>, or <code>&amp;</code>.</p>
-<p>For instance, check out this list of some possible object names. Some are okay to use; some are invalid:</p>
+<section id="nombres-de-objetos" class="level3">
+<h3 class="anchored" data-anchor-id="nombres-de-objetos">Nombres de objetos</h3>
+<p>Puedes elegir casi cualquier nombre que quieras para un objeto, siempre y cuando el nombre no empiece con un número o un carácter especial como <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>^</code>, <code>!</code>, <code>@</code> o <code>&amp;</code>.</p>
+<p>Por ejemplo, revisa esta lista de algunos posibles nombres de objetos. Algunos se podrían utilizar, pero otros no son válidos:</p>
 <ul>
-<li><code>today</code>: This is fine</li>
-<li><code>1st</code>: This is <strong>bad</strong>; it starts with a number</li>
-<li><code>+1</code>: This is <strong>bad</strong>; it starts with a special character</li>
-<li><code>vars</code>: This is fine</li>
-<li><code>\^_^</code>: This is <strong>bad</strong>; it starts with a special character</li>
-<li><code>foo</code>: This is fine</li>
+<li><code>hoy</code>: Este está bien</li>
+<li><code>1ero</code>: Este está <strong>mal</strong>; empieza con un número</li>
+<li><code>+1</code>: Este está <strong>mal</strong>; empieza con un carácter especial</li>
+<li><code>vars</code>: Este está bien</li>
+<li><code>\^_^</code>: Este está <strong>mal</strong>; empieza con un carácter especial</li>
+<li><code>foo</code>: Este está bien</li>
 </ul>
 </section>
-<section id="using-objects" class="level3">
-<h3 class="anchored" data-anchor-id="using-objects">Using objects</h3>
-<p>In the code chunk below, save the results of <code>rnorm(100, mean = 100, sd = 15)</code> to an object named <code>data</code>. Then, on a new line, call the <code>hist()</code> function on <code>data</code> to plot a histogram of the random values.</p>
+<section id="usar-objetos" class="level3">
+<h3 class="anchored" data-anchor-id="usar-objetos">Usar objetos</h3>
+<p>En el fragmento de código de abajo, guarda los resultados de <code>rnorm(100, mean = 100, sd = 15)</code> en un objeto llamado <code>datos</code>. Después, en una nueva línea, ejecuta la función <code>hist()</code> sobre <code>datos</code> para representar gráficamente un diagrama de los valores aleatorios.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solution</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solución</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div id="qwebr-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">100</span>, <span class="at">sd =</span> <span class="dv">15</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>datos <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">100</span>, <span class="at">sd =</span> <span class="dv">15</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(datos)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="what-if" class="level3">
-<h3 class="anchored" data-anchor-id="what-if">What if?</h3>
-<p>What do you think would happen if you assigned <code>data</code> to a new object named <code>copy</code>, like this? Run the code and then inspect both <code>data</code> and <code>copy</code>.</p>
+<section id="y-si" class="level3">
+<h3 class="anchored" data-anchor-id="y-si">¿Y si…?</h3>
+<p>¿Qué crees que pasaría si asignaras <code>datos</code> a un nuevo objeto llamado <code>copia</code>, así? Ejecuta el código y después inspecciona tanto <code>datos</code> como <code>copia</code>.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solution</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solución</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <div id="qwebr-insertion-location-2"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">100</span>, <span class="at">sd =</span> <span class="dv">15</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>copy <span class="ot">&lt;-</span> data</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>data</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>copy</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>datos <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">100</span>, <span class="at">sd =</span> <span class="dv">15</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>copia <span class="ot">&lt;-</span> datos</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>datos</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>copia</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </section>
 <section id="section" class="level3">
 <h3 class="anchored" data-anchor-id="section"></h3>
-<p>Good job! R saves a copy of the contents in data to copy.</p>
+<p>¡Efectivamente! R guarda una copia de los contenidos de <code>datos</code> en <code>copia</code>.</p>
 </section>
-<section id="datasets" class="level3">
-<h3 class="anchored" data-anchor-id="datasets">Datasets</h3>
-<p>Objects provide an easy way to store datasets in R. In fact, R comes with many toy datasets pre-loaded. Examine the contents of <code>mtcars</code> to see a classic toy dataset. Hint: how could you learn more about the <code>mtcars</code> object?</p>
+<section id="conjuntos-de-datos" class="level3">
+<h3 class="anchored" data-anchor-id="conjuntos-de-datos">Conjuntos de datos</h3>
+<p>Los objetos ofrecen una manera sencilla de almacenar conjuntos de datos en R. De hecho, R viene con varios conjuntos de datos de prueba precargados. Examina el contenido de <code>mtcars</code> para ver un conjunto de datos de prueba clásico. Pista: ¿cómo harías para saber más acerca del objeto <code>mtcars</code>?</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solution</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solución</a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <div id="qwebr-insertion-location-3"></div>
@@ -2052,13 +2053,13 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </section>
 <section id="section-1" class="level3">
 <h3 class="anchored" data-anchor-id="section-1"></h3>
-<p>Good job! You can learn more about mtcars by examining its help page with <code>?mtcars</code>.</p>
+<p>¡Eso es! Puedes saber aún más sobre <code>mtcars</code> examinando su página de ayuda con <code>?mtcars</code>.</p>
 </section>
 <section id="rm" class="level3">
 <h3 class="anchored" data-anchor-id="rm"><code>rm()</code></h3>
-<p>What if you accidentally overwrite an object? If that object came with R or one of its packages, you can restore the original version of the object by removing your version with <code>rm()</code>. Run <code>rm()</code> on <code>mtcars</code> below to restore the mtcars data set.</p>
+<p>¿Qué pasa si sobreescribes un ojeto accidentalmente? Si ese objeto vino con R o alguno de sus paquetes, puedes restaurar la versión original del objeto borrándolo de tu entorno con <code>rm()</code>. Ejecuta <code>rm()</code> sobre <code>mtcars</code> abajo para restaurar el conjunto de datos <code>mtcars</code>.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solution</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solución</a></li></ul>
 <div class="tab-content">
 <div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
 <div id="qwebr-insertion-location-4"></div>
@@ -2075,15 +2076,12 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </section>
 <section id="section-2" class="level3">
 <h3 class="anchored" data-anchor-id="section-2"></h3>
-<p>Good job! Unfortunately, <code>rm()</code> cannot help you if you overwrite one of your own objects.</p>
-</section>
-<section id="section-3" class="level2">
-<h2 class="anchored" data-anchor-id="section-3"></h2>
+<p>¡Bien hecho! Desafortunadamente, <code>rm()</code> no puede ayudarte si sobreescribes uno de tus propios objetos. ##</p>
 <section id="buttons">
 <button id="continueButton" class="btn btn-primary float-start me-2">
-Continue
+Continuar
 </button>
-<a id="nextTopicButton" class="btn btn-danger disabled" href="04-vectors.html" role="button">Next topic</a> <button id="resetButton" class="btn btn-outline-warning btn-sm float-end">Start over</button>
+<a id="nextTopicButton" class="btn btn-danger disabled" href="04-vectors.html" role="button">Siguiente tema</a> <button id="resetButton" class="btn btn-outline-warning btn-sm float-end">Volver a empezar</button>
 </section>
 
 
@@ -2500,7 +2498,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/andrewheiss/r-primers/edit/main/basics/02-programming-basics/03-objects.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/andrewheiss/r-primers/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script src="../../js/progressive-reveal.js"></script>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/mirenbz/r-primers/edit/main/basics/02-programming-basics/03-objects.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mirenbz/r-primers/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script src="../../js/progressive-reveal.js"></script>
 <script type="module">
 // Handle cell initialization initialization
 qwebrCellDetails.map(
@@ -2603,11 +2601,11 @@ qwebrInstance.then(
     // Release document status as ready
 
     if (qwebrShowStartupMessage) {
-      qwebrStartupMessage.innerText = "🟢 Ready!"
+      qwebrStartupMessage.innerText = "🟢 Listo"
     }
   
     qwebrSetInteractiveButtonState(
-      `<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Run Code</span>`, 
+      `<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Ejecutar código</span>`, 
       true
     );  
   }

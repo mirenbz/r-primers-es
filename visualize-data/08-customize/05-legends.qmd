@@ -92,7 +92,7 @@ To change the position of a legend in a {ggplot2} graph add one of the below to 
 Try this now. Move the legend in `p_cont` to the bottom of the graph.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 p_cont
@@ -100,7 +100,7 @@ p_cont
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 p_cont + theme(legend.position = "bottom")
@@ -117,7 +117,7 @@ Good job! If you move the legend to the top or bottom of the plot, {ggplot2} wil
 Theme functions like `theme_grey()` and `theme_bw()` also adjust the legend position (among all of the other details they orchestrate). So if you use `theme(legend.position = "bottom")` in your plots, be sure to add it _after_ any `theme_` functions you call, like this
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) + 
@@ -164,7 +164,7 @@ p_legend + guides(fill = "legend", color = "none")
 Use `guides()` to remove each legend from the `p_legend` plot.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 p_legend
@@ -172,7 +172,7 @@ p_legend
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 p_legend + guides(fill = "none", color = "none")
@@ -243,7 +243,7 @@ As you can see, it is handy to know which scales a {ggplot2} graph will use by d
 Use the list of scale defaults above to relabel the legend in `p_cont`. The legend should have the title "Highway MPG". Also place the legend at the top of the plot.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 p_cont
@@ -251,7 +251,7 @@ p_cont
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 p_cont + 

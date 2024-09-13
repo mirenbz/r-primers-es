@@ -53,7 +53,7 @@ source(here::here("R", "helpers.R"))
 One of these, `color`, creates the most surprising results. Predict what the code below will return and then run it.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = diamonds) +
@@ -82,7 +82,7 @@ ggplot(data = diamonds) +
 Use the code chunk below to experiment with fill, along with other `geom_bar()` aesthetics, like `alpha`, `linetype`, and `size`.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = diamonds) +
@@ -99,7 +99,7 @@ ggplot(data = diamonds) +
 You can control the width of each bar in your bar chart with the `width` parameter. In the chunk below, set `width = 1`, then `width = 0.5`. Can you spot the difference?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = diamonds) +
@@ -117,7 +117,7 @@ Notice that width is a _parameter_, not an aesthetic mapping. Hence, you should 
 Create a colored bar chart of the `class` variable from the `mpg` data set, which comes with ggplot2. Map the interior color of each bar to `class`.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -125,7 +125,7 @@ Create a colored bar chart of the `class` variable from the `mpg` data set, whic
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg) +

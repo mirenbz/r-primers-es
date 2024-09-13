@@ -107,7 +107,7 @@ Scales specialize in either _discrete_ variables or _continuous_ variables. In o
 One of the most useful color palettes for discrete variables is `scale_color_brewer()` (`scale_fill_brewer()` if you are working with fill). Run the code below to see the effect of the scale.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 p1 + scale_color_brewer()
@@ -115,7 +115,7 @@ p1 + scale_color_brewer()
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 
@@ -135,7 +135,7 @@ The {RColorBrewer} package contains a variety of palettes developed by Cynthia B
 Altogether, the {RColorBrewer} package contains 35 palettes. You can see each palette and its name by running `RColorBrewer::display.brewer.all()`. Try it below.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 #| fig-width: 6
@@ -169,7 +169,7 @@ p1 + scale_color_brewer(palette = "Spectral")
 ```
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 p1
@@ -177,7 +177,7 @@ p1
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 p1 + scale_color_brewer(palette = "Spectral")
@@ -229,7 +229,7 @@ p_cont + scale_color_distiller(palette = "Spectral")
 Recreate the graph below, which uses a different palette from the {RColorBrewer} package.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 p_cont
@@ -237,7 +237,7 @@ p_cont
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 p_cont + scale_color_distiller(palette = "BrBG")
@@ -269,7 +269,7 @@ Altogether, the viridis package comes with [eight color palettes](https://cran.r
 Try each option with `p_cont` below. Determine which is the default.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 p_cont + scale_color_viridis_c(option = "turbo")
@@ -278,7 +278,7 @@ p_cont + scale_color_viridis_c(option = "turbo")
 ```
 
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 p_cont + scale_color_viridis_c(option = "viridis")

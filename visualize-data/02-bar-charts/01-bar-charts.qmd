@@ -81,7 +81,7 @@ pressure
 Use the code chunk below to plot the distribution of the `color` variable in the `diamonds` data set, which comes in the {ggplot2} package.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -89,7 +89,7 @@ Use the code chunk below to plot the distribution of the `color` variable in the
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds) +
@@ -156,7 +156,7 @@ check_question(
 Diagnose the error below and then fix the code chunk to make a plot.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = pressure) +
@@ -165,7 +165,7 @@ ggplot(data = pressure) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = pressure) +
@@ -180,7 +180,7 @@ ggplot(data = pressure) +
 Recreate the bar graph of `color` from exercise one, but this time first use `count()` to manually compute the heights of the bars. Then use `geom_col()` to plot the results as a bar graph. Does your graph look the same as in exercise one?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -188,7 +188,7 @@ Recreate the bar graph of `color` from exercise one, but this time first use `co
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 diamonds |> 

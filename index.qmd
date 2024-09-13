@@ -5,6 +5,26 @@ toc: false
 
 Una versión del antiguo RStudio/Posit Primers, ahora con Quarto y webR y **en castellano**.
 
+- Conceptos básicos
+  - [Fundamentos de visualización de datos](basics/01-visualization-basics/)
+  - [Fundamentos de programación](basics/02-programming-basics/)
+- Transformar datos
+  - [Trabajar con tibbles](transform-data/01-tibbles/)
+  - [Aislar datos con {dplyr}](transform-data/02-isolating/)
+  - [Derivar información don {dplyr}](transform-data/03-deriving/)
+- Visualizar datos
+  - [Análisis exploratorio de datos](visualize-data/01-eda/)
+  - [Gráfico de barras](visualize-data/02-bar-charts/)
+  - [Histogramas](visualize-data/03-histograms/)
+  - [Diagramas de cajas](visualize-data/04-boxplots/)
+  - [Gráficos de dispersión](visualize-data/05-scatterplots/)
+  - [Gráficos de línea](visualize-data/06-line-graphs/)
+  - [_Overplotting_ y macrodatos](visualize-data/07-overplotting/)
+  - [Personaliza tus gráficos](visualize-data/08-customize/)
+- Ordenar datos
+  - [Modificar la forma de los datos](tidy-data/01-reshape-data/)
+
+
 ## Licencia {.appendix}
 
 The original primers were developed by the RStudio/Posit Education Team and made [open source on GitHub](https://github.com/rstudio-education/primers). Following the original license, these tutorials are licensed under the Creative Commons Attribution-ShareAlike 4.0 License (CC BY-SA 4.0).

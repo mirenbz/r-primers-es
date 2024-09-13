@@ -52,7 +52,7 @@ source(here::here("R", "helpers.R"))
 In {ggplot2}, you can add multiple geoms to a plot by adding multiple geom functions to the plot call. For example, the code below creates a plot that contains both points and a smooth line. Imagine what the results will look like in your head, and then run the code to see if you are right.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 mpg |> 
@@ -79,7 +79,7 @@ Do you remember how the labels that we made early overlapped each other and ran 
 Use `geom_label_repel()` to add a new layer to our plot below. `geom_label_repel()` requires the same aesthetics as `geom_label()`: `x`, `y`, and `label` (here set to `class`).
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 mpg |> 
@@ -92,7 +92,7 @@ mpg |>
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 mpg |> 
@@ -154,7 +154,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 Reduce duplication in the code below by moving as many local mappings into the global mappings as possible. Rerun the new code to ensure that it creates the same plot.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 mpg |> 
@@ -168,7 +168,7 @@ mpg |>
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 mpg |> 
@@ -198,7 +198,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 ```
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -206,7 +206,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
@@ -236,7 +236,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 ```
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 mpg2 <- filter(mpg, class == "2seater")
@@ -244,7 +244,7 @@ mpg2 <- filter(mpg, class == "2seater")
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 mpg2 <- filter(mpg, class == "2seater")
@@ -274,7 +274,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 ```
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -282,7 +282,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 mpg3 <- filter(mpg, hwy > 40)
@@ -337,7 +337,7 @@ p
 In the chunk below, use the `faithful` dataset to create a scatterplot that has the `waiting` variable on the $x$ axis and the `eruptions` variable on the $y$ axis. Use `geom_rug()` to add a rug plot to the scatterplot. Like `geom_point()`, `geom_rug()` requires x and y aesthetic mappings.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -345,7 +345,7 @@ In the chunk below, use the `faithful` dataset to create a scatterplot that has 
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = faithful, mapping = aes(x = waiting, y = eruptions)) +
@@ -366,7 +366,7 @@ Good job! Pass `geom_rug()` the parameter `sides = "l"` to limit the rug plot to
 Why would you use `geom_jitter()`? Jittering provides a simple way to inspect patterns that occur in heavily gridded or overlapping data. To see what I mean, replace `geom_point()` with `geom_jitter()` in the plot below.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) +
@@ -375,7 +375,7 @@ ggplot(data = mpg) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg) +
@@ -396,7 +396,7 @@ Good job! You can also jitter in only a single direction. To turn off jittering 
 Use the chunk below to create a boxplot of the previous graph. Arrange for the outliers to have an alpha of 0, which will make them completely transparent. Then add a layer of points that are jittered in $y$ direction, but not the $x$ direction.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -404,7 +404,7 @@ Use the chunk below to create a boxplot of the previous graph. Arrange for the o
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg, mapping = aes(x = class, y = hwy)) +

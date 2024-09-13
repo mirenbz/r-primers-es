@@ -60,14 +60,14 @@ As we see above, you can use different geoms to plot the same data. The plot on 
 To change the geom in your plot, change the geom function that you add to `ggplot()`. For example, take this code which makes the plot on the left (above), and change `geom_point()` to `geom_smooth()`. What do you get? 
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy))
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg) + 

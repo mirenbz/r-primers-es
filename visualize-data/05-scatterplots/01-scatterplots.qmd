@@ -45,7 +45,7 @@ In [Visualization Basics](/basics/01-visualization-basics/), you learned how to 
 The code below summarizes the mpg data set and begins to plot the results. Finish the plot with `geom_point()`. Put `mean_cty` on the $x$ axis and `mean_hwy` on the $y$ axis.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 mpg |> 
@@ -56,7 +56,7 @@ mpg |>
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 mpg |> 
@@ -79,7 +79,7 @@ Good job! It can be tricky to remember when to use `|>` and when to use `+`. Use
 Convert the plot below from `geom_point()` to `geom_text()` and map the `label` aesthetic to the `class` variable. When you are finished convert the code to `geom_label()` and rerun the plot. Can you spot the difference?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 mpg |> 
@@ -91,7 +91,7 @@ mpg |>
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 mpg |> 
@@ -145,7 +145,7 @@ You can use the `method` parameter of `geom_smooth()` to fit and display other t
 In the code below, use `geom_smooth()` to draw the linear model line that fits the data.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 mpg |> 
@@ -156,7 +156,7 @@ mpg |>
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 mpg |> 

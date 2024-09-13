@@ -76,7 +76,7 @@ You can test your hypothesis with the `mpg` dataset that comes in the `ggplot2` 
 To see the `mpg` data frame, type `mpg` in the code block below and click "Run Code".
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -84,7 +84,7 @@ To see the `mpg` data frame, type `mpg` in the code block below and click "Run C
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 mpg
@@ -181,14 +181,14 @@ In fact, you can turn our code into a reusable template for making graphs. To ma
 Give it a try! Replace the bracketed sections with `mpg`, `geom_boxplot`, and `x = class, y = hwy` to make a slightly different graph. Be sure to delete the `#` symbols before you run the code.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 # ggplot(data = <DATA>) + 
 #  <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>))
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg) + 
@@ -227,7 +227,7 @@ If that doesn't help, carefully read the error message that appears when you run
 Run `ggplot(data = mpg)`. What do you see?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -246,7 +246,7 @@ Good job! A ggplot that has no layers looks blank. To finish the graph, add a ge
 Make a scatterplot of `cty` vs `hwy`.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -254,11 +254,11 @@ Make a scatterplot of `cty` vs `hwy`.
 
 ```
 
-## {{< fa lightbulb >}}&ensp;Hint
+## {{< fa lightbulb >}}&ensp;Pista
 
-**Hint:** Scatterplots are also called points plots and bubble plots. They use the point geom.
+**Pista:** Scatterplots are also called points plots and bubble plots. They use the point geom.
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg) + 
@@ -276,7 +276,7 @@ Excellent work!
 What happens if you make a scatterplot of `class` vs `drv`. Try it. Why is the plot not useful?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -284,7 +284,7 @@ What happens if you make a scatterplot of `class` vs `drv`. Try it. Why is the p
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg) + 

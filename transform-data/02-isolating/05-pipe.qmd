@@ -92,7 +92,7 @@ I'll use pipes for the remainder of the tutorial, and I will expect you to as we
 Try to write your pipe without copying and pasting the code from above.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -100,7 +100,7 @@ Try to write your pipe without copying and pasting the code from above.
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 babynames |> 
@@ -122,7 +122,7 @@ You've now mastered a set of skills that will let you easily plot the popularity
 Note that the first argument of `ggplot()` takes a data frame, which means you can add `ggplot()` directly to the end of a pipe. However, you will need to switch from `|>` to `+` to finish adding layers to your plot.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -130,7 +130,7 @@ Note that the first argument of `ggplot()` takes a data frame, which means you c
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 babynames |> 

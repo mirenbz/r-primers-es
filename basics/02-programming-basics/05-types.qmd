@@ -29,7 +29,9 @@ source(here::here("R", "helpers.R"))
 
 ### Types {.no-hide}
 
-Watch [this video](https://vimeo.com/220490241):
+Mira [este video](https://vimeo.com/220490241):
+
+[**Nota:** Puedes activar los subtítulos (en inglés) con el botón _CC_ (CC/Subtitles) o visualizar la transcripción del video con el botón _Transcript_.]{style="font-size:.8em;opacity:.6"}
 
 ```{=html}
 <div class="ratio ratio-4x3">
@@ -93,7 +95,7 @@ check_question(
 Create a vector of integers from one to five. Can you imagine why you might want to use integers instead of numbers/doubles?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -101,7 +103,7 @@ Create a vector of integers from one to five. Can you imagine why you might want
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 c(1L, 2L, 3L, 4L, 5L)
@@ -117,7 +119,7 @@ Computers must use a finite amount of memory to store decimal numbers (which can
 Compute the square root of two, square the answer (e.g. multiply the square root of two by the square root of two), and then subtract two from the result. What answer do you expect? What answer do you get?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -125,7 +127,7 @@ Compute the square root of two, square the answer (e.g. multiply the square root
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 sqrt(2) * sqrt(2) - 2

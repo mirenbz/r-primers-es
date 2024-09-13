@@ -54,7 +54,7 @@ This might sound like an inconvenience, but choosing which packages to load keep
 In the chunk below, load {babynames} (the package) and then open the help page for `babynames` (the dataset). Be sure to read the help page before going on.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -62,7 +62,7 @@ In the chunk below, load {babynames} (the package) and then open the help page f
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 library(babynames)

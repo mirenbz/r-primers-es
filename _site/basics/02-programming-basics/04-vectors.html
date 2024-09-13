@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R Primers - Vectors</title>
+<title>Manual básico de R - Vectors</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -306,7 +306,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"options":{"output":"true","read-only":"false","fig-cap":"","results":"markup","warning":"true","fig-width":"6","out-width":"70%","context":"interactive","editor-font-scale":"0.85","autorun":"false","message":"true","editor-max-height":"","classes":"","out-height":"","comment":"","editor-quick-suggestions":"false","fig-height":"3.7","label":"unnamed-chunk-1","dpi":72},"id":1,"code":"\n"},{"options":{"output":"true","read-only":"false","fig-cap":"","results":"markup","warning":"true","fig-width":"6","out-width":"70%","context":"interactive","editor-font-scale":"0.85","autorun":"false","message":"true","editor-max-height":"","classes":"","out-height":"","comment":"","editor-quick-suggestions":"false","fig-height":"3.7","label":"unnamed-chunk-2","dpi":72},"id":2,"code":"\n"},{"options":{"output":"true","read-only":"false","fig-cap":"","results":"markup","warning":"true","fig-width":"6","out-width":"70%","context":"interactive","editor-font-scale":"0.85","autorun":"false","message":"true","editor-max-height":"","classes":"","out-height":"","comment":"","editor-quick-suggestions":"false","fig-height":"3.7","label":"unnamed-chunk-3","dpi":72},"id":3,"code":"vec <- c(1, 2, 4, 8, 16)\n"},{"options":{"output":"true","read-only":"false","fig-cap":"","results":"markup","warning":"true","fig-width":"6","out-width":"70%","context":"interactive","editor-font-scale":"0.85","autorun":"false","message":"true","editor-max-height":"","classes":"","out-height":"","comment":"","editor-quick-suggestions":"false","fig-height":"3.7","label":"unnamed-chunk-4","dpi":72},"id":4,"code":"vec <- c(1, 2, 4, 8, 16)\nvec[]\n"},{"options":{"output":"true","read-only":"false","fig-cap":"","results":"markup","warning":"true","fig-width":"6","out-width":"70%","context":"interactive","editor-font-scale":"0.85","autorun":"false","message":"true","editor-max-height":"","classes":"","out-height":"","comment":"","editor-quick-suggestions":"false","fig-height":"3.7","label":"unnamed-chunk-5","dpi":72},"id":5,"code":"vec2 <- c(alpha = 1, beta = 2, gamma = 3)\n"},{"options":{"output":"true","read-only":"false","fig-cap":"","results":"markup","warning":"true","fig-width":"6","out-width":"70%","context":"interactive","editor-font-scale":"0.85","autorun":"false","message":"true","editor-max-height":"","classes":"","out-height":"","comment":"","editor-quick-suggestions":"false","fig-height":"3.7","label":"unnamed-chunk-6","dpi":72},"id":6,"code":"c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10) + c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)\n"},{"options":{"output":"true","read-only":"false","fig-cap":"","results":"markup","warning":"true","fig-width":"6","out-width":"70%","context":"interactive","editor-font-scale":"0.85","autorun":"false","message":"true","editor-max-height":"","classes":"","out-height":"","comment":"","editor-quick-suggestions":"false","fig-height":"3.7","label":"unnamed-chunk-7","dpi":72},"id":7,"code":"1 + c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)\n"}];
+globalThis.qwebrCellDetails = [{"code":"\n","id":1,"options":{"dpi":72,"label":"unnamed-chunk-1","warning":"true","out-width":"70%","fig-width":"6","editor-max-height":"","fig-height":"3.7","classes":"","context":"interactive","read-only":"false","fig-cap":"","editor-quick-suggestions":"false","output":"true","comment":"","autorun":"false","editor-font-scale":"0.85","message":"true","out-height":"","results":"markup"}},{"code":"\n","id":2,"options":{"dpi":72,"label":"unnamed-chunk-2","warning":"true","out-width":"70%","fig-width":"6","editor-max-height":"","fig-height":"3.7","classes":"","context":"interactive","read-only":"false","fig-cap":"","editor-quick-suggestions":"false","output":"true","comment":"","autorun":"false","editor-font-scale":"0.85","message":"true","out-height":"","results":"markup"}},{"code":"vec <- c(1, 2, 4, 8, 16)\n","id":3,"options":{"dpi":72,"label":"unnamed-chunk-3","warning":"true","out-width":"70%","fig-width":"6","editor-max-height":"","fig-height":"3.7","classes":"","context":"interactive","read-only":"false","fig-cap":"","editor-quick-suggestions":"false","output":"true","comment":"","autorun":"false","editor-font-scale":"0.85","message":"true","out-height":"","results":"markup"}},{"code":"vec <- c(1, 2, 4, 8, 16)\nvec[]\n","id":4,"options":{"dpi":72,"label":"unnamed-chunk-4","warning":"true","out-width":"70%","fig-width":"6","editor-max-height":"","fig-height":"3.7","classes":"","context":"interactive","read-only":"false","fig-cap":"","editor-quick-suggestions":"false","output":"true","comment":"","autorun":"false","editor-font-scale":"0.85","message":"true","out-height":"","results":"markup"}},{"code":"vec2 <- c(alpha = 1, beta = 2, gamma = 3)\n","id":5,"options":{"dpi":72,"label":"unnamed-chunk-5","warning":"true","out-width":"70%","fig-width":"6","editor-max-height":"","fig-height":"3.7","classes":"","context":"interactive","read-only":"false","fig-cap":"","editor-quick-suggestions":"false","output":"true","comment":"","autorun":"false","editor-font-scale":"0.85","message":"true","out-height":"","results":"markup"}},{"code":"c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10) + c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)\n","id":6,"options":{"dpi":72,"label":"unnamed-chunk-6","warning":"true","out-width":"70%","fig-width":"6","editor-max-height":"","fig-height":"3.7","classes":"","context":"interactive","read-only":"false","fig-cap":"","editor-quick-suggestions":"false","output":"true","comment":"","autorun":"false","editor-font-scale":"0.85","message":"true","out-height":"","results":"markup"}},{"code":"1 + c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)\n","id":7,"options":{"dpi":72,"label":"unnamed-chunk-7","warning":"true","out-width":"70%","fig-width":"6","editor-max-height":"","fig-height":"3.7","classes":"","context":"interactive","read-only":"false","fig-cap":"","editor-quick-suggestions":"false","output":"true","comment":"","autorun":"false","editor-font-scale":"0.85","message":"true","out-height":"","results":"markup"}}];
 
 </script>
 <script type="module">
@@ -429,11 +429,11 @@ function displayStartupMessage(showStartupMessage, showHeaderMessage) {
   const firstInnerDiv = document.createElement("div");
   firstInnerDiv.setAttribute("id", "qwebr-status-message-area");
 
-  // Create the second inner div element for "WebR Status" heading and contents
+  // Create the second inner div element for "Estado de WebR" heading and contents
   const secondInnerDiv = document.createElement("div");
   secondInnerDiv.setAttribute("id", "qwebr-status-message-title");
   secondInnerDiv.classList.add("quarto-title-meta-heading");
-  secondInnerDiv.innerText = "WebR Status";
+  secondInnerDiv.innerText = "Estado de WebR";
 
   // Create another inner div for contents
   const secondInnerDivContents = document.createElement("div");
@@ -575,8 +575,8 @@ globalThis.qwebrCreateInteractiveElement = function (qwebrCounter, qwebrOptions)
   runCodeButton.disabled = true;
   runCodeButton.type = 'button';
   runCodeButton.id = 'qwebr-button-run-' + qwebrCounter;
-  runCodeButton.textContent = '🟡 Loading webR...';
-  runCodeButton.title = `Run code (Shift + Enter)`;
+  runCodeButton.textContent = '🟡 Cargando webR...';
+  runCodeButton.title = `Ejecutar código (Mayus + Enter)`;
 
   // Append buttons to the leftButtonsDiv
   leftButtonsDiv.appendChild(runCodeButton);
@@ -729,7 +729,7 @@ globalThis.createLoadingContainer = function(qwebrCounter) {
   const statusText = document.createElement('p');
   statusText.id = `qwebr-status-text-${qwebrCounter}`;
   statusText.className = `qwebr-status-text qwebr-cell-needs-evaluation`;
-  statusText.innerText = 'Loading webR...';
+  statusText.innerText = 'Cargando webR...';
 
   // Incorporate an inner container
   const innerContainer = document.createElement('div');
@@ -1124,7 +1124,7 @@ globalThis.qwebrExecuteCode = async function (
 
     if (options.context == EvalTypes.Interactive) {
         // Emphasize the active code cell
-        elements.runButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin qwebr-icon-status-spinner"></i> <span>Run Code</span>';
+        elements.runButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin qwebr-icon-status-spinner"></i> <span>Ejecutar código</span>';
     }
 
     // Evaluate the code and parse the output into the document
@@ -1137,7 +1137,7 @@ globalThis.qwebrExecuteCode = async function (
 
     if (options.context == EvalTypes.Interactive) {
         // Revert to the initial code cell state
-        elements.runButton.innerHTML = '<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Run Code</span>';
+        elements.runButton.innerHTML = '<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Ejecutar código</span>';
     }
 }
 
@@ -1154,7 +1154,7 @@ globalThis.qwebrExecuteCode = async function (
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">R Primers</span>
+    <span class="navbar-title">Manual básico de R</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -1165,12 +1165,12 @@ globalThis.qwebrExecuteCode = async function (
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">About</span></a>
+<span class="menu-text">Acerca de este sitio</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/andrewheiss/r-primers"> <i class="bi bi-github" role="img" aria-label="github">
+    <a class="nav-link" href="https://github.com/mirenbz/r-primers"> <i class="bi bi-github" role="img" aria-label="github">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -1200,7 +1200,7 @@ globalThis.qwebrExecuteCode = async function (
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Basics</span></a>
+ <span class="menu-text">Conceptos básicos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -1244,7 +1244,7 @@ globalThis.qwebrExecuteCode = async function (
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../basics/02-programming-basics/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Programming basics</span></a>
+ <span class="menu-text">Fundamentos de programación</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -1253,7 +1253,7 @@ globalThis.qwebrExecuteCode = async function (
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../basics/02-programming-basics/01-functions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Functions</span></a>
+ <span class="menu-text">Funciones</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -1299,7 +1299,7 @@ globalThis.qwebrExecuteCode = async function (
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
- <span class="menu-text">Transform data</span></a>
+ <span class="menu-text">Transformar datos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -1421,7 +1421,7 @@ globalThis.qwebrExecuteCode = async function (
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">
- <span class="menu-text">Visualize data</span></a>
+ <span class="menu-text">Visualizar datos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -1430,7 +1430,7 @@ globalThis.qwebrExecuteCode = async function (
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../visualize-data/01-eda/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exploratory data analysis</span></a>
+ <span class="menu-text">Análisis exploratorio de datos</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -1439,7 +1439,7 @@ globalThis.qwebrExecuteCode = async function (
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../visualize-data/01-eda/01-eda.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Exploratory data analysis</span></a>
+ <span class="menu-text">Análisis exploratorio de datos</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -1682,7 +1682,7 @@ globalThis.qwebrExecuteCode = async function (
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="true">
- <span class="menu-text">Tidy data</span></a>
+ <span class="menu-text">Ordenar datos</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-17" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -1974,18 +1974,19 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </header>
 
 
-<section id="vectors" class="level3 no-hide">
-<h3 class="no-hide anchored" data-anchor-id="vectors">Vectors</h3>
-<p>Watch <a href="https://vimeo.com/220490316">this video</a>:</p>
+<section id="vectores" class="level3 no-hide">
+<h3 class="no-hide anchored" data-anchor-id="vectores">Vectores</h3>
+<p>Mira <a href="https://vimeo.com/220490316">este video</a>:</p>
 <div class="ratio ratio-4x3">
 <iframe src="https://player.vimeo.com/video/220490316" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
 </div>
+<p><span style="font-size:.8em;opacity:.6"><strong>Nota:</strong> Puedes activar los subtítulos (en inglés) con el botón <em>CC</em> (CC/Subtitles) o visualizar la transcripción del video con el botón <em>Transcript</em>.</span></p>
 </section>
-<section id="create-a-vector" class="level3">
-<h3 class="anchored" data-anchor-id="create-a-vector">Create a vector</h3>
-<p>In the chunk below, create a vector that contains the integers from one to ten. Use the <code>c()</code> function.</p>
+<section id="crear-un-vector" class="level3">
+<h3 class="anchored" data-anchor-id="crear-un-vector">Crear un vector</h3>
+<p>En el fragmento de código de abajo, crea un vector que contenga los números enteros del uno al diez. Usa la función <code>c()</code>.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solution</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solución</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div id="qwebr-insertion-location-1"></div>
@@ -1999,9 +2000,9 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </section>
 <section id="section" class="level3">
 <h3 class="anchored" data-anchor-id="section"><code>:</code></h3>
-<p>If your vector contains a sequence of contiguous integers, you can create it with the <code>:</code> shortcut. Run <code>1:10</code> in the chunk below. What do you get? What do you suppose <code>1:20</code> would return?</p>
+<p>Si tu vector contiene una secuencia de números contíguos, puedes crearlo con el operador <code>:</code>. Ejecuta <code>1:10</code> en el fragmento de código de debajo. ¿Qué obtienes? ¿Qué crees que devolvería <code>1:20</code>?</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solution</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solución</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <div id="qwebr-insertion-location-2"></div>
@@ -2016,10 +2017,10 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </section>
 <section id="section-1" class="level3">
 <h3 class="anchored" data-anchor-id="section-1"><code>[]</code></h3>
-<p>You can extract any element of a vector by placing a pair of brackets behind the vector. Inside the brackets place the number of the element that you’d like to extract. For example, <code>vec[3]</code> would return the third element of the vector named <code>vec</code>.</p>
-<p>Use the chunk below to extract the fourth element of <code>vec</code>.</p>
+<p>Puedes extraer cualquier elemento de un vector colocando un par de corchetes después del vector. Dentro de los corchetes, coloca el número del elemento que quieres extraer. Por ejemplo, <code>vec[3]</code> devolvería el tercer elemento del vector con nombre <code>vec</code>.</p>
+<p>Utiliza el fragmento de código de debajo para extraer el cuarto elemento de <code>vec</code>.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solution</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solución</a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <div id="qwebr-insertion-location-3"></div>
@@ -2032,11 +2033,11 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </div>
 </div>
 </section>
-<section id="more" class="level3">
-<h3 class="anchored" data-anchor-id="more">More <code>[]</code></h3>
-<p>You can also use <code>[]</code> to extract multiple elements of a vector. Place the vector <code>c(1,2,5)</code> between the brackets below. What does R return?</p>
+<section id="más" class="level3">
+<h3 class="anchored" data-anchor-id="más">Más <code>[]</code></h3>
+<p>También puedes usar <code>[]</code> para extraer múltiples elementos de un vector. Coloca el vector <code>c(1,2,5)</code> entre los corchetes aquí abajo. ¿Qué devuelve R?</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solution</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solución</a></li></ul>
 <div class="tab-content">
 <div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
 <div id="qwebr-insertion-location-4"></div>
@@ -2054,7 +2055,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <p>If the elements of your vector have names, you can extract them by name. To do so place a name or vector of names in the brackets behind a vector. Surround each name with quotation marks, e.g.&nbsp;<code>vec2[c("alpha", "beta")]</code>.</p>
 <p>Extract the element named gamma from the vector below.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solution</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false"><i class="fa-solid fa-circle-check" aria-label="circle-check"></i> Solución</a></li></ul>
 <div class="tab-content">
 <div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
 <div id="qwebr-insertion-location-5"></div>
@@ -2071,7 +2072,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <h3 class="anchored" data-anchor-id="vectorised-operations">Vectorised operations</h3>
 <p>Predict what the code below will return. Then look at the result.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li></ul>
 <div class="tab-content">
 <div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
 <div id="qwebr-insertion-location-6"></div>
@@ -2088,7 +2089,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <h3 class="anchored" data-anchor-id="vector-recycling">Vector recycling</h3>
 <p>Predict what the code below will return. Then look at the result.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Interactive editor</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Editor interactivo</a></li></ul>
 <div class="tab-content">
 <div id="tabset-7-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-7-1-tab">
 <div id="qwebr-insertion-location-7"></div>
@@ -2105,9 +2106,9 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <h2 class="anchored" data-anchor-id="section-4"></h2>
 <section id="buttons">
 <button id="continueButton" class="btn btn-primary float-start me-2">
-Continue
+Continuar
 </button>
-<a id="nextTopicButton" class="btn btn-danger disabled" href="05-types.html" role="button">Next topic</a> <button id="resetButton" class="btn btn-outline-warning btn-sm float-end">Start over</button>
+<a id="nextTopicButton" class="btn btn-danger disabled" href="05-types.html" role="button">Siguiente tema</a> <button id="resetButton" class="btn btn-outline-warning btn-sm float-end">Volver a empezar</button>
 </section>
 
 
@@ -2524,7 +2525,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/andrewheiss/r-primers/edit/main/basics/02-programming-basics/04-vectors.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/andrewheiss/r-primers/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script src="../../js/progressive-reveal.js"></script>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/mirenbz/r-primers/edit/main/basics/02-programming-basics/04-vectors.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/mirenbz/r-primers/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script src="../../js/progressive-reveal.js"></script>
 <script type="module">
 // Handle cell initialization initialization
 qwebrCellDetails.map(
@@ -2627,11 +2628,11 @@ qwebrInstance.then(
     // Release document status as ready
 
     if (qwebrShowStartupMessage) {
-      qwebrStartupMessage.innerText = "🟢 Ready!"
+      qwebrStartupMessage.innerText = "🟢 Listo"
     }
   
     qwebrSetInteractiveButtonState(
-      `<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Run Code</span>`, 
+      `<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Ejecutar código</span>`, 
       true
     );  
   }

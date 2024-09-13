@@ -50,7 +50,7 @@ In the previous tutorials, you learned how to visualize data with graphs. Now le
 In the chunk below, make a plot that uses boxplots to display the relationship between the `cut` and `price` variables from the `diamonds` dataset.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -58,7 +58,7 @@ In the chunk below, make a plot that uses boxplots to display the relationship b
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(diamonds) +
@@ -83,7 +83,7 @@ p <- ggplot(diamonds) +
 Now whenever you call `p`, R will draw your plot. Try it and see.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -91,7 +91,7 @@ Now whenever you call `p`, R will draw your plot. Try it and see.
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 p
@@ -150,7 +150,7 @@ some_plot +
 Use `ylim()` to recreate our plot on the left from above. The plot zooms the $y$ axis from 0 to 7,500 by clipping.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 p
@@ -158,7 +158,7 @@ p
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 p + ylim(0, 7500)
@@ -194,7 +194,7 @@ But what if your plot doesn't call a `coord_` function? Then your plot is using 
 Try it below. Use `coord_cartesian()` to zoom `p` to the region where price falls between 0 and 7500.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 p
@@ -202,7 +202,7 @@ p
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 p + coord_cartesian(ylim = c(0, 7500))

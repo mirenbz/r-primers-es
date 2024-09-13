@@ -95,7 +95,7 @@ You can load the less commonly used tidyverse packages in the normal way, by run
 Let's give this a try. We will use the ggplot2 and dplyr packages later in this tutorial. Let's use the tidyverse package to load them in the chunk below:
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -103,7 +103,7 @@ Let's give this a try. We will use the ggplot2 and dplyr packages later in this 
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 library(tidyverse)

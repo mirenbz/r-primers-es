@@ -1,5 +1,5 @@
 ---
-title: "Functions"
+title: "Funciones"
 format:
   html: 
     toc: false
@@ -23,9 +23,9 @@ webr:
 source(here::here("R", "helpers.R"))
 ```
 
-### Functions {.no-hide}
+### Funciones {.no-hide}
 
-Watch [this video](https://vimeo.com/220490105):
+Mira [este video](https://vimeo.com/220490105?&texttrack=en):
 
 ```{=html}
 <div class="ratio ratio-4x3">
@@ -33,12 +33,14 @@ Watch [this video](https://vimeo.com/220490105):
 </div>
 ```
 
-### Run a function
+[**Nota:** Puedes activar los subtítulos (en inglés) con el botón _CC_ (CC/Subtitles) o visualizar la transcripción del video con el botón _Transcript_.]{style="font-size:.8em;opacity:.6"}
 
-Can you use the `sqrt()` function in the chunk below to compute the square root of 962?
+### Ejecutar una función
+
+¿Puedes usar la función `sqrt()` en el fragmento de código de aquí debajo para calcular la raíz cuadrada de 962?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -46,7 +48,7 @@ Can you use the `sqrt()` function in the chunk below to compute the square root 
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 sqrt(962)
@@ -54,12 +56,12 @@ sqrt(962)
 
 :::
 
-### Code
+### Código
 
-Use the code chunk below to examine the code that `sqrt()` runs.
+Utiliza el fragmento de código de aquí abajo para examinar el código que ejecuta `sqrt()`.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -67,7 +69,11 @@ Use the code chunk below to examine the code that `sqrt()` runs.
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa lightbulb >}}&ensp;Pista
+
+**Pista:** R devuelve el código que ejecuta cada función si se indica su nombre, sin los paréntesis.
+
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 sqrt
@@ -77,14 +83,14 @@ sqrt
 
 ###
 
-Good job! `sqrt` immediately triggers a low level algorithm optimized for performance, so there is not much code to see.
+¡Buen trabajo! `sqrt` inmediatamente lanza un algoritmo de baho nivel optimizado para el rendimiento, así que no hay mucho código que ver.
 
 ### lm
 
-Compare the code in `sqrt()` to the code in another R function, `lm()`. Examine `lm()`'s code body in the chunk below.
+Compara el código de `sqrt()` con el código de otra función de R, `lm()`. Examina el código de `lm()` en el fragmento de abajo.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -92,7 +98,7 @@ Compare the code in `sqrt()` to the code in another R function, `lm()`. Examine 
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 lm
@@ -101,12 +107,12 @@ lm
 :::
 
 
-### Help pages
+### Páginas de ayuda
 
-Wow! `lm()` runs a lot of code. What does it do? Open the help page for `lm()` in the chunk below and find out.
+¡Guau! `lm()` ejecuta mucho código. ¿Pero qué es lo que hace? Abre la página de ayuda de `lm()` para averiguarlo.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ?lm
@@ -114,7 +120,7 @@ Wow! `lm()` runs a lot of code. What does it do? Open the help page for `lm()` i
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ?lm
@@ -124,15 +130,15 @@ Wow! `lm()` runs a lot of code. What does it do? Open the help page for `lm()` i
 
 ###
 
-Good job! `lm()` is R's function for fitting basic linear models. No wonder it runs so much code.
+¡Bueno trabajo! `lm()` es la función de R para ajustar modelos lineales básicos. No es de extrañar qe necesite tanto código.
 
 
-### Code comments
+### Comentarios en el código
 
-What do you think the chunk below will return? Run it and see. The result should be nothing. R will not run anything on a line after a `#` symbol. This is useful because it lets you write human readable comments in your code: just place the comments after a `#`. Now delete the `#` and re-run the chunk. You should see a result.
+¿Qué crees que devolverá el fragmento de aquí abajo? Ejecútalo, a ver. El resultado debería ser nada. R no ejecutará nada en una línea después de un símbolo `#`. Esto es útil porque permite escribir comentarios legibles para humanos en tu código: simplemente escribe tus comentarios después de una `#`. Ahora elimina la `#` de aquí abajo y vuelve a ejecutar el fragmento. Deberías ver el resultado.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 # sqrt(962)
@@ -140,7 +146,7 @@ What do you think the chunk below will return? Run it and see. The result should
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 sqrt(962)

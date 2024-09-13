@@ -48,7 +48,7 @@ website:
         - auto: "visualize-data/07-overplotting"
         - auto: "visualize-data/08-customize"
 
-      - section: "Ordenar data"
+      - section: "Ordenar datos"
         contents:
         - auto: "tidy-data/01-reshape-data"
 

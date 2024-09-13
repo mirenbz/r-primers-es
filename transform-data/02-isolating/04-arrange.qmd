@@ -45,7 +45,7 @@ source(here::here("R", "helpers.R"))
 Use the code chunk below to arrange babynames by `n`. Can you tell what the smallest value of `n` is? 
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -53,7 +53,7 @@ Use the code chunk below to arrange babynames by `n`. Can you tell what the smal
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 arrange(babynames, n)
@@ -70,7 +70,7 @@ Good job! The compiler of `babynames` used 5 as a cutoff; a name only made it in
 If you supply additional column names, `arrange()` will use them as tie breakers to order rows that have identical values in the earlier columns. Add to the code below, to make `prop` a tie breaker. The result should first order rows by value of `n` and then reorder rows within each value of `n` by values of `prop`. 
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 arrange(babynames, n)
@@ -78,7 +78,7 @@ arrange(babynames, n)
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 arrange(babynames, n, prop)
@@ -94,7 +94,7 @@ If you would rather arrange rows in the opposite order, i.e. from _large_ values
 Add a `desc()` to the code below to display the most popular name for 2017 (the largest year in the dataset) instead of 1880 (the smallest year in the dataset).
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 arrange(babynames, year, desc(prop))
@@ -102,7 +102,7 @@ arrange(babynames, year, desc(prop))
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 arrange(babynames, desc(year), desc(prop))
@@ -117,7 +117,7 @@ Think you have it? Click Continue to test yourself.
 Which name was the most popular for a single gender in a single year? In the code chunk below, use `arrange()` to make the row with the largest value of `prop` appear at the top of the data set.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -125,7 +125,7 @@ Which name was the most popular for a single gender in a single year? In the cod
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 arrange(babynames, desc(prop))
@@ -136,7 +136,7 @@ arrange(babynames, desc(prop))
 Now arrange `babynames` so that the row with the largest value of `n` appears at the top of the data frame. Will this be the same row? Why or why not?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -144,7 +144,7 @@ Now arrange `babynames` so that the row with the largest value of `n` appears at
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 arrange(babynames, desc(n))

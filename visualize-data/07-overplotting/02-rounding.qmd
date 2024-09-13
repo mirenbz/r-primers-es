@@ -44,7 +44,7 @@ If your overplotting is due to rounding, you can obtain a better picture of the 
 Try this now. Set the points to an alpha of 0.25, which will make each point 25% opaque (i.e. four points staked on top of each other will create a solid black).
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) +
@@ -53,11 +53,11 @@ ggplot(data = mpg) +
 
 ```
 
-## {{< fa lightbulb >}}&ensp;Hint
+## {{< fa lightbulb >}}&ensp;Pista
 
-**Hint:** Make sure you set `alpha = 0.25` *outside* of `aes()`.
+**Pista:** Make sure you set `alpha = 0.25` *outside* of `aes()`.
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg) +
@@ -89,7 +89,7 @@ In the [Scatterplots tutorial](/visualize-data/05-scatterplots/02-layers.qmd), y
 Rewrite the code below to use that geom. Do you obtain similar results?
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) +
@@ -98,7 +98,7 @@ ggplot(data = mpg) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg) +

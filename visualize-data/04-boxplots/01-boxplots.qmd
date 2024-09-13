@@ -40,7 +40,7 @@ source(here::here("R", "helpers.R"))
 
 ### Introduction {.no-hide}
 
-Watch [this video](https://vimeo.com/222358034):
+Mira [este video](https://vimeo.com/222358034):
 
 ```{=html}
 <div class="ratio ratio-4x3">
@@ -79,7 +79,7 @@ check_question(
 To make a boxplot with {ggplot2}, add `geom_boxplot()` to the [ggplot2 template](/basics/01-visualization-basics/01-code-template.qmd). For example, the code below uses boxplots to display the relationship between the `class` and `hwy` variables in the `mpg` dataset, which comes with {ggplot2}. 
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) +
@@ -143,7 +143,7 @@ ggplot(data = diamonds) +
 ```
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 
@@ -151,7 +151,7 @@ ggplot(data = diamonds) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds) +
@@ -171,7 +171,7 @@ You can change how outliers look in your boxplot with the parameters `outlier.co
 Unfortunately, you can't tell `geom_boxplot()` to ignore outliers completely, but you can make outliers disappear by setting `outlier.alpha = 0`. Try it in the plot below.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = diamonds) +
@@ -181,7 +181,7 @@ ggplot(data = diamonds) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds) +
@@ -228,7 +228,7 @@ The three cut functions are
 Use one of three functions below to bin `continuous_vector` into groups of `width = 2`.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 continuous_vector <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
@@ -238,7 +238,7 @@ continuous_vector
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 cut_width(continuous_vector, width = 2)
@@ -257,7 +257,7 @@ When you set the `group` aesthetic of a boxplot, `geom_boxplot()` will draw a se
 This means we can split our `carat` plot by mapping `group` to the output of a cut function, as in the code below. Study the code, then modify it to create a separate boxplot for each 0.25 wide interval of `carat`.
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = diamonds) +
@@ -266,7 +266,7 @@ ggplot(data = diamonds) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = diamonds) +
@@ -301,7 +301,7 @@ You can do this in two ways:
 Modify the code below to make a horizontal boxplot by switching the `x = ` and `y = ` values:
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) +
@@ -310,7 +310,7 @@ ggplot(data = mpg) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg) +
@@ -324,7 +324,7 @@ ggplot(data = mpg) +
 Modify the code below to make a horizontal boxplot by adding `coord_flip()`:
 
 ::: {.panel-tabset}
-## {{< fa code >}}&ensp;Interactive editor
+## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
 ggplot(data = mpg) +
@@ -333,7 +333,7 @@ ggplot(data = mpg) +
 
 ```
 
-## {{< fa circle-check >}}&ensp;Solution
+## {{< fa circle-check >}}&ensp;Solución
 
 ```r
 ggplot(data = mpg) +
