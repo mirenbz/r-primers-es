@@ -1,5 +1,5 @@
 ---
-title: "Argumentos ?¿"
+title: "Argumentos"
 format:
   html: 
     toc: false

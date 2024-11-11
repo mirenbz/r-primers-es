@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Manual básico de R (R Primers)",
-    "section": "",
-    "text": "Una versión del antiguo RStudio/Posit Primers, ahora con Quarto y webR y en castellano."
-  },
-  {
-    "objectID": "index.html#license",
-    "href": "index.html#license",
-    "title": "R Primers",
-    "section": "License",
-    "text": "License\n\nThe original primers were developed by the RStudio/Posit Education Team and made open source on GitHub. Following the original license, these tutorials are licensed under the Creative Commons Attribution-ShareAlike 4.0 License (CC BY-SA 4.0).\nThe primers are derived from the book R for Data Science from O’Reilly Media, Inc. Copyright © 2017 Garrett Grolemund, Hadley Wickham. Used with permission.\nSee here for the full license."
-  },
-  {
     "objectID": "tidy-data/01-reshape-data/01-tidy-data.html",
     "href": "tidy-data/01-reshape-data/01-tidy-data.html",
     "title": "Tidy data",
@@ -21,7 +7,7 @@
     "text": "In the exploratory data analysis primer, we proposed three definitions that are useful for data science:\n\nA variable is a quantity, quality, or property that you can measure.\nA value is the state of a variable when you measure it. The value of a variable may change from measurement to measurement.\nAn observation is a set of measurements that are made under similar conditions (you usually make all of the measurements in an observation at the same time and on the same object). An observation will contain several values, each associated with a different variable. I’ll sometimes refer to an observation as a case or data point.\n\nThese definitions are tied to the concept of tidy data. To see how, let’s apply the definitions to some real data.",
     "crumbs": [
       "Acerca de este sitio",
-      "Ordenar data",
+      "Ordenar datos",
       "Reshape data",
       "Tidy data"
     ]
@@ -34,7 +20,7 @@
     "text": "Continuar\n\nSiguiente tema Volver a empezar",
     "crumbs": [
       "Acerca de este sitio",
-      "Ordenar data",
+      "Ordenar datos",
       "Reshape data",
       "Tidy data"
     ]
@@ -47,7 +33,7 @@
     "text": "Continuar\n\nSiguiente tema Volver a empezar",
     "crumbs": [
       "Acerca de este sitio",
-      "Ordenar data",
+      "Ordenar datos",
       "Reshape data",
       "Wide to long"
     ]
@@ -121,7 +107,7 @@
     "href": "basics/01-visualization-basics/index.html#section-1",
     "title": "Data visualization basics",
     "section": "",
-    "text": "Continue\n\nNext topic Start over",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
     "crumbs": [
       "Acerca de este sitio",
       "Conceptos básicos",
@@ -131,27 +117,27 @@
   {
     "objectID": "basics/02-programming-basics/02-arguments.html",
     "href": "basics/02-programming-basics/02-arguments.html",
-    "title": "Arguments",
+    "title": "Argumentos",
     "section": "",
     "text": "Mira este video:\n\n\n\nNota: Puedes activar los subtítulos (en inglés) con el botón CC (CC/Subtitles) o visualizar la transcripción del video con el botón Transcript.",
     "crumbs": [
       "Acerca de este sitio",
       "Conceptos básicos",
       "Fundamentos de programación",
-      "Arguments"
+      "Argumentos"
     ]
   },
   {
     "objectID": "basics/02-programming-basics/02-arguments.html#section-1",
     "href": "basics/02-programming-basics/02-arguments.html#section-1",
-    "title": "Arguments",
+    "title": "Argumentos",
     "section": "",
     "text": "Continuar\n\nSiguiente tema Volver a empezar",
     "crumbs": [
       "Acerca de este sitio",
       "Conceptos básicos",
       "Fundamentos de programación",
-      "Arguments"
+      "Argumentos"
     ]
   },
   {
@@ -235,10 +221,10 @@
     "href": "visualize-data/04-boxplots/02-similar-geoms.html",
     "title": "Similar geoms",
     "section": "",
-    "text": "Boxplots provide a quick way to represent a distribution, but they leave behind a lot of information. {ggplot2} supplements boxplots with two geoms that show more information.\nThe first is geom_dotplot(). If you set the binaxis parameter of geom_dotplot() to \"y\", geom_dotplot() behaves like geom_boxplot(), display a separate distribution for each group of data.\nHere each group functions like a vertical histogram. Add the parameter stackdir = \"center\" then re-run the code. Can you interpret the results?\n\n Interactive editor Solution\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nggplot(data = mpg) +\n  geom_dotplot(mapping = aes(x = class, y = hwy), binaxis = \"y\", \n               dotsize = 0.5, binwidth = 1, stackdir = \"center\")",
+    "text": "Boxplots provide a quick way to represent a distribution, but they leave behind a lot of information. {ggplot2} supplements boxplots with two geoms that show more information.\nThe first is geom_dotplot(). If you set the binaxis parameter of geom_dotplot() to \"y\", geom_dotplot() behaves like geom_boxplot(), display a separate distribution for each group of data.\nHere each group functions like a vertical histogram. Add the parameter stackdir = \"center\" then re-run the code. Can you interpret the results?\n\n Editor interactivo Solución\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nggplot(data = mpg) +\n  geom_dotplot(mapping = aes(x = class, y = hwy), binaxis = \"y\", \n               dotsize = 0.5, binwidth = 1, stackdir = \"center\")",
     "crumbs": [
-      "About",
-      "Visualize data",
+      "Acerca de este sitio",
+      "Visualizar datos",
       "Boxplots and counts",
       "Similar geoms"
     ]
@@ -248,10 +234,10 @@
     "href": "visualize-data/04-boxplots/02-similar-geoms.html#section-3",
     "title": "Similar geoms",
     "section": "",
-    "text": "Continue\n\nNext topic Start over",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
     "crumbs": [
-      "About",
-      "Visualize data",
+      "Acerca de este sitio",
+      "Visualizar datos",
       "Boxplots and counts",
       "Similar geoms"
     ]
@@ -261,7 +247,7 @@
     "href": "visualize-data/04-boxplots/01-boxplots.html",
     "title": "Boxplots",
     "section": "",
-    "text": "Watch this video:",
+    "text": "Mira este video:",
     "crumbs": [
       "Acerca de este sitio",
       "Visualizar datos",
@@ -289,8 +275,8 @@
     "section": "",
     "text": "You’ve seen this plot several times in previous tutorials, but have you noticed that it only displays 126 points? This is unusual because the plot visualizes a data set that contains 234 points.\n\n\n\n\n\n\n\n\n\nThe missing points are hidden behind other points, a phenomenon known as overplotting. Overplotting is a problem because it provides an incomplete picture of the dataset. You cannot determine where the mass of the points fall, which makes it difficult to spot relationships in the data.",
     "crumbs": [
-      "About",
-      "Visualize data",
+      "Acerca de este sitio",
+      "Visualizar datos",
       "Overplotting and big data",
       "Overplotting"
     ]
@@ -300,10 +286,10 @@
     "href": "visualize-data/07-overplotting/01-overplotting.html#section",
     "title": "Overplotting",
     "section": "",
-    "text": "Continue\n\nNext topic Start over",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
     "crumbs": [
-      "About",
-      "Visualize data",
+      "Acerca de este sitio",
+      "Visualizar datos",
       "Overplotting and big data",
       "Overplotting"
     ]
@@ -341,8 +327,8 @@
     "section": "",
     "text": "You can more easily compare subgroups of data if you place each subgroup in its own subplot, a process known as facetting.",
     "crumbs": [
-      "About",
-      "Visualize data",
+      "Acerca de este sitio",
+      "Visualizar datos",
       "Bar charts",
       "Facets"
     ]
@@ -352,10 +338,10 @@
     "href": "visualize-data/02-bar-charts/04-facets.html#section",
     "title": "Facets",
     "section": "",
-    "text": "Continue\n\n\nStart over",
+    "text": "Continuar\n\n\nVolver a empezar",
     "crumbs": [
-      "About",
-      "Visualize data",
+      "Acerca de este sitio",
+      "Visualizar datos",
       "Bar charts",
       "Facets"
     ]
@@ -403,7 +389,7 @@
     "href": "visualize-data/02-bar-charts/index.html#section",
     "title": "Bar charts",
     "section": "",
-    "text": "Continue\n\nNext topic Start over",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
     "crumbs": [
       "Acerca de este sitio",
       "Visualizar datos",
@@ -417,8 +403,8 @@
     "section": "",
     "text": "In the previous tutorials, you learned how to visualize data with graphs. Now let’s look at how to customize the look and feel of your graphs. To do that we will need to begin with a graph that we can customize.",
     "crumbs": [
-      "About",
-      "Visualize data",
+      "Acerca de este sitio",
+      "Visualizar datos",
       "Customize your plots",
       "Zooming"
     ]
@@ -428,10 +414,10 @@
     "href": "visualize-data/08-customize/01-zooming.html#section-4",
     "title": "Zooming",
     "section": "",
-    "text": "Continue\n\nNext topic Start over",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
     "crumbs": [
-      "About",
-      "Visualize data",
+      "Acerca de este sitio",
+      "Visualizar datos",
       "Customize your plots",
       "Zooming"
     ]
@@ -443,8 +429,8 @@
     "section": "",
     "text": "In this tutorial, you learned how to customize the graphs that you make with ggplot2 in several ways. You learned how to:\nTo cement your skills, combine what you’ve learned to recreate the plot below.",
     "crumbs": [
-      "About",
-      "Visualize data",
+      "Acerca de este sitio",
+      "Visualizar datos",
       "Customize your plots",
       "Quiz"
     ]
@@ -454,10 +440,10 @@
     "href": "visualize-data/08-customize/06-quiz.html#section",
     "title": "Quiz",
     "section": "",
-    "text": "Continue\n\n\nStart over",
+    "text": "Continuar\n\n\nVolver a empezar",
     "crumbs": [
-      "About",
-      "Visualize data",
+      "Acerca de este sitio",
+      "Visualizar datos",
       "Customize your plots",
       "Quiz"
     ]
@@ -469,8 +455,8 @@
     "section": "",
     "text": "One of the most effective ways to control the look of your plot is with a theme.",
     "crumbs": [
-      "About",
-      "Visualize data",
+      "Acerca de este sitio",
+      "Visualizar datos",
       "Customize your plots",
       "Themes"
     ]
@@ -480,10 +466,10 @@
     "href": "visualize-data/08-customize/03-themes.html#section-2",
     "title": "Themes",
     "section": "",
-    "text": "Continue\n\nNext topic Start over",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
     "crumbs": [
-      "About",
-      "Visualize data",
+      "Acerca de este sitio",
+      "Visualizar datos",
       "Customize your plots",
       "Themes"
     ]
@@ -495,8 +481,8 @@
     "section": "",
     "text": "By adding a fill color to our histogram below, we’ve divided the data into five “sub-distributions”: the distribution of price for Fair cut diamonds, for Good cut diamonds, for Very Good cut diamonds, for Premium cut diamonds, and for Ideal cut diamonds.\n\n\n\n\n\n\n\n\n\nBut this display has some shortcomings:\n\nit is difficult to see the “shapes” of the individual distributions\nit is difficult to compare the individual distributions, because they do not share a common baseline value for \\(y\\).",
     "crumbs": [
-      "About",
-      "Visualize data",
+      "Acerca de este sitio",
+      "Visualizar datos",
       "Histograms",
       "Similar geoms"
     ]
@@ -506,10 +492,10 @@
     "href": "visualize-data/03-histograms/02-similar-geoms.html#section-4",
     "title": "Similar geoms",
     "section": "",
-    "text": "Continue\n\n\nStart over",
+    "text": "Continuar\n\n\nVolver a empezar",
     "crumbs": [
-      "About",
-      "Visualize data",
+      "Acerca de este sitio",
+      "Visualizar datos",
       "Histograms",
       "Similar geoms"
     ]
@@ -521,8 +507,8 @@
     "section": "",
     "text": "Histograms are the most popular way to visualize continuous distributions. Here we will look at them and their derivatives. You will learn how to:\nThe tutorial is adapted from R for Data Science by Hadley Wickham and Garrett Grolemund, published by O’Reilly Media, Inc., 2016, ISBN: 9781491910399. You can purchase the book at shop.oreilly.com.\nThe tutorial uses the {ggplot2} and {dplyr} packages, which have been pre-loaded for your convenience.",
     "crumbs": [
-      "About",
-      "Visualize data",
+      "Acerca de este sitio",
+      "Visualizar datos",
       "Histograms"
     ]
   },
@@ -531,10 +517,10 @@
     "href": "visualize-data/03-histograms/index.html#section",
     "title": "Histograms",
     "section": "",
-    "text": "Continue\n\nNext topic Start over",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
     "crumbs": [
-      "About",
-      "Visualize data",
+      "Acerca de este sitio",
+      "Visualizar datos",
       "Histograms"
     ]
   },
@@ -545,8 +531,8 @@
     "section": "",
     "text": "One way to customize a scatterplot is to plot it in a new coordinate system. {ggplot2} provides several helper functions that change the coordinate system of a plot. You’ve already seen one of these in action in the boxplots tutorial: coord_flip() flips the \\(x\\) and \\(y\\) axes of a plot.\n\nggplot(data = mpg, mapping = aes(x = class, y = hwy)) +\n  geom_boxplot(outlier.alpha = 0) +\n  geom_jitter(width = 0) +\n  coord_flip()",
     "crumbs": [
-      "About",
-      "Visualize data",
+      "Acerca de este sitio",
+      "Visualizar datos",
       "Scatterplots",
       "Coordinate systems"
     ]
@@ -556,10 +542,10 @@
     "href": "visualize-data/05-scatterplots/03-coordinate-systems.html#section-1",
     "title": "Coordinate systems",
     "section": "",
-    "text": "Continue\n\n\nStart over",
+    "text": "Continuar\n\n\nVolver a empezar",
     "crumbs": [
-      "About",
-      "Visualize data",
+      "Acerca de este sitio",
+      "Visualizar datos",
       "Scatterplots",
       "Coordinate systems"
     ]
@@ -571,8 +557,8 @@
     "section": "",
     "text": "A scatterplot displays the relationship between two continuous variables. Scatterplots are one of the most common types of graphs—in fact, you’ve met scatterplots already in Visualization Basics.\nIn this tutorial, you’ll learn how to:\nThe tutorial is adapted from R for Data Science by Hadley Wickham and Garrett Grolemund, published by O’Reilly Media, Inc., 2016, ISBN: 9781491910399. You can purchase the book at shop.oreilly.com.\nThe tutorial uses the {ggplot2}, {ggrepel}, and {dplyr} packages, which have been pre-loaded for your convenience.",
     "crumbs": [
-      "About",
-      "Visualize data",
+      "Acerca de este sitio",
+      "Visualizar datos",
       "Scatterplots"
     ]
   },
@@ -581,10 +567,10 @@
     "href": "visualize-data/05-scatterplots/index.html#section",
     "title": "Scatterplots",
     "section": "",
-    "text": "Continue\n\nNext topic Start over",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
     "crumbs": [
-      "About",
-      "Visualize data",
+      "Acerca de este sitio",
+      "Visualizar datos",
       "Scatterplots"
     ]
   },
@@ -602,522 +588,488 @@
     ]
   },
   {
-    "objectID": "visualize-data/06-line-graphs/03-maps.html#section-4",
-    "href": "visualize-data/06-line-graphs/03-maps.html#section-4",
-    "title": "Maps",
+    "objectID": "visualize-data/06-line-graphs/index.html",
+    "href": "visualize-data/06-line-graphs/index.html",
+    "title": "Line plots",
     "section": "",
-    "text": "Continue\n\n\nStart over",
+    "text": "A line graph displays a functional relationship between two continuous variables. A map displays spatial data. The two may seem different, but they are made in similar ways. This tutorial will examine them both.\nIn this tutorial, you’ll learn how to:\nThe tutorial is adapted from R for Data Science by Hadley Wickham and Garrett Grolemund, published by O’Reilly Media, Inc., 2016, ISBN: 9781491910399. You can purchase the book at shop.oreilly.com.\nThe tutorial uses the {ggplot2}, {sf}, and {dplyr} packages, which have been pre-loaded for your convenience.",
     "crumbs": [
-      "About",
-      "Visualize data",
-      "Line plots",
-      "Maps"
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Line plots"
     ]
   },
   {
-    "objectID": "visualize-data/06-line-graphs/01-line-graphs.html#section-5",
-    "href": "visualize-data/06-line-graphs/01-line-graphs.html#section-5",
-    "title": "Line graphs",
+    "objectID": "visualize-data/06-line-graphs/index.html#section",
+    "href": "visualize-data/06-line-graphs/index.html#section",
+    "title": "Line plots",
     "section": "",
     "text": "Continuar\n\nSiguiente tema Volver a empezar",
     "crumbs": [
       "Acerca de este sitio",
       "Visualizar datos",
-      "Line plots",
-      "Line graphs"
+      "Line plots"
     ]
   },
   {
-    "objectID": "visualize-data/05-scatterplots/02-layers.html",
-    "href": "visualize-data/05-scatterplots/02-layers.html",
-    "title": "Layers",
+    "objectID": "visualize-data/01-eda/01-eda.html",
+    "href": "visualize-data/01-eda/01-eda.html",
+    "title": "Análisis exploratorio de datos",
     "section": "",
-    "text": "geom_smooth() becomes much more useful when you combine it with geom_point() to create a scatterplot that contains both:\n\nraw data\na trend line\n\nIn {ggplot2}, you can add multiple geoms to a plot by adding multiple geom functions to the plot call. For example, the code below creates a plot that contains both points and a smooth line. Imagine what the results will look like in your head, and then run the code to see if you are right.\n\n Interactive editor\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
-    "crumbs": [
-      "About",
-      "Visualize data",
-      "Scatterplots",
-      "Layers"
-    ]
-  },
-  {
-    "objectID": "visualize-data/05-scatterplots/02-layers.html#section-9",
-    "href": "visualize-data/05-scatterplots/02-layers.html#section-9",
-    "title": "Layers",
-    "section": "",
-    "text": "Continue\n\nNext topic Start over",
-    "crumbs": [
-      "About",
-      "Visualize data",
-      "Scatterplots",
-      "Layers"
-    ]
-  },
-  {
-    "objectID": "visualize-data/05-scatterplots/01-scatterplots.html",
-    "href": "visualize-data/05-scatterplots/01-scatterplots.html",
-    "title": "Scatterplots",
-    "section": "",
-    "text": "In Visualization Basics, you learned how to make a scatterplot with geom_point().\nThe code below summarizes the mpg data set and begins to plot the results. Finish the plot with geom_point(). Put mean_cty on the \\(x\\) axis and mean_hwy on the \\(y\\) axis.\n\n Interactive editor Solution\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nmpg |&gt; \n  group_by(class) |&gt; \n  summarize(mean_cty = mean(cty), mean_hwy = mean(hwy)) |&gt; \n  ggplot() +\n    geom_point(mapping = aes(x = mean_cty, y = mean_hwy))",
-    "crumbs": [
-      "About",
-      "Visualize data",
-      "Scatterplots",
-      "Scatterplots"
-    ]
-  },
-  {
-    "objectID": "visualize-data/05-scatterplots/01-scatterplots.html#section-3",
-    "href": "visualize-data/05-scatterplots/01-scatterplots.html#section-3",
-    "title": "Scatterplots",
-    "section": "",
-    "text": "Continue\n\nNext topic Start over",
-    "crumbs": [
-      "About",
-      "Visualize data",
-      "Scatterplots",
-      "Scatterplots"
-    ]
-  },
-  {
-    "objectID": "visualize-data/03-histograms/01-histograms.html",
-    "href": "visualize-data/03-histograms/01-histograms.html",
-    "title": "Histograms",
-    "section": "",
-    "text": "Watch this video:",
+    "text": "El análisis exploratorio de datos (o EDA) es un ciclo iterativo que te ayuda a comprender lo que dicen tus datos. Cuando haces un análisis exploratorio de datos:\n\nGeneras preguntas acerca de tus datos\nBuscas respuestas visualizando, transformando y/o modelando tus datos\nUtilizas lo aprendido para refinar tus preguntas y/o generar nuevas preguntas\n\nEl EDA es una parte importante de cualquier análisis de datos. Puedes usar EDA para hacer descubrimientos acerca del mundo; o puedes hacer EDA para asegurar la calidad de tus datos, haciendo preguntas acerca de si los datos cumplen tus estándares o no.",
     "crumbs": [
       "Acerca de este sitio",
       "Visualizar datos",
-      "Histograms",
-      "Histograms"
+      "Análisis exploratorio de datos",
+      "Análisis exploratorio de datos"
     ]
   },
   {
-    "objectID": "visualize-data/03-histograms/01-histograms.html#section-4",
-    "href": "visualize-data/03-histograms/01-histograms.html#section-4",
-    "title": "Histograms",
+    "objectID": "visualize-data/01-eda/01-eda.html#section",
+    "href": "visualize-data/01-eda/01-eda.html#section",
+    "title": "Análisis exploratorio de datos",
     "section": "",
     "text": "Continuar\n\nSiguiente tema Volver a empezar",
     "crumbs": [
       "Acerca de este sitio",
       "Visualizar datos",
-      "Histograms",
-      "Histograms"
+      "Análisis exploratorio de datos",
+      "Análisis exploratorio de datos"
     ]
   },
   {
-    "objectID": "visualize-data/08-customize/index.html",
-    "href": "visualize-data/08-customize/index.html",
-    "title": "Customize your plots",
+    "objectID": "visualize-data/01-eda/index.html",
+    "href": "visualize-data/01-eda/index.html",
+    "title": "Análisis exploratorio de datos",
     "section": "",
-    "text": "This tutorial will teach you how to customize the look and feel of your plots. You will learn how to:\nThe tutorial is adapted from R for Data Science by Hadley Wickham and Garrett Grolemund, published by O’Reilly Media, Inc., 2016, ISBN: 9781491910399. You can purchase the book at shop.oreilly.com.\nThe tutorial uses the {ggplot2}, {dplyr}, {scales}, {ggthemes}, and {viridis} packages, which have been pre-loaded for your convenience.",
-    "crumbs": [
-      "About",
-      "Visualize data",
-      "Customize your plots"
-    ]
-  },
-  {
-    "objectID": "visualize-data/08-customize/index.html#section",
-    "href": "visualize-data/08-customize/index.html#section",
-    "title": "Customize your plots",
-    "section": "",
-    "text": "Continue\n\nNext topic Start over",
-    "crumbs": [
-      "About",
-      "Visualize data",
-      "Customize your plots"
-    ]
-  },
-  {
-    "objectID": "visualize-data/08-customize/04-scales.html#section-5",
-    "href": "visualize-data/08-customize/04-scales.html#section-5",
-    "title": "Scales",
-    "section": "",
-    "text": "Continue\n\nNext topic Start over",
-    "crumbs": [
-      "About",
-      "Visualize data",
-      "Customize your plots",
-      "Scales"
-    ]
-  },
-  {
-    "objectID": "visualize-data/08-customize/02-labels.html#section-2",
-    "href": "visualize-data/08-customize/02-labels.html#section-2",
-    "title": "Labels",
-    "section": "",
-    "text": "Continue\n\nNext topic Start over",
-    "crumbs": [
-      "About",
-      "Visualize data",
-      "Customize your plots",
-      "Labels"
-    ]
-  },
-  {
-    "objectID": "visualize-data/08-customize/05-legends.html#section-2",
-    "href": "visualize-data/08-customize/05-legends.html#section-2",
-    "title": "Legends",
-    "section": "",
-    "text": "Continue\n\nNext topic Start over",
-    "crumbs": [
-      "About",
-      "Visualize data",
-      "Customize your plots",
-      "Legends"
-    ]
-  },
-  {
-    "objectID": "visualize-data/02-bar-charts/03-position-adjustments.html",
-    "href": "visualize-data/02-bar-charts/03-position-adjustments.html",
-    "title": "Position adjustments",
-    "section": "",
-    "text": "If you map fill to a new variable, geom_bar() will display a stacked bar chart:\n\nggplot(data = diamonds) +\n  geom_bar(mapping = aes(x = cut, fill = clarity))\n\n\n\n\n\n\n\n\nThis plot displays 40 different combinations of cut and clarity, each displayed by its own rectangle. geom_bar() lays out the rectangles by stacking rectangles that have the same cut value on top of one another. You can change this behavior with a position adjustment.",
+    "text": "Este tutorial te enseñará a explorar tus datos de una manera sistemática, una tarea que los estadísticos llaman análisis exploratorio de datos (o exploratory data analyisis en inglés, EDA). En este tutorial:\nEste tutorial está extraido del libro R for Data Science de Hadley Wickham y Garrett Grolemund, publicado por O’Reilly Media, Inc., 2016, ISBN: 9781491910399. Puedes comprar el libro en shop.oreilly.com.",
     "crumbs": [
       "Acerca de este sitio",
       "Visualizar datos",
-      "Bar charts",
-      "Position adjustments"
+      "Análisis exploratorio de datos"
     ]
   },
   {
-    "objectID": "visualize-data/02-bar-charts/03-position-adjustments.html#section",
-    "href": "visualize-data/02-bar-charts/03-position-adjustments.html#section",
-    "title": "Position adjustments",
+    "objectID": "visualize-data/01-eda/index.html#section",
+    "href": "visualize-data/01-eda/index.html#section",
+    "title": "Análisis exploratorio de datos",
     "section": "",
     "text": "Continuar\n\nSiguiente tema Volver a empezar",
     "crumbs": [
       "Acerca de este sitio",
       "Visualizar datos",
-      "Bar charts",
-      "Position adjustments"
+      "Análisis exploratorio de datos"
     ]
   },
   {
-    "objectID": "visualize-data/02-bar-charts/02-aesthetics.html",
-    "href": "visualize-data/02-bar-charts/02-aesthetics.html",
-    "title": "Aesthetics",
+    "objectID": "transform-data/02-isolating/03-filter.html",
+    "href": "transform-data/02-isolating/03-filter.html",
+    "title": "filter()",
     "section": "",
-    "text": "geom_bar() and geom_col() can use several aesthetics:\n\nalpha\ncolor\nfill\nlinetype\nsize\n\nOne of these, color, creates the most surprising results. Predict what the code below will return and then run it.\n\n Interactive editor\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
-    "crumbs": [
-      "About",
-      "Visualize data",
-      "Bar charts",
-      "Aesthetics"
-    ]
-  },
-  {
-    "objectID": "visualize-data/02-bar-charts/02-aesthetics.html#section",
-    "href": "visualize-data/02-bar-charts/02-aesthetics.html#section",
-    "title": "Aesthetics",
-    "section": "",
-    "text": "Continue\n\nNext topic Start over",
-    "crumbs": [
-      "About",
-      "Visualize data",
-      "Bar charts",
-      "Aesthetics"
-    ]
-  },
-  {
-    "objectID": "visualize-data/07-overplotting/index.html",
-    "href": "visualize-data/07-overplotting/index.html",
-    "title": "Overplotting and big data",
-    "section": "",
-    "text": "Data visualization is a useful tool because it makes data accessible to your visual system, which can process large amounts of information quickly. However, two characteristics of data can short circuit this system. Data can not be easily visualized if\nThese features both create overplotting, the condition where multiple geoms in the plot are plotted on top of each other, hiding each other. This tutorial will show you several strategies for dealing with overplotting, introducing new geoms along the way.\nThe tutorial is adapted from R for Data Science by Hadley Wickham and Garrett Grolemund, published by O’Reilly Media, Inc., 2016, ISBN: 9781491910399. You can purchase the book at shop.oreilly.com.\nThe tutorial uses the {ggplot2} and {hexbin} packages, which have been pre-loaded for your convenience.",
-    "crumbs": [
-      "About",
-      "Visualize data",
-      "Overplotting and big data"
-    ]
-  },
-  {
-    "objectID": "visualize-data/07-overplotting/index.html#section",
-    "href": "visualize-data/07-overplotting/index.html#section",
-    "title": "Overplotting and big data",
-    "section": "",
-    "text": "Continue\n\nNext topic Start over",
-    "crumbs": [
-      "About",
-      "Visualize data",
-      "Overplotting and big data"
-    ]
-  },
-  {
-    "objectID": "visualize-data/07-overplotting/03-large-data.html",
-    "href": "visualize-data/07-overplotting/03-large-data.html",
-    "title": "Large data",
-    "section": "",
-    "text": "A dataset does not need to be truly “Big Data” to be hard to visualize. The diamonds data set contains fewer than 54,000 points, but it still suffers from overplotting when you try to plot carat vs. price. Here the bulk of the points fall on top of each other in an impenetrable cloud of blackness.\n\nggplot(data = diamonds) +\n  geom_point(mapping = aes(x = carat, y = price))",
-    "crumbs": [
-      "About",
-      "Visualize data",
-      "Overplotting and big data",
-      "Large data"
-    ]
-  },
-  {
-    "objectID": "visualize-data/07-overplotting/03-large-data.html#section-2",
-    "href": "visualize-data/07-overplotting/03-large-data.html#section-2",
-    "title": "Large data",
-    "section": "",
-    "text": "Continue\n\n\nStart over",
-    "crumbs": [
-      "About",
-      "Visualize data",
-      "Overplotting and big data",
-      "Large data"
-    ]
-  },
-  {
-    "objectID": "visualize-data/04-boxplots/index.html",
-    "href": "visualize-data/04-boxplots/index.html",
-    "title": "Boxplots and counts",
-    "section": "",
-    "text": "Boxplots display the relationship between a continuous variable and a categorical variable. Count plots display the relationship between two categorical variables. In this tutorial, you will learn how to use both. You will learn how to:\nThe tutorial is adapted from R for Data Science by Hadley Wickham and Garrett Grolemund, published by O’Reilly Media, Inc., 2016, ISBN: 9781491910399. You can purchase the book at shop.oreilly.com.\nThe tutorial uses the {ggplot2} and {dplyr} packages, which have been pre-loaded for your convenience.",
-    "crumbs": [
-      "About",
-      "Visualize data",
-      "Boxplots and counts"
-    ]
-  },
-  {
-    "objectID": "visualize-data/04-boxplots/index.html#section",
-    "href": "visualize-data/04-boxplots/index.html#section",
-    "title": "Boxplots and counts",
-    "section": "",
-    "text": "Continue\n\nNext topic Start over",
-    "crumbs": [
-      "About",
-      "Visualize data",
-      "Boxplots and counts"
-    ]
-  },
-  {
-    "objectID": "visualize-data/04-boxplots/03-counts.html",
-    "href": "visualize-data/04-boxplots/03-counts.html",
-    "title": "Counts",
-    "section": "",
-    "text": "Boxplots provide an efficient way to explore the interaction of a continuous variable and a categorical variable. But what if you have two categorical variables?\nYou can see how observations are distributed across two categorical variables with geom_count(). geom_count() draws a point at each combination of values from the two variables. The size of the point is mapped to the number of observations with this combination of values. Rare combinations will have small points, frequent combinations will have large points.",
-    "crumbs": [
-      "About",
-      "Visualize data",
-      "Boxplots and counts",
-      "Counts"
-    ]
-  },
-  {
-    "objectID": "visualize-data/04-boxplots/03-counts.html#section-1",
-    "href": "visualize-data/04-boxplots/03-counts.html#section-1",
-    "title": "Counts",
-    "section": "",
-    "text": "Continue\n\n\nStart over",
-    "crumbs": [
-      "About",
-      "Visualize data",
-      "Boxplots and counts",
-      "Counts"
-    ]
-  },
-  {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "License",
-    "section": "",
-    "text": "License\nThis is a human-readable summary of (and not a substitute for) the license. Please see https://creativecommons.org/licenses/by-sa/4.0/ for the full legal text.\nThis work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License (CC BY-SA 4.0).\nYou are free to:\n\nShare—copy and redistribute the material in any medium or format, even commercially.\nAdapt—remix, transform, and build upon the material for any purpose, even commercially.\n\nThe licensor cannot revoke these freedoms as long as you follow the license terms.\nUnder the following terms:\n\nAttribution—You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nThe primers are derived from the book R for Data Science. For the purposes of this license, appropriate credit requires including the phrase, “R for Data Science from O’Reilly Media, Inc. Copyright © 2017 Garrett Grolemund, Hadley Wickham. Used with permission.”\nShareAlike-—-If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.\nNo additional restrictions—You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.\n\nNotices:\nYou do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.\nNo warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material."
-  },
-  {
-    "objectID": "basics/02-programming-basics/07-packages.html",
-    "href": "basics/02-programming-basics/07-packages.html",
-    "title": "Packages",
-    "section": "",
-    "text": "Watch this video:",
+    "text": "filter() extracts rows from a data frame and returns them as a new data frame. As with select(), the first argument of filter() should be a data frame to extract rows from. The arguments that follow should be logical tests; filter() will return every row for which the tests return TRUE.",
     "crumbs": [
       "Acerca de este sitio",
-      "Conceptos básicos",
-      "Programming basics",
-      "Packages"
+      "Transformar datos",
+      "Isolating data with {dplyr}",
+      "`filter()`"
     ]
   },
   {
-    "objectID": "basics/02-programming-basics/07-packages.html#section-2",
-    "href": "basics/02-programming-basics/07-packages.html#section-2",
-    "title": "Packages",
+    "objectID": "transform-data/02-isolating/03-filter.html#section-5",
+    "href": "transform-data/02-isolating/03-filter.html#section-5",
+    "title": "filter()",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Transformar datos",
+      "Isolating data with {dplyr}",
+      "`filter()`"
+    ]
+  },
+  {
+    "objectID": "transform-data/02-isolating/04-arrange.html",
+    "href": "transform-data/02-isolating/04-arrange.html",
+    "title": "arrange()",
+    "section": "",
+    "text": "arrange() returns all of the rows of a data frame reordered by the values of a column. As with select(), the first argument of arrange() should be a data frame and the remaining arguments should be the names of columns. If you give arrange() a single column name, it will return the rows of the data frame reordered so that the row with the lowest value in that column appears first, the row with the second lowest value appears second, and so on. If the column contains character strings, arrange() will place them in alphabetical order.",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Transformar datos",
+      "Isolating data with {dplyr}",
+      "`arrange()`"
+    ]
+  },
+  {
+    "objectID": "transform-data/02-isolating/04-arrange.html#section-2",
+    "href": "transform-data/02-isolating/04-arrange.html#section-2",
+    "title": "arrange()",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Transformar datos",
+      "Isolating data with {dplyr}",
+      "`arrange()`"
+    ]
+  },
+  {
+    "objectID": "transform-data/02-isolating/02-select.html",
+    "href": "transform-data/02-isolating/02-select.html",
+    "title": "select()",
+    "section": "",
+    "text": "select() extracts columns of a data frame and returns the columns as a new data frame. To use select(), pass it the name of a data frame to extract columns from, and then the names of the columns to extract. The column names do not need to appear in quotation marks or be prefixed with a $; select() knows to find them in the data frame that you supply.",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Transformar datos",
+      "Isolating data with {dplyr}",
+      "`select()`"
+    ]
+  },
+  {
+    "objectID": "transform-data/02-isolating/02-select.html#section",
+    "href": "transform-data/02-isolating/02-select.html#section",
+    "title": "select()",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Transformar datos",
+      "Isolating data with {dplyr}",
+      "`select()`"
+    ]
+  },
+  {
+    "objectID": "transform-data/01-tibbles/02-tibbles.html#section-1",
+    "href": "transform-data/01-tibbles/02-tibbles.html#section-1",
+    "title": "tibbles",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Transformar datos",
+      "Working with tibbles",
+      "tibbles"
+    ]
+  },
+  {
+    "objectID": "transform-data/01-tibbles/01-babynames.html",
+    "href": "transform-data/01-tibbles/01-babynames.html",
+    "title": "babynames",
+    "section": "",
+    "text": "Before we begin, let’s learn a little about our data. The babynames dataset comes in the {babynames} package. The package is pre-installed for you, just as {ggplot2} was pre-installed in the last tutorial. But unlike in the last tutorial, I have not pre-loaded {babynames}, or any other package.\nWhat does this mean? In R, whenever you want to use a package that is not part of base R, you need to load the package with the command library(). Until you load a package, R will not be able to find the datasets and functions contained in the package. For example, if we asked R to display the babynames dataset, which comes in the {babynames} package, right now, we’d get the message below. R cannot find the dataset because we haven’t loaded the {babynames} package.\n\nbabynames\n\nError in eval(expr, envir, enclos): object 'babynames' not found\n\n\nTo load the {babynames} package, you would run the command library(babynames). After you load a package, R will be able to find its contents until you close R. The next time you open R, you will need to reload the package if you wish to use it again.\nThis might sound like an inconvenience, but choosing which packages to load keeps your R experience simple and orderly.\nIn the chunk below, load {babynames} (the package) and then open the help page for babynames (the dataset). Be sure to read the help page before going on.\n\n Editor interactivo Solución\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nlibrary(babynames)\n?babynames",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Transformar datos",
+      "Working with tibbles",
+      "babynames"
+    ]
+  },
+  {
+    "objectID": "transform-data/01-tibbles/01-babynames.html#section",
+    "href": "transform-data/01-tibbles/01-babynames.html#section",
+    "title": "babynames",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Transformar datos",
+      "Working with tibbles",
+      "babynames"
+    ]
+  },
+  {
+    "objectID": "transform-data/03-deriving/05-challenges.html",
+    "href": "transform-data/03-deriving/05-challenges.html",
+    "title": "Challenges",
+    "section": "",
+    "text": "Apply your knowledge of dplyr to do the following two challenges.",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Transformar datos",
+      "Deriving information with {dplyr}",
+      "Challenges"
+    ]
+  },
+  {
+    "objectID": "transform-data/03-deriving/05-challenges.html#section-1",
+    "href": "transform-data/03-deriving/05-challenges.html#section-1",
+    "title": "Challenges",
     "section": "",
     "text": "Continuar\n\n\nVolver a empezar",
     "crumbs": [
       "Acerca de este sitio",
-      "Conceptos básicos",
-      "Programming basics",
-      "Packages"
+      "Transformar datos",
+      "Deriving information with {dplyr}",
+      "Challenges"
     ]
   },
   {
-    "objectID": "basics/02-programming-basics/06-lists.html",
-    "href": "basics/02-programming-basics/06-lists.html",
-    "title": "Lists",
+    "objectID": "transform-data/03-deriving/01-most-popular-names.html",
+    "href": "transform-data/03-deriving/01-most-popular-names.html",
+    "title": "The most popular names",
     "section": "",
-    "text": "Watch this video:",
+    "text": "Let’s use babynames to answer a different question: what are the most popular names of all time?\nThis question seems simple enough, but to answer it we need to be more precise: how do you define “the most popular” names? Try to think of several definitions and then click Continue. After the Continue button, I will suggest two definitions of my own.",
     "crumbs": [
       "Acerca de este sitio",
-      "Conceptos básicos",
-      "Programming basics",
-      "Lists"
+      "Transformar datos",
+      "Deriving information with {dplyr}",
+      "The most popular names"
     ]
   },
   {
-    "objectID": "basics/02-programming-basics/06-lists.html#section-1",
-    "href": "basics/02-programming-basics/06-lists.html#section-1",
-    "title": "Lists",
+    "objectID": "transform-data/03-deriving/01-most-popular-names.html#section",
+    "href": "transform-data/03-deriving/01-most-popular-names.html#section",
+    "title": "The most popular names",
     "section": "",
     "text": "Continuar\n\nSiguiente tema Volver a empezar",
     "crumbs": [
       "Acerca de este sitio",
-      "Conceptos básicos",
-      "Programming basics",
-      "Lists"
+      "Transformar datos",
+      "Deriving information with {dplyr}",
+      "The most popular names"
     ]
   },
   {
-    "objectID": "basics/02-programming-basics/03-objects.html",
-    "href": "basics/02-programming-basics/03-objects.html",
-    "title": "Objects",
+    "objectID": "transform-data/03-deriving/04-mutate.html",
+    "href": "transform-data/03-deriving/04-mutate.html",
+    "title": "mutate()",
     "section": "",
-    "text": "Objetos\nMira este video:\n\n\n\nNota: Puedes activar los subtítulos (en inglés) con el botón CC (CC/Subtitles) o visualizar la transcripción del video con el botón Transcript.\n\n\nNombres de objetos\nPuedes elegir casi cualquier nombre que quieras para un objeto, siempre y cuando el nombre no empiece con un número o un carácter especial como +, -, *, /, ^, !, @ o &.\nPor ejemplo, revisa esta lista de algunos posibles nombres de objetos. Algunos se podrían utilizar, pero otros no son válidos:\n\nhoy: Este está bien\n1ero: Este está mal; empieza con un número\n+1: Este está mal; empieza con un carácter especial\nvars: Este está bien\n\\^_^: Este está mal; empieza con un carácter especial\nfoo: Este está bien\n\n\n\nUsar objetos\nEn el fragmento de código de abajo, guarda los resultados de rnorm(100, mean = 100, sd = 15) en un objeto llamado datos. Después, en una nueva línea, ejecuta la función hist() sobre datos para representar gráficamente un diagrama de los valores aleatorios.\n\n Editor interactivo Solución\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\ndatos &lt;- rnorm(100, mean = 100, sd = 15)\nhist(datos)\n\n\n\n\n\n¿Y si…?\n¿Qué crees que pasaría si asignaras datos a un nuevo objeto llamado copia, así? Ejecuta el código y después inspecciona tanto datos como copia.\n\n Editor interactivo Solución\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\ndatos &lt;- rnorm(100, mean = 100, sd = 15)\ncopia &lt;- datos\ndatos\ncopia\n\n\n\n\n\n\n¡Efectivamente! R guarda una copia de los contenidos de datos en copia.\n\n\nConjuntos de datos\nLos objetos ofrecen una manera sencilla de almacenar conjuntos de datos en R. De hecho, R viene con varios conjuntos de datos de prueba precargados. Examina el contenido de mtcars para ver un conjunto de datos de prueba clásico. Pista: ¿cómo harías para saber más acerca del objeto mtcars?\n\n Editor interactivo Solución\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nmtcars\n\n\n\n\n\n\n¡Eso es! Puedes saber aún más sobre mtcars examinando su página de ayuda con ?mtcars.\n\n\nrm()\n¿Qué pasa si sobreescribes un ojeto accidentalmente? Si ese objeto vino con R o alguno de sus paquetes, puedes restaurar la versión original del objeto borrándolo de tu entorno con rm(). Ejecuta rm() sobre mtcars abajo para restaurar el conjunto de datos mtcars.\n\n Editor interactivo Solución\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nmtcars &lt;- 1\nmtcars\nrm(mtcars)\nmtcars\n\n\n\n\n\n\n¡Bien hecho! Desafortunadamente, rm() no puede ayudarte si sobreescribes uno de tus propios objetos. ##\n\n\nContinuar\n\nSiguiente tema Volver a empezar",
+    "text": "Why might there be a difference between the proportion of children who receive a name over time, and the number of children who receive the name?\nAn obvious culprit could be the total number of children born per year. If more children are born each year, the number of children who receive a name could grow even if the proportion of children given that name declines.\nTest this theory in the chunk below. Use babynames and groupwise summaries to compute the total number of children born each year and then to plot that number vs. year in a line graph.\n\n Editor interactivo Solución\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nbabynames |&gt; \n  group_by(year) |&gt; \n  summarize(n = sum(n)) |&gt; \n  ggplot() +\n    geom_line(aes(x = year, y = n))",
     "crumbs": [
       "Acerca de este sitio",
-      "Conceptos básicos",
-      "Fundamentos de programación",
-      "Objects"
+      "Transformar datos",
+      "Deriving information with {dplyr}",
+      "`mutate()`"
     ]
   },
   {
-    "objectID": "basics/02-programming-basics/03-objects.html#section-3",
-    "href": "basics/02-programming-basics/03-objects.html#section-3",
-    "title": "Objects",
+    "objectID": "transform-data/03-deriving/04-mutate.html#section-2",
+    "href": "transform-data/03-deriving/04-mutate.html#section-2",
+    "title": "mutate()",
     "section": "",
     "text": "Continuar\n\nSiguiente tema Volver a empezar",
     "crumbs": [
       "Acerca de este sitio",
-      "Conceptos básicos",
-      "Fundamentos de programación",
-      "Objects"
+      "Transformar datos",
+      "Deriving information with {dplyr}",
+      "`mutate()`"
     ]
   },
   {
-    "objectID": "basics/02-programming-basics/05-types.html",
-    "href": "basics/02-programming-basics/05-types.html",
-    "title": "Types",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Manual básico de R (R Primers)",
     "section": "",
-    "text": "Watch this video:",
+    "text": "Una versión del antiguo RStudio/Posit Primers, ahora con Quarto y webR y en castellano."
+  },
+  {
+    "objectID": "index.html#licencia",
+    "href": "index.html#licencia",
+    "title": "Manual básico de R (R Primers)",
+    "section": "Licencia",
+    "text": "Licencia\n\nThe original primers were developed by the RStudio/Posit Education Team and made open source on GitHub. Following the original license, these tutorials are licensed under the Creative Commons Attribution-ShareAlike 4.0 License (CC BY-SA 4.0).\nThe primers are derived from the book R for Data Science from O’Reilly Media, Inc. Copyright © 2017 Garrett Grolemund, Hadley Wickham. Used with permission.\nSee here for the full license."
+  },
+  {
+    "objectID": "transform-data/03-deriving/index.html",
+    "href": "transform-data/03-deriving/index.html",
+    "title": "Deriving information with {dplyr}",
+    "section": "",
+    "text": "In this case study, you will identify the most popular American names from 1880 to 2015. While doing this, you will master three more dplyr functions:\nThese are some of the most useful R functions for data science, and this tutorial provides everything you need to learn them.\nThis tutorial uses the core tidyverse packages, including {ggplot2}, {tibble}, and {dplyr}, as well as the babynames package. All of these packages have been pre-installed and pre-loaded for your convenience.",
     "crumbs": [
       "Acerca de este sitio",
-      "Conceptos básicos",
-      "Programming basics",
-      "Types"
+      "Transformar datos",
+      "Deriving information with {dplyr}"
     ]
   },
   {
-    "objectID": "basics/02-programming-basics/05-types.html#section",
-    "href": "basics/02-programming-basics/05-types.html#section",
-    "title": "Types",
+    "objectID": "transform-data/03-deriving/index.html#section",
+    "href": "transform-data/03-deriving/index.html#section",
+    "title": "Deriving information with {dplyr}",
     "section": "",
     "text": "Continuar\n\nSiguiente tema Volver a empezar",
     "crumbs": [
       "Acerca de este sitio",
-      "Conceptos básicos",
-      "Programming basics",
-      "Types"
+      "Transformar datos",
+      "Deriving information with {dplyr}"
     ]
   },
   {
-    "objectID": "basics/01-visualization-basics/04-ggplot2-package.html",
-    "href": "basics/01-visualization-basics/04-ggplot2-package.html",
-    "title": "The ggplot2 package",
+    "objectID": "transform-data/03-deriving/02-summarize.html",
+    "href": "transform-data/03-deriving/02-summarize.html",
+    "title": "summarize()",
     "section": "",
-    "text": "Throughout this tutorial, I’ve referred to ggplot2 as a package. What does that mean?\nThe R language is subdivided into packages, small collections of data sets and functions that all focus on a single task. The functions that we used in this tutorial come from one of those packages, the ggplot2 package, which focuses on visualizing data.",
-    "crumbs": [
-      "About",
-      "Basics",
-      "Data visualization basics",
-      "The ggplot2 package"
-    ]
-  },
-  {
-    "objectID": "basics/01-visualization-basics/04-ggplot2-package.html#section",
-    "href": "basics/01-visualization-basics/04-ggplot2-package.html#section",
-    "title": "The ggplot2 package",
-    "section": "",
-    "text": "Continue\n\n\nStart over",
-    "crumbs": [
-      "About",
-      "Basics",
-      "Data visualization basics",
-      "The ggplot2 package"
-    ]
-  },
-  {
-    "objectID": "basics/01-visualization-basics/01-code-template.html",
-    "href": "basics/01-visualization-basics/01-code-template.html",
-    "title": "A code template",
-    "section": "",
-    "text": "“The simple graph has brought more information to the data analyst’s mind than any other device.”\n— John Tukey",
+    "text": "summarize() takes a data frame and uses it to calculate a new data frame of summary statistics.",
     "crumbs": [
       "Acerca de este sitio",
-      "Conceptos básicos",
-      "Data visualization basics",
-      "A code template"
+      "Transformar datos",
+      "Deriving information with {dplyr}",
+      "`summarize()`"
     ]
   },
   {
-    "objectID": "basics/01-visualization-basics/01-code-template.html#section-8",
-    "href": "basics/01-visualization-basics/01-code-template.html#section-8",
-    "title": "A code template",
+    "objectID": "transform-data/03-deriving/02-summarize.html#section-1",
+    "href": "transform-data/03-deriving/02-summarize.html#section-1",
+    "title": "summarize()",
     "section": "",
     "text": "Continuar\n\nSiguiente tema Volver a empezar",
     "crumbs": [
       "Acerca de este sitio",
-      "Conceptos básicos",
-      "Data visualization basics",
-      "A code template"
+      "Transformar datos",
+      "Deriving information with {dplyr}",
+      "`summarize()`"
     ]
   },
   {
-    "objectID": "tidy-data/01-reshape-data/index.html",
-    "href": "tidy-data/01-reshape-data/index.html",
-    "title": "Reshape data",
+    "objectID": "transform-data/03-deriving/03-group_by.html",
+    "href": "transform-data/03-deriving/03-group_by.html",
+    "title": "group_by() and summarize()",
     "section": "",
-    "text": "The tools that you learned in the previous Primers work best when your data is organized in a specific way. This format is known as tidy data and it appears throughout the tidyverse. You will spend a lot of time as a data scientist wrangling your data into a usable format, so it is important to learn how to do this fast.\nThis tutorial will teach you how to recognize tidy data, as well as how to reshape untidy data into a tidy format. In it, you will learn the core data wrangling functions for the tidyverse:\nThis tutorial uses the core tidyverse packages, including {ggplot2}, {dplyr}, and {tidyr}, as well as the {babynames} package. All of these packages have been pre-installed and pre-loaded for your convenience.",
+    "text": "group_by() takes a data frame and then the names of one or more columns in the data frame. It returns a copy of the data frame that has been “grouped” into sets of rows that share identical combinations of values in the specified columns.",
     "crumbs": [
-      "About",
-      "Ordenar data",
-      "Reshape data"
+      "Acerca de este sitio",
+      "Transformar datos",
+      "Deriving information with {dplyr}",
+      "`group_by()` and `summarize()`"
     ]
   },
   {
-    "objectID": "tidy-data/01-reshape-data/index.html#section",
-    "href": "tidy-data/01-reshape-data/index.html#section",
-    "title": "Reshape data",
+    "objectID": "transform-data/03-deriving/03-group_by.html#section-1",
+    "href": "transform-data/03-deriving/03-group_by.html#section-1",
+    "title": "group_by() and summarize()",
     "section": "",
-    "text": "Continue\n\nNext topic Start over",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
     "crumbs": [
-      "About",
-      "Ordenar data",
-      "Reshape data"
+      "Acerca de este sitio",
+      "Transformar datos",
+      "Deriving information with {dplyr}",
+      "`group_by()` and `summarize()`"
     ]
   },
   {
-    "objectID": "tidy-data/01-reshape-data/03-long-to-wide.html#section-5",
-    "href": "tidy-data/01-reshape-data/03-long-to-wide.html#section-5",
-    "title": "Long to wide",
+    "objectID": "transform-data/01-tibbles/index.html",
+    "href": "transform-data/01-tibbles/index.html",
+    "title": "Working with tibbles",
+    "section": "",
+    "text": "In this primer, you will explore the popularity of different names over time. To succeed, you will need to master some common tools for manipulating data with R:\nThese are some of the most useful R functions for data science, and the tutorials that follow will provide you everything you need to learn them.\nIn the tutorials, we’ll use a dataset named babynames, which comes in a package that is also named babynames. Within babynames, you will find information about almost every name given to children in the United States since 1880.\nThis tutorial introduces babynames as well as a new data structure that makes working with data in R easy: the tibble.\nIn addition to babynames, this tutorial uses the core tidyverse packages, including {ggplot2}, {tibble}, and {dplyr.} All of these packages have been pre-installed for your convenience. But they haven’t been pre-loaded—something you will soon learn more about!",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Transformar datos",
+      "Working with tibbles"
+    ]
+  },
+  {
+    "objectID": "transform-data/01-tibbles/index.html#section",
+    "href": "transform-data/01-tibbles/index.html#section",
+    "title": "Working with tibbles",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Transformar datos",
+      "Working with tibbles"
+    ]
+  },
+  {
+    "objectID": "transform-data/01-tibbles/03-tidyverse.html",
+    "href": "transform-data/01-tibbles/03-tidyverse.html",
+    "title": "tidyverse",
+    "section": "",
+    "text": "The {tibble} package is one of several packages that are known collectively as “the tidyverse”. Tidyverse packages share a common philosophy and are designed to work well together. For example, in this tutorial you will use the {tibble} package, the {ggplot2} package, and the {dplyr} package, all of which belong to the tidyverse.",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Transformar datos",
+      "Working with tibbles",
+      "tidyverse"
+    ]
+  },
+  {
+    "objectID": "transform-data/01-tibbles/03-tidyverse.html#section",
+    "href": "transform-data/01-tibbles/03-tidyverse.html#section",
+    "title": "tidyverse",
     "section": "",
     "text": "Continuar\n\n\nVolver a empezar",
     "crumbs": [
       "Acerca de este sitio",
-      "Ordenar data",
-      "Reshape data",
-      "Long to wide"
+      "Transformar datos",
+      "Working with tibbles",
+      "tidyverse"
+    ]
+  },
+  {
+    "objectID": "transform-data/02-isolating/index.html",
+    "href": "transform-data/02-isolating/index.html",
+    "title": "Isolating data with {dplyr}",
+    "section": "",
+    "text": "In this case study, you will explore the popularity of your own name over time. Along the way, you will master some of the most useful functions for isolating variables, cases, and values within a data frame:\nThis tutorial uses the core tidyverse packages, including {ggplot2}, {tibble}, and {dplyr}, as well as the {babynames} package. All of these packages have been pre-installed and pre-loaded for your convenience.",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Transformar datos",
+      "Isolating data with {dplyr}"
+    ]
+  },
+  {
+    "objectID": "transform-data/02-isolating/index.html#section",
+    "href": "transform-data/02-isolating/index.html#section",
+    "title": "Isolating data with {dplyr}",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Transformar datos",
+      "Isolating data with {dplyr}"
+    ]
+  },
+  {
+    "objectID": "transform-data/02-isolating/05-pipe.html",
+    "href": "transform-data/02-isolating/05-pipe.html",
+    "title": "|>",
+    "section": "",
+    "text": "Notice how each {dplyr} function takes a data frame as input and returns a data frame as output. This makes the functions easy to use in a step-by-step fashion. For example, you could:\n\nFilter babynames to just boys born in 2017\nSelect the name and n columns from the result\nArrange those columns so that the most popular names appear near the top.\n\n\nboys_2017 &lt;- filter(babynames, year == 2017, sex == \"M\")\nboys_2017 &lt;- select(boys_2017, name, n)\nboys_2017 &lt;- arrange(boys_2017, desc(n))\nboys_2017\n\n# A tibble: 14,160 × 2\n   name         n\n   &lt;chr&gt;    &lt;int&gt;\n 1 Liam     18728\n 2 Noah     18326\n 3 William  14904\n 4 James    14232\n 5 Logan    13974\n 6 Benjamin 13733\n 7 Mason    13502\n 8 Elijah   13268\n 9 Oliver   13141\n10 Jacob    13106\n# ℹ 14,150 more rows",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Transformar datos",
+      "Isolating data with {dplyr}",
+      "`|>`"
+    ]
+  },
+  {
+    "objectID": "transform-data/02-isolating/05-pipe.html#section-1",
+    "href": "transform-data/02-isolating/05-pipe.html#section-1",
+    "title": "|>",
+    "section": "",
+    "text": "Continuar\n\n\nVolver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Transformar datos",
+      "Isolating data with {dplyr}",
+      "`|>`"
+    ]
+  },
+  {
+    "objectID": "transform-data/02-isolating/01-your-name.html",
+    "href": "transform-data/02-isolating/01-your-name.html",
+    "title": "Your name",
+    "section": "",
+    "text": "You can use the data in babynames to make graphs like this, which reveal the history of a name, perhaps your name.\n\n\n\n\n\n\n\n\n\nBut before you do, you will need to trim down babynames. At the moment, there are more rows in babynames than you need to build your plot.",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Transformar datos",
+      "Isolating data with {dplyr}",
+      "Your name"
+    ]
+  },
+  {
+    "objectID": "transform-data/02-isolating/01-your-name.html#section",
+    "href": "transform-data/02-isolating/01-your-name.html#section",
+    "title": "Your name",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Transformar datos",
+      "Isolating data with {dplyr}",
+      "Your name"
     ]
   },
   {
@@ -1153,7 +1105,7 @@
     "href": "about.html#how-it-works",
     "title": "Acerca de este sitio",
     "section": "How it works",
-    "text": "How it works\nThe tutorials aren’t nearly as fully featured as {learnr}, but they get the job done.\n\n{learnr} hints and solutions\nTo simulate {learnr}’s hint and solution functionality, I use Quarto’s Tabset Panels:\n::: {.panel-tabset}\n## {{&lt; fa code &gt;}}&ensp;Interactive editor\n\n```{webr-r}\n# Calculate 1 + 2\n```\n\n## {{&lt; fa lightbulb &gt;}}&ensp;Hint\n\n**Pista:** Think about addition\n\n## {{&lt; fa circle-check &gt;}}&ensp;Solution\n\n```r\n1 + 2\n```\n\n:::\n\n Interactive editor Hint Solution\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nHint: Think about addition\n\n\n1 + 2\n\n\n\n\n\n{learnr} progressive reveal\nOne great feature of {learnr} is its progressive reveal, which unhides sections of a tutorial as you work through it. To simulate this with Quarto, I turned to Javascript. My progressive-reveal.js script looks for all third-level headings on a page (similar to {learnr}) and makes the appear progressively using some buttons at the bottom of the page. It’s clunky, but it works.\n\n\nQuizzes\n{learnr} also supports interactive questions, or inline quiz questions. To simulate this, I use {checkdown}. It’s not as great as {learnr}, but again, it gets the job done.1"
+    "text": "How it works\nThe tutorials aren’t nearly as fully featured as {learnr}, but they get the job done.\n\n{learnr} hints and solutions\nTo simulate {learnr}’s hint and solution functionality, I use Quarto’s Tabset Panels:\n::: {.panel-tabset}\n## &ensp;Editor interactivo\n\n```{webr-r}\n# Calculate 1 + 2\n```\n\n## &ensp;Pista\n\n**Pista:** Think about addition\n\n## &ensp;Solución\n\n```r\n1 + 2\n```\n\n:::\n\n Editor interactivo Pista Solución\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nPista: Think about addition\n\n\n1 + 2\n\n\n\n\n\n{learnr} progressive reveal\nOne great feature of {learnr} is its progressive reveal, which unhides sections of a tutorial as you work through it. To simulate this with Quarto, I turned to Javascript. My progressive-reveal.js script looks for all third-level headings on a page (similar to {learnr}) and makes the appear progressively using some buttons at the bottom of the page. It’s clunky, but it works.\n\n\nQuizzes\n{learnr} also supports interactive questions, or inline quiz questions. To simulate this, I use {checkdown}. It’s not as great as {learnr}, but again, it gets the job done.1"
   },
   {
     "objectID": "about.html#legal-stuff",
@@ -1168,141 +1120,6 @@
     "title": "Acerca de este sitio",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nI also played with {webexercises}, which is a little more polished, but doesn’t let you give feedback messages for in/correct answers. I’m tempted to fork {checkdown} or submit a bunch of PRs to make it nicer. Someday.↩︎"
-  },
-  {
-    "objectID": "index.html#licencia",
-    "href": "index.html#licencia",
-    "title": "Manual básico de R (R Primers)",
-    "section": "Licencia",
-    "text": "Licencia\n\nThe original primers were developed by the RStudio/Posit Education Team and made open source on GitHub. Following the original license, these tutorials are licensed under the Creative Commons Attribution-ShareAlike 4.0 License (CC BY-SA 4.0).\nThe primers are derived from the book R for Data Science from O’Reilly Media, Inc. Copyright © 2017 Garrett Grolemund, Hadley Wickham. Used with permission.\nSee here for the full license."
-  },
-  {
-    "objectID": "visualize-data/01-eda/index.html",
-    "href": "visualize-data/01-eda/index.html",
-    "title": "Análisis exploratorio de datos",
-    "section": "",
-    "text": "Este tutorial te enseñará a explorar tus datos de una manera sistemática, una tarea que los estadísticos llaman análisis exploratorio de datos (o exploratory data analyisis en inglés, EDA). En este tutorial:\nEste tutorial está extraido del libro R for Data Science de Hadley Wickham y Garrett Grolemund, publicado por O’Reilly Media, Inc., 2016, ISBN: 9781491910399. Puedes comprar el libro en shop.oreilly.com.",
-    "crumbs": [
-      "Acerca de este sitio",
-      "Visualizar datos",
-      "Análisis exploratorio de datos"
-    ]
-  },
-  {
-    "objectID": "visualize-data/01-eda/index.html#section",
-    "href": "visualize-data/01-eda/index.html#section",
-    "title": "Análisis exploratorio de datos",
-    "section": "",
-    "text": "Continuar\n\nSiguiente tema Volver a empezar",
-    "crumbs": [
-      "Acerca de este sitio",
-      "Visualizar datos",
-      "Análisis exploratorio de datos"
-    ]
-  },
-  {
-    "objectID": "visualize-data/01-eda/01-eda.html",
-    "href": "visualize-data/01-eda/01-eda.html",
-    "title": "Análisis exploratorio de datos",
-    "section": "",
-    "text": "El análisis exploratorio de datos (o EDA) es un ciclo iterativo que te ayuda a comprender lo que dicen tus datos. Cuando haces un análisis exploratorio de datos:\n\nGeneras preguntas acerca de tus datos\nBuscas respuestas visualizando, transformando y/o modelando tus datos\nUtilizas lo aprendido para refinar tus preguntas y/o generar nuevas preguntas\n\nEl EDA es una parte importante de cualquier análisis de datos. Puedes usar EDA para hacer descubrimientos acerca del mundo; o puedes hacer EDA para asegurar la calidad de tus datos, haciendo preguntas acerca de si los datos cumplen tus estándares o no.",
-    "crumbs": [
-      "Acerca de este sitio",
-      "Visualizar datos",
-      "Análisis exploratorio de datos",
-      "Análisis exploratorio de datos"
-    ]
-  },
-  {
-    "objectID": "visualize-data/01-eda/01-eda.html#section",
-    "href": "visualize-data/01-eda/01-eda.html#section",
-    "title": "Análisis exploratorio de datos",
-    "section": "",
-    "text": "Continuar\n\nSiguiente tema Volver a empezar",
-    "crumbs": [
-      "Acerca de este sitio",
-      "Visualizar datos",
-      "Análisis exploratorio de datos",
-      "Análisis exploratorio de datos"
-    ]
-  },
-  {
-    "objectID": "transform-data/02-isolating/02-select.html",
-    "href": "transform-data/02-isolating/02-select.html",
-    "title": "select()",
-    "section": "",
-    "text": "select() extracts columns of a data frame and returns the columns as a new data frame. To use select(), pass it the name of a data frame to extract columns from, and then the names of the columns to extract. The column names do not need to appear in quotation marks or be prefixed with a $; select() knows to find them in the data frame that you supply.",
-    "crumbs": [
-      "Acerca de este sitio",
-      "Transformar datos",
-      "Isolating data with {dplyr}",
-      "`select()`"
-    ]
-  },
-  {
-    "objectID": "transform-data/02-isolating/02-select.html#section",
-    "href": "transform-data/02-isolating/02-select.html#section",
-    "title": "select()",
-    "section": "",
-    "text": "Continuar\n\nSiguiente tema Volver a empezar",
-    "crumbs": [
-      "Acerca de este sitio",
-      "Transformar datos",
-      "Isolating data with {dplyr}",
-      "`select()`"
-    ]
-  },
-  {
-    "objectID": "transform-data/03-deriving/01-most-popular-names.html",
-    "href": "transform-data/03-deriving/01-most-popular-names.html",
-    "title": "The most popular names",
-    "section": "",
-    "text": "Let’s use babynames to answer a different question: what are the most popular names of all time?\nThis question seems simple enough, but to answer it we need to be more precise: how do you define “the most popular” names? Try to think of several definitions and then click Continue. After the Continue button, I will suggest two definitions of my own.",
-    "crumbs": [
-      "Acerca de este sitio",
-      "Transformar datos",
-      "Deriving information with {dplyr}",
-      "The most popular names"
-    ]
-  },
-  {
-    "objectID": "transform-data/03-deriving/01-most-popular-names.html#section",
-    "href": "transform-data/03-deriving/01-most-popular-names.html#section",
-    "title": "The most popular names",
-    "section": "",
-    "text": "Continuar\n\nSiguiente tema Volver a empezar",
-    "crumbs": [
-      "Acerca de este sitio",
-      "Transformar datos",
-      "Deriving information with {dplyr}",
-      "The most popular names"
-    ]
-  },
-  {
-    "objectID": "transform-data/01-tibbles/03-tidyverse.html",
-    "href": "transform-data/01-tibbles/03-tidyverse.html",
-    "title": "tidyverse",
-    "section": "",
-    "text": "The {tibble} package is one of several packages that are known collectively as “the tidyverse”. Tidyverse packages share a common philosophy and are designed to work well together. For example, in this tutorial you will use the {tibble} package, the {ggplot2} package, and the {dplyr} package, all of which belong to the tidyverse.",
-    "crumbs": [
-      "Acerca de este sitio",
-      "Transformar datos",
-      "Working with tibbles",
-      "tidyverse"
-    ]
-  },
-  {
-    "objectID": "transform-data/01-tibbles/03-tidyverse.html#section",
-    "href": "transform-data/01-tibbles/03-tidyverse.html#section",
-    "title": "tidyverse",
-    "section": "",
-    "text": "Continuar\n\n\nVolver a empezar",
-    "crumbs": [
-      "Acerca de este sitio",
-      "Transformar datos",
-      "Working with tibbles",
-      "tidyverse"
-    ]
   },
   {
     "objectID": "visualize-data/01-eda/03-covariation.html",
@@ -1357,16 +1174,509 @@
     ]
   },
   {
-    "objectID": "basics/02-programming-basics/01-functions.html#footnotes",
-    "href": "basics/02-programming-basics/01-functions.html#footnotes",
-    "title": "Funciones",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nPuedes activar↩︎",
+    "objectID": "visualize-data/06-line-graphs/03-maps.html#section-4",
+    "href": "visualize-data/06-line-graphs/03-maps.html#section-4",
+    "title": "Maps",
+    "section": "",
+    "text": "Continuar\n\n\nVolver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Line plots",
+      "Maps"
+    ]
+  },
+  {
+    "objectID": "visualize-data/06-line-graphs/01-line-graphs.html#section-5",
+    "href": "visualize-data/06-line-graphs/01-line-graphs.html#section-5",
+    "title": "Line graphs",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Line plots",
+      "Line graphs"
+    ]
+  },
+  {
+    "objectID": "visualize-data/05-scatterplots/02-layers.html",
+    "href": "visualize-data/05-scatterplots/02-layers.html",
+    "title": "Layers",
+    "section": "",
+    "text": "geom_smooth() becomes much more useful when you combine it with geom_point() to create a scatterplot that contains both:\n\nraw data\na trend line\n\nIn {ggplot2}, you can add multiple geoms to a plot by adding multiple geom functions to the plot call. For example, the code below creates a plot that contains both points and a smooth line. Imagine what the results will look like in your head, and then run the code to see if you are right.\n\n Editor interactivo\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Scatterplots",
+      "Layers"
+    ]
+  },
+  {
+    "objectID": "visualize-data/05-scatterplots/02-layers.html#section-9",
+    "href": "visualize-data/05-scatterplots/02-layers.html#section-9",
+    "title": "Layers",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Scatterplots",
+      "Layers"
+    ]
+  },
+  {
+    "objectID": "visualize-data/05-scatterplots/01-scatterplots.html",
+    "href": "visualize-data/05-scatterplots/01-scatterplots.html",
+    "title": "Scatterplots",
+    "section": "",
+    "text": "In Visualization Basics, you learned how to make a scatterplot with geom_point().\nThe code below summarizes the mpg data set and begins to plot the results. Finish the plot with geom_point(). Put mean_cty on the \\(x\\) axis and mean_hwy on the \\(y\\) axis.\n\n Editor interactivo Solución\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nmpg |&gt; \n  group_by(class) |&gt; \n  summarize(mean_cty = mean(cty), mean_hwy = mean(hwy)) |&gt; \n  ggplot() +\n    geom_point(mapping = aes(x = mean_cty, y = mean_hwy))",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Scatterplots",
+      "Scatterplots"
+    ]
+  },
+  {
+    "objectID": "visualize-data/05-scatterplots/01-scatterplots.html#section-3",
+    "href": "visualize-data/05-scatterplots/01-scatterplots.html#section-3",
+    "title": "Scatterplots",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Scatterplots",
+      "Scatterplots"
+    ]
+  },
+  {
+    "objectID": "visualize-data/03-histograms/01-histograms.html",
+    "href": "visualize-data/03-histograms/01-histograms.html",
+    "title": "Histograms",
+    "section": "",
+    "text": "Mira este video:",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Histograms",
+      "Histograms"
+    ]
+  },
+  {
+    "objectID": "visualize-data/03-histograms/01-histograms.html#section-4",
+    "href": "visualize-data/03-histograms/01-histograms.html#section-4",
+    "title": "Histograms",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Histograms",
+      "Histograms"
+    ]
+  },
+  {
+    "objectID": "visualize-data/08-customize/index.html",
+    "href": "visualize-data/08-customize/index.html",
+    "title": "Customize your plots",
+    "section": "",
+    "text": "This tutorial will teach you how to customize the look and feel of your plots. You will learn how to:\nThe tutorial is adapted from R for Data Science by Hadley Wickham and Garrett Grolemund, published by O’Reilly Media, Inc., 2016, ISBN: 9781491910399. You can purchase the book at shop.oreilly.com.\nThe tutorial uses the {ggplot2}, {dplyr}, {scales}, {ggthemes}, and {viridis} packages, which have been pre-loaded for your convenience.",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Customize your plots"
+    ]
+  },
+  {
+    "objectID": "visualize-data/08-customize/index.html#section",
+    "href": "visualize-data/08-customize/index.html#section",
+    "title": "Customize your plots",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Customize your plots"
+    ]
+  },
+  {
+    "objectID": "visualize-data/08-customize/04-scales.html#section-5",
+    "href": "visualize-data/08-customize/04-scales.html#section-5",
+    "title": "Scales",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Customize your plots",
+      "Scales"
+    ]
+  },
+  {
+    "objectID": "visualize-data/08-customize/02-labels.html#section-2",
+    "href": "visualize-data/08-customize/02-labels.html#section-2",
+    "title": "Labels",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Customize your plots",
+      "Labels"
+    ]
+  },
+  {
+    "objectID": "visualize-data/08-customize/05-legends.html#section-2",
+    "href": "visualize-data/08-customize/05-legends.html#section-2",
+    "title": "Legends",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Customize your plots",
+      "Legends"
+    ]
+  },
+  {
+    "objectID": "visualize-data/02-bar-charts/03-position-adjustments.html",
+    "href": "visualize-data/02-bar-charts/03-position-adjustments.html",
+    "title": "Position adjustments",
+    "section": "",
+    "text": "If you map fill to a new variable, geom_bar() will display a stacked bar chart:\n\nggplot(data = diamonds) +\n  geom_bar(mapping = aes(x = cut, fill = clarity))\n\n\n\n\n\n\n\n\nThis plot displays 40 different combinations of cut and clarity, each displayed by its own rectangle. geom_bar() lays out the rectangles by stacking rectangles that have the same cut value on top of one another. You can change this behavior with a position adjustment.",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Bar charts",
+      "Position adjustments"
+    ]
+  },
+  {
+    "objectID": "visualize-data/02-bar-charts/03-position-adjustments.html#section",
+    "href": "visualize-data/02-bar-charts/03-position-adjustments.html#section",
+    "title": "Position adjustments",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Bar charts",
+      "Position adjustments"
+    ]
+  },
+  {
+    "objectID": "visualize-data/02-bar-charts/02-aesthetics.html",
+    "href": "visualize-data/02-bar-charts/02-aesthetics.html",
+    "title": "Aesthetics",
+    "section": "",
+    "text": "geom_bar() and geom_col() can use several aesthetics:\n\nalpha\ncolor\nfill\nlinetype\nsize\n\nOne of these, color, creates the most surprising results. Predict what the code below will return and then run it.\n\n Editor interactivo\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Bar charts",
+      "Aesthetics"
+    ]
+  },
+  {
+    "objectID": "visualize-data/02-bar-charts/02-aesthetics.html#section",
+    "href": "visualize-data/02-bar-charts/02-aesthetics.html#section",
+    "title": "Aesthetics",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Bar charts",
+      "Aesthetics"
+    ]
+  },
+  {
+    "objectID": "visualize-data/07-overplotting/index.html",
+    "href": "visualize-data/07-overplotting/index.html",
+    "title": "Overplotting and big data",
+    "section": "",
+    "text": "Data visualization is a useful tool because it makes data accessible to your visual system, which can process large amounts of information quickly. However, two characteristics of data can short circuit this system. Data can not be easily visualized if\nThese features both create overplotting, the condition where multiple geoms in the plot are plotted on top of each other, hiding each other. This tutorial will show you several strategies for dealing with overplotting, introducing new geoms along the way.\nThe tutorial is adapted from R for Data Science by Hadley Wickham and Garrett Grolemund, published by O’Reilly Media, Inc., 2016, ISBN: 9781491910399. You can purchase the book at shop.oreilly.com.\nThe tutorial uses the {ggplot2} and {hexbin} packages, which have been pre-loaded for your convenience.",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Overplotting and big data"
+    ]
+  },
+  {
+    "objectID": "visualize-data/07-overplotting/index.html#section",
+    "href": "visualize-data/07-overplotting/index.html#section",
+    "title": "Overplotting and big data",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Overplotting and big data"
+    ]
+  },
+  {
+    "objectID": "visualize-data/07-overplotting/03-large-data.html",
+    "href": "visualize-data/07-overplotting/03-large-data.html",
+    "title": "Large data",
+    "section": "",
+    "text": "A dataset does not need to be truly “Big Data” to be hard to visualize. The diamonds data set contains fewer than 54,000 points, but it still suffers from overplotting when you try to plot carat vs. price. Here the bulk of the points fall on top of each other in an impenetrable cloud of blackness.\n\nggplot(data = diamonds) +\n  geom_point(mapping = aes(x = carat, y = price))",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Overplotting and big data",
+      "Large data"
+    ]
+  },
+  {
+    "objectID": "visualize-data/07-overplotting/03-large-data.html#section-2",
+    "href": "visualize-data/07-overplotting/03-large-data.html#section-2",
+    "title": "Large data",
+    "section": "",
+    "text": "Continuar\n\n\nVolver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Overplotting and big data",
+      "Large data"
+    ]
+  },
+  {
+    "objectID": "visualize-data/04-boxplots/index.html",
+    "href": "visualize-data/04-boxplots/index.html",
+    "title": "Boxplots and counts",
+    "section": "",
+    "text": "Boxplots display the relationship between a continuous variable and a categorical variable. Count plots display the relationship between two categorical variables. In this tutorial, you will learn how to use both. You will learn how to:\nThe tutorial is adapted from R for Data Science by Hadley Wickham and Garrett Grolemund, published by O’Reilly Media, Inc., 2016, ISBN: 9781491910399. You can purchase the book at shop.oreilly.com.\nThe tutorial uses the {ggplot2} and {dplyr} packages, which have been pre-loaded for your convenience.",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Boxplots and counts"
+    ]
+  },
+  {
+    "objectID": "visualize-data/04-boxplots/index.html#section",
+    "href": "visualize-data/04-boxplots/index.html#section",
+    "title": "Boxplots and counts",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Boxplots and counts"
+    ]
+  },
+  {
+    "objectID": "visualize-data/04-boxplots/03-counts.html",
+    "href": "visualize-data/04-boxplots/03-counts.html",
+    "title": "Counts",
+    "section": "",
+    "text": "Boxplots provide an efficient way to explore the interaction of a continuous variable and a categorical variable. But what if you have two categorical variables?\nYou can see how observations are distributed across two categorical variables with geom_count(). geom_count() draws a point at each combination of values from the two variables. The size of the point is mapped to the number of observations with this combination of values. Rare combinations will have small points, frequent combinations will have large points.",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Boxplots and counts",
+      "Counts"
+    ]
+  },
+  {
+    "objectID": "visualize-data/04-boxplots/03-counts.html#section-1",
+    "href": "visualize-data/04-boxplots/03-counts.html#section-1",
+    "title": "Counts",
+    "section": "",
+    "text": "Continuar\n\n\nVolver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Visualizar datos",
+      "Boxplots and counts",
+      "Counts"
+    ]
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "License",
+    "section": "",
+    "text": "License\nThis is a human-readable summary of (and not a substitute for) the license. Please see https://creativecommons.org/licenses/by-sa/4.0/ for the full legal text.\nThis work is licensed under the Creative Commons Attribution-ShareAlike 4.0 License (CC BY-SA 4.0).\nYou are free to:\n\nShare—copy and redistribute the material in any medium or format, even commercially.\nAdapt—remix, transform, and build upon the material for any purpose, even commercially.\n\nThe licensor cannot revoke these freedoms as long as you follow the license terms.\nUnder the following terms:\n\nAttribution—You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nThe primers are derived from the book R for Data Science. For the purposes of this license, appropriate credit requires including the phrase, “R for Data Science from O’Reilly Media, Inc. Copyright © 2017 Garrett Grolemund, Hadley Wickham. Used with permission.”\nShareAlike-—-If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.\nNo additional restrictions—You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.\n\nNotices:\nYou do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.\nNo warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material."
+  },
+  {
+    "objectID": "basics/02-programming-basics/07-packages.html",
+    "href": "basics/02-programming-basics/07-packages.html",
+    "title": "Packages",
+    "section": "",
+    "text": "Mira este video:\nNota: Puedes activar los subtítulos (en inglés) con el botón CC (CC/Subtitles) o visualizar la transcripción del video con el botón Transcript.",
     "crumbs": [
       "Acerca de este sitio",
       "Conceptos básicos",
       "Fundamentos de programación",
-      "Funciones"
+      "Packages"
+    ]
+  },
+  {
+    "objectID": "basics/02-programming-basics/07-packages.html#section-2",
+    "href": "basics/02-programming-basics/07-packages.html#section-2",
+    "title": "Packages",
+    "section": "",
+    "text": "Continuar\n\n\nVolver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Conceptos básicos",
+      "Fundamentos de programación",
+      "Packages"
+    ]
+  },
+  {
+    "objectID": "basics/02-programming-basics/06-lists.html",
+    "href": "basics/02-programming-basics/06-lists.html",
+    "title": "Lists",
+    "section": "",
+    "text": "Mira este video:\nNota: Puedes activar los subtítulos (en inglés) con el botón CC (CC/Subtitles) o visualizar la transcripción del video con el botón Transcript.",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Conceptos básicos",
+      "Fundamentos de programación",
+      "Lists"
+    ]
+  },
+  {
+    "objectID": "basics/02-programming-basics/06-lists.html#section-1",
+    "href": "basics/02-programming-basics/06-lists.html#section-1",
+    "title": "Lists",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Conceptos básicos",
+      "Fundamentos de programación",
+      "Lists"
+    ]
+  },
+  {
+    "objectID": "basics/02-programming-basics/03-objects.html",
+    "href": "basics/02-programming-basics/03-objects.html",
+    "title": "Objetos",
+    "section": "",
+    "text": "Objetos\nMira este video:\n\n\n\nNota: Puedes activar los subtítulos (en inglés) con el botón CC (CC/Subtitles) o visualizar la transcripción del video con el botón Transcript.\n\n\nNombres de objetos\nPuedes elegir casi cualquier nombre que quieras para un objeto, siempre y cuando el nombre no empiece con un número o un carácter especial como +, -, *, /, ^, !, @ o &.\nPor ejemplo, revisa esta lista de algunos posibles nombres de objetos. Algunos se podrían utilizar, pero otros no son válidos:\n\nhoy: Este está bien\n1ero: Este está mal; empieza con un número\n+1: Este está mal; empieza con un carácter especial\nvars: Este está bien\n\\^_^: Este está mal; empieza con un carácter especial\nfoo: Este está bien\n\n\n\nUsar objetos\nEn el fragmento de código de abajo, guarda los resultados de rnorm(100, mean = 100, sd = 15) en un objeto llamado datos. Después, en una nueva línea, ejecuta la función hist() sobre datos para representar gráficamente un diagrama de los valores aleatorios.\n\n Editor interactivo Solución\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\ndatos &lt;- rnorm(100, mean = 100, sd = 15)\nhist(datos)\n\n\n\n\n\n¿Y si…?\n¿Qué crees que pasaría si asignaras datos a un nuevo objeto llamado copia, así? Ejecuta el código y después inspecciona tanto datos como copia.\n\n Editor interactivo Solución\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\ndatos &lt;- rnorm(100, mean = 100, sd = 15)\ncopia &lt;- datos\ndatos\ncopia\n\n\n\n\n\n\n¡Efectivamente! R guarda una copia de los contenidos de datos en copia.\n\n\nConjuntos de datos\nLos objetos ofrecen una manera sencilla de almacenar conjuntos de datos en R. De hecho, R viene con varios conjuntos de datos de prueba precargados. Examina el contenido de mtcars para ver un conjunto de datos de prueba clásico. Pista: ¿cómo harías para saber más acerca del objeto mtcars?\n\n Editor interactivo Solución\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nmtcars\n\n\n\n\n\n\n¡Eso es! Puedes saber aún más sobre mtcars examinando su página de ayuda con ?mtcars.\n\n\nrm()\n¿Qué pasa si sobreescribes un ojeto accidentalmente? Si ese objeto vino con R o alguno de sus paquetes, puedes restaurar la versión original del objeto borrándolo de tu entorno con rm(). Ejecuta rm() sobre mtcars abajo para restaurar el conjunto de datos mtcars.\n\n Editor interactivo Solución\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nmtcars &lt;- 1\nmtcars\nrm(mtcars)\nmtcars\n\n\n\n\n\n\n¡Bien hecho! Desafortunadamente, rm() no puede ayudarte si sobreescribes uno de tus propios objetos. ##\n\n\nContinuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Conceptos básicos",
+      "Fundamentos de programación",
+      "Objetos"
+    ]
+  },
+  {
+    "objectID": "basics/02-programming-basics/05-types.html",
+    "href": "basics/02-programming-basics/05-types.html",
+    "title": "Types",
+    "section": "",
+    "text": "Mira este video:\nNota: Puedes activar los subtítulos (en inglés) con el botón CC (CC/Subtitles) o visualizar la transcripción del video con el botón Transcript.",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Conceptos básicos",
+      "Fundamentos de programación",
+      "Types"
+    ]
+  },
+  {
+    "objectID": "basics/02-programming-basics/05-types.html#section",
+    "href": "basics/02-programming-basics/05-types.html#section",
+    "title": "Types",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Conceptos básicos",
+      "Fundamentos de programación",
+      "Types"
+    ]
+  },
+  {
+    "objectID": "basics/01-visualization-basics/04-ggplot2-package.html",
+    "href": "basics/01-visualization-basics/04-ggplot2-package.html",
+    "title": "The ggplot2 package",
+    "section": "",
+    "text": "Throughout this tutorial, I’ve referred to ggplot2 as a package. What does that mean?\nThe R language is subdivided into packages, small collections of data sets and functions that all focus on a single task. The functions that we used in this tutorial come from one of those packages, the ggplot2 package, which focuses on visualizing data.",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Conceptos básicos",
+      "Data visualization basics",
+      "The ggplot2 package"
+    ]
+  },
+  {
+    "objectID": "basics/01-visualization-basics/04-ggplot2-package.html#section",
+    "href": "basics/01-visualization-basics/04-ggplot2-package.html#section",
+    "title": "The ggplot2 package",
+    "section": "",
+    "text": "Continuar\n\n\nVolver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Conceptos básicos",
+      "Data visualization basics",
+      "The ggplot2 package"
+    ]
+  },
+  {
+    "objectID": "basics/01-visualization-basics/01-code-template.html",
+    "href": "basics/01-visualization-basics/01-code-template.html",
+    "title": "A code template",
+    "section": "",
+    "text": "“The simple graph has brought more information to the data analyst’s mind than any other device.”\n— John Tukey",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Conceptos básicos",
+      "Data visualization basics",
+      "A code template"
+    ]
+  },
+  {
+    "objectID": "basics/01-visualization-basics/01-code-template.html#section-8",
+    "href": "basics/01-visualization-basics/01-code-template.html#section-8",
+    "title": "A code template",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Conceptos básicos",
+      "Data visualization basics",
+      "A code template"
+    ]
+  },
+  {
+    "objectID": "tidy-data/01-reshape-data/index.html",
+    "href": "tidy-data/01-reshape-data/index.html",
+    "title": "Reshape data",
+    "section": "",
+    "text": "The tools that you learned in the previous Primers work best when your data is organized in a specific way. This format is known as tidy data and it appears throughout the tidyverse. You will spend a lot of time as a data scientist wrangling your data into a usable format, so it is important to learn how to do this fast.\nThis tutorial will teach you how to recognize tidy data, as well as how to reshape untidy data into a tidy format. In it, you will learn the core data wrangling functions for the tidyverse:\nThis tutorial uses the core tidyverse packages, including {ggplot2}, {dplyr}, and {tidyr}, as well as the {babynames} package. All of these packages have been pre-installed and pre-loaded for your convenience.",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Ordenar datos",
+      "Reshape data"
+    ]
+  },
+  {
+    "objectID": "tidy-data/01-reshape-data/index.html#section",
+    "href": "tidy-data/01-reshape-data/index.html#section",
+    "title": "Reshape data",
+    "section": "",
+    "text": "Continuar\n\nSiguiente tema Volver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Ordenar datos",
+      "Reshape data"
+    ]
+  },
+  {
+    "objectID": "tidy-data/01-reshape-data/03-long-to-wide.html#section-5",
+    "href": "tidy-data/01-reshape-data/03-long-to-wide.html#section-5",
+    "title": "Long to wide",
+    "section": "",
+    "text": "Continuar\n\n\nVolver a empezar",
+    "crumbs": [
+      "Acerca de este sitio",
+      "Ordenar datos",
+      "Reshape data",
+      "Long to wide"
     ]
   }
 ]
