@@ -10,7 +10,7 @@ website:
   title: "Manual básico de R"
   bread-crumbs: false
   
-  repo-url: "https://github.com/mirenbz/r-primers"
+  repo-url: "https://github.com/mirenbz/r-primers-es"
   repo-actions: [edit, issue]
 
   navbar:
