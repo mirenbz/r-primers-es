@@ -1,5 +1,5 @@
 ---
-title: "Variation"
+title: "Variación"
 format:
   html: 
     toc: false

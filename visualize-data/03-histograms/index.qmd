@@ -1,5 +1,5 @@
 ---
-title: "Histograms"
+title: "Histograms ⚠"
 format:
   html: 
     toc: false

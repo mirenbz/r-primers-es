@@ -1,5 +1,5 @@
 ---
-title: "The ggplot2 package"
+title: "The ggplot2 package ⚠"
 format:
   html: 
     toc: false

@@ -18,6 +18,7 @@ website:
     pinned: true
     left:
       - about.qmd
+      - deustokom-data.qmd
     right:
       - icon: github
         aria-label: github

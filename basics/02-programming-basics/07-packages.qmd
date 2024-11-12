@@ -1,5 +1,5 @@
 ---
-title: "Packages"
+title: "Paquetes"
 format:
   html: 
     toc: false
@@ -29,7 +29,7 @@ library(checkdown)
 source(here::here("R", "helpers.R"))
 ```
 
-### Packages {.no-hide}
+### Paquetes {.no-hide}
 
 Mira [este video](https://vimeo.com/220490447):
 
@@ -41,33 +41,33 @@ Mira [este video](https://vimeo.com/220490447):
 </div>
 ```
 
-### A common error
+### Un error frecuente
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-**What does this common error message suggest? `object _____ does not exist.`**
+**Un mensaje de error muy frecuente es `object _____ does not exist`. ¿Qué sugiere?**
 
 ```{r packages1, echo=FALSE}
 check_question(
-  answer = c("Either"), 
+  answer = c("Ambas"), 
   options = c(
-   "You misspelled your object name",
-   "You've forgot to load the package that ____ comes in",
-   "Either"
+   "Has escrito mal el nombre de un objeto",
+   "Has olvidado cargar el paquete en el que viene _____",
+   "Ambas"
   ), 
   type = "radio", 
   button_label = "Registrar respuesta", 
   q_id = 1,
-  right = c("Correct!")
+  right = c("¡Correcto!")
 )
 ```
 
 :::
 
 
-### Load a package
+### Cargar un paquete
 
-In the code chunk below, load the {tidyverse} package. Whenever you load a package R will also load all of the packages that the first package depends on. {tidyverse} takes advantage of this to create a shortcut for loading several common packages at once. Whenever you load {tidyverse}, {tidyverse} also loads {ggplot2}, {dplyr}, {tibble}, {tidyr}, {readr}, {purrr}, {forcats}, {stringr}, and {lubridate}.
+En el bloque de código de abajo, carga el paquete {tidyverse}. Cada vez que cargas un paquete R también cargará todos los paquetes que son dependencias del primer paquete. {tidyverse} se aprovecha de esto para crear un atajo para la carga de varios paquetes comunes de una sola vez. Cada vez que cargas {tidyverse}, {tidyverse} también carga {ggplot2}, {dplyr}, {tibble}, {tidyr}, {readr}, {purrr}, {forcats}, {stringr} y {lubridate}.
 
 ::: {.panel-tabset}
 ## {{< fa code >}}&ensp;Editor interactivo
@@ -88,18 +88,18 @@ library(tidyverse)
 
 ###
 
-Good job! R will keep the packages loaded until you close your R session. When you re-open R, you'll need to reload your packages.
+¡Buen trabajo! R mantendrá los paquetes cargaos hasta que cierres tu sesión de R. Cuando reabras R, tendrás que volver a cargar los paquetes.
 
 
-### Quotes
+### Comillas
 
-Did you know `library()` is a special function in R? You can pass `library()` a package name in quotes, like `library("tidyverse")`, or not in quotes, like `library(tidyverse)`---both will work! That's often not the case with R functions.
+¿Sabías que `library()` es una función especial en R? Puedes usar `library()` con un nombre de paquete entre comillas, como `library("tidyverse")`, o sin comillas, como `library(tidyverse)`---ambas opciones funcionarán. Esto no ocurre generalmente con otras funciones de R.
 
-In general, you should always use quotes unless you are writing the _name_ of something that is already loaded into R's memory, like a function, vector, or data frame.
+Generalmente, siempre deberías usar comillas a menos que estés escribiendo el _nombre_ de algo que esté ya cargado en la memoria de R, como una función,, un objeto, un vector o un marco de datos.
 
-### Install packages
+### Instalar paquetes
 
-But what if the package that you want to load is not installed on your computer? How would you install the {dplyr} package on your own computer?
+¿Pero qué pasa si el paquete que quieres cargar no está instalado en tu ordenador? ¿Cómo instalarías el paquete {dplyr}  en tu propio ordenador?
 
 ::: {.panel-tabset}
 ## {{< fa code >}}&ensp;Editor interactivo
@@ -120,12 +120,12 @@ install.packages("dplyr")
 
 ###
 
-Good job! You only need to install a package once, unless you wish to update your local copying by reinstalling the package. Notice that `install.packages()` _always_ requires quotes around the package name.
+¡Buen trabajo! Solamente hace falta que instales un paquete la primera vez, a menos que quieras actualizar la copia instalada en tu ordenador reinstalándolo. Ten en cuenta que `install.packages()` _siempre_ requiere comillas alrededor del nombre del paquete.
 
 
-### Congratulations!
+### ¡Enhorabuena!
 
-Congratulations. You now have a formal sense for how the basics of R work. Although you may think of your self as a data scientist, this brief computer science background will help you as you analyze data. Whenever R does something unexpected, you can apply your knowledge of how R works to figure out what went wrong.
+Enhorabuena. Ahora tienes una noción de cómo funcionan las cuestiones más básicas en R. Aunque es poco probables que te veas como científica/o de datos todavía, este breve contexto de informática te resultará útil al realizar análisis de datos. Cada vez que R haga algo ineseprado, puedes aplicar tus conocimientos de cómo funciona R para averiguar qué fue mal.
 
 
 ##

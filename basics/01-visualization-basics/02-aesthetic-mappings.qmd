@@ -1,5 +1,5 @@
 ---
-title: "Aesthetic mappings"
+title: "Aesthetic mappings ⚠"
 format:
   html: 
     toc: false

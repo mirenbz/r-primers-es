@@ -1,5 +1,5 @@
 ---
-title: "Types"
+title: "T️ipos"
 format:
   html: 
     toc: false
@@ -27,7 +27,7 @@ library(checkdown)
 source(here::here("R", "helpers.R"))
 ```
 
-### Types {.no-hide}
+### Tipos de datos {.no-hide}
 
 Mira [este video](https://vimeo.com/220490241):
 
@@ -39,60 +39,60 @@ Mira [este video](https://vimeo.com/220490241):
 </div>
 ```
 
-### Atomic types
+### Tipos atómicos
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-**Which of these is not an atomic data type?**
+**¿Cuál de estos NO es un tipo de datos atómico?**
 
 ```{r types1, echo=FALSE}
 check_question(
   answer = "simple", 
   options = c(
-   "numeric/double",
-   "integer",
-   "character",
-   "logical",
-   "complex",
-   "raw",
+   "numérico/doble",
+   "número entero",
+   "carácter",
+   "lógico",
+   "complejo",
+   "dato bruto",
    "simple"
   ), 
   type = "radio", 
   button_label = "Registrar respuesta", 
   q_id = 1,
-  right = c("Correct!")
+  right = c("¡Correcto!")
 )
 ```
 
 :::
 
-### What type?
+### ¿Qué tipo?
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-**What type of data is `"1L"`?**
+**¿Qué tipo de dato es `"1L"`?**
 
 ```{r types2, echo=FALSE}
 check_question(
-  answer = "character", 
+  answer = "carácter", 
   options = c(
-   "numeric/double",
-   "integer",
-   "character",
-   "logical"
+   "numérico/doble",
+   "número entero",
+   "carácter",
+   "lógico"
   ), 
   type = "radio", 
   button_label = "Registrar respuesta", 
   q_id = 2,
-  right = c("Correct! This was tricky because of the quotes. 1L by itself would be an integer, but values become characters when they're in quotes.")
+  right = c("¡Correcto! Era difícil, **por las comillas**. Si fuera solamente 1L sería un número entero o _integer_, pero los valores se interpretan como cadenas de texto cuando van entre comillas.")
 )
 ```
 
 :::
 
-### Integers
+### Números enteros
 
-Create a vector of integers from one to five. Can you imagine why you might want to use integers instead of numbers/doubles?
+Crea un vector de números enteros del uno al cinco. ¿Puedes deducir por qué querrías usar números enteros en lugar de números continuos/dobles?
 
 ::: {.panel-tabset}
 ## {{< fa code >}}&ensp;Editor interactivo
@@ -112,11 +112,11 @@ c(1L, 2L, 3L, 4L, 5L)
 :::
 
 
-### Floating point arithmetic
+### Aritmética con decimales <!--Floating point arithmetic-->
 
-Computers must use a finite amount of memory to store decimal numbers (which can sometimes require infinite precision). As a result, some decimals can only be saved as very precise approximations. From time to time you'll notice side effects of this imprecision, like below.
+Los ordenadores tiene una cantidad de memoria finita, limitada, para almacenar números decimales (que a veces pueden requerir precisión infinita). Como resultado, algunos decimales solamente pueden almacenarse como aproximaciones muy precisas. De vez en cuando notarás efectos secundarios de esta imprecisión, como aquí abajo.
 
-Compute the square root of two, square the answer (e.g. multiply the square root of two by the square root of two), and then subtract two from the result. What answer do you expect? What answer do you get?
+Calcula la raíz cuadrada de dos, eleva la respuesta al cuadrado (es decir, multiplica la raíz cuadrada de dos por la raíz cuadrada de dos) y resta dos al resultado. ¿Qué resultado esperabas? ¿Qué resultado has obtenido?
 
 ::: {.panel-tabset}
 ## {{< fa code >}}&ensp;Editor interactivo
@@ -137,11 +137,11 @@ sqrt(2)^2 - 2
 :::
 
 
-### Vectors
+### Vectores
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-**How many types of data can you put into a single vector?**
+**¿Cuántos tipos de datos puedes añadir a un único vector?**
 
 ```{r types3, echo=FALSE}
 check_question(
@@ -149,24 +149,24 @@ check_question(
   options = c(
    "1",
    "6",
-   "As many as you like"
+   "Tantos como quieras"
   ), 
   type = "radio", 
   button_label = "Registrar respuesta", 
   q_id = 3,
-  right = c("Correct!")
+  right = c("¡Correcto!")
 )
 ```
 
 :::
 
-### Character or object?
+### ¿Carácter u objeto?
 
-One of the most common mistakes in R is to call an object when you mean to call a character string and vice versa.
+Uno de los errores más comunes en R es llamar a un objeto cuando pretendes llamar a una cadena de texto, y viceversa.
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-**Which of these are object names? What is the difference between object names and character strings?**
+**¿Cuáles de los siguientes son nombres de objetos? ¿Cuál es la diferencia entre nombres de objetos y cadenas de caracteres o de texto?**
 
 ```{r types4, echo=FALSE}
 check_question(
@@ -182,7 +182,7 @@ check_question(
   type = "checkbox", 
   button_label = "Registrar respuesta", 
   q_id = 4,
-  right = c("Correct! Character strings are surrounded by quotation marks, object names are not.")
+  right = c("¡Correcto! Las cadenas de texto están rodeadas de comillas, los nombres de objeto no.")
 )
 ```
 

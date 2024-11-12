@@ -1,5 +1,5 @@
 ---
-title: "Lists"
+title: "Listas"
 format:
   html: 
     toc: false
@@ -27,7 +27,7 @@ library(checkdown)
 source(here::here("R", "helpers.R"))
 ```
 
-### Lists {.no-hide}
+### Listas {.no-hide}
 
 Mira [este video](https://vimeo.com/220490360):
 
@@ -39,33 +39,33 @@ Mira [este video](https://vimeo.com/220490360):
 </div>
 ```
 
-### Lists vs. vectors
+### Listas vs. vectores
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-**Which data structure(s) could you use to store these pieces of data in the same object? `1001`, `TRUE`, `"stories"`**
+**¿Qué estructura(s) de datos podrías usar para almacenar estos datos en el mismo objeto? `1001`, `TRUE`, `"historias"`**
 
 ```{r lists1, echo=FALSE}
 check_question(
-  answer = c("a list"), 
+  answer = c("una lista"), 
   options = c(
-   "a vector",
-   "a list",
-   "neither"
+   "un vector",
+   "una lista",
+   "ninguna"
   ), 
   type = "radio", 
   button_label = "Registrar respuesta", 
   q_id = 1,
-  right = c("Correct! Lists can contain elements that are different types.")
+  right = c("¡Correcto! Las listas pueden contener elementos que sean de diferentes tipos.")
 )
 ```
 
 :::
 
 
-### Make a list
+### Crea una lista
 
-Make a list that contains the elements `1001`, `TRUE`, and `"stories"`. Give each element a name.
+Crea una lista que contenga los elementos `1001`, `TRUE` e `"historias"`. Da un nombre a caa elemento.
 
 ::: {.panel-tabset}
 ## {{< fa code >}}&ensp;Editor interactivo
@@ -79,21 +79,21 @@ Make a list that contains the elements `1001`, `TRUE`, and `"stories"`. Give eac
 ## {{< fa circle-check >}}&ensp;Solución
 
 ```r
-list(number = 1001, logical = TRUE, string = "stories")
+list(number = 1001, logical = TRUE, string = "historias")
 ```
 
 :::
 
 
-### Extract an element
+### Extrae un elemento
 
-Extract the number 1001 from the list below.
+Extrae el número 1001 de la lista de abajo.
 
 ::: {.panel-tabset}
 ## {{< fa code >}}&ensp;Editor interactivo
 
 ```{webr-r}
-things <- list(number = 1001, logical = TRUE, string = "stories")
+cosas <- list(numero = 1001, logico = TRUE, cadena = "historias")
 
 
 ```
@@ -101,13 +101,15 @@ things <- list(number = 1001, logical = TRUE, string = "stories")
 ## {{< fa circle-check >}}&ensp;Solución
 
 ```r
-things <- list(number = 1001, logical = TRUE, string = "stories")
-things$number
+cosas <- list(numero = 1001, logico = TRUE, cadena = "historias")
+cosas$numero
 ```
 
 :::
 
-### Data Frames
+### Marcos de datos
+
+Puedes crear un marco de datos con la función `data.frame()`, que funciona de modo parecido a `c()`y `lists()`. Ensambla los vectores de debajo en un marco de datos con los nombres de columnas `num`, `logico` y `cadena`.
 
 You can make a data frame with the `data.frame()` function, which works similar to `c()`, and `list()`. Assemble the vectors below into a data frame with the column names `numbers`, `logicals`, `strings`.
 
@@ -117,7 +119,7 @@ You can make a data frame with the `data.frame()` function, which works similar 
 ```{webr-r}
 nums <- c(1, 2, 3, 4)
 logs <- c(TRUE, TRUE, FALSE, TRUE)
-strs <- c("apple", "banana", "carrot", "duck")
+cads <- c("manazana", "platano", "zanahora", "pato")
 
 
 ```
@@ -127,20 +129,20 @@ strs <- c("apple", "banana", "carrot", "duck")
 ```r
 nums <- c(1, 2, 3, 4)
 logs <- c(TRUE, TRUE, FALSE, TRUE)
-strs <- c("apple", "banana", "carrot", "duck")
-data.frame(numbers = nums, logicals = logs, strings = strs)
+cads <- c("manazana", "platano", "zanahora", "pato")
+data.frame(numero = nums, logico = logs, cadena = strs)
 ```
 
 :::
 
 ###
 
-Good job. When you make a data frame, you must follow one rule: each column vector should be the same length
+Bien hecho. Cuando creas un marco de datos, debes seguir una norma: cada columna de vector (cada vector, cada variable) debería ser de la misma longitud.
 
 
-### Extract a column
+### Extrae una columna
 
-Given that a data frame is a type of list (with named elements), how could you extract the strings column of the `df` data frame below? Do it.
+Dado que el marco de datos es un tipo de lista (con elementos nombrados), ¿cómo podrías extraer la columna de cadenas de texto del marco de datos `df` de debajo? Hazlo.
 
 ::: {.panel-tabset}
 ## {{< fa code >}}&ensp;Editor interactivo
@@ -148,8 +150,8 @@ Given that a data frame is a type of list (with named elements), how could you e
 ```{webr-r}
 nums <- c(1, 2, 3, 4)
 logs <- c(TRUE, TRUE, FALSE, TRUE)
-strs <- c("apple", "banana", "carrot", "duck")
-df <- data.frame(numbers = nums, logicals = logs, strings = strs)
+cads <- c("manazana", "platano", "zanahora", "pato")
+df <- data.frame(numero = nums, logico = logs, cadena = strs)
 
 
 ```
@@ -157,7 +159,7 @@ df <- data.frame(numbers = nums, logicals = logs, strings = strs)
 ## {{< fa circle-check >}}&ensp;Solución
 
 ```r
-df$strings
+df$cadena
 ```
 
 :::

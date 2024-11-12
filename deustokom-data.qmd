@@ -1,0 +1,35 @@
+---
+title: "DeustoKOM [DATA]"
+sidebar: false
+
+engine: knitr
+filters:
+  - webr
+webr:
+  cell-options:
+  editor-font-scale: 0.85
+fig-width: 6
+fig-height: 3.7
+out-width: "70%"
+---
+
+Estos son los apartados que se recomienda que revises para la asignatura _Análisis e interpretación de datos_, del grado en Comunicación de la Universidad de Deusto.
+
+- <mark>Conceptos básicos</mark>
+  - [<mark>Fundamentos de visualización de datos</mark>](basics/01-visualization-basics/)
+  - [<mark>Fundamentos de programación</mark>](basics/02-programming-basics/)
+- Transformar datos
+  - [Trabajar con tibbles](transform-data/01-tibbles/)
+  - [Aislar datos con {dplyr}](transform-data/02-isolating/)
+  - [Derivar información don {dplyr}](transform-data/03-deriving/)
+- Visualizar datos
+  - [Análisis exploratorio de datos](visualize-data/01-eda/)
+  - [Gráfico de barras](visualize-data/02-bar-charts/)
+  - [Histogramas](visualize-data/03-histograms/)
+  - [Diagramas de cajas](visualize-data/04-boxplots/)
+  - [Gráficos de dispersión](visualize-data/05-scatterplots/)
+  - [Gráficos de línea](visualize-data/06-line-graphs/)
+  - [_Overplotting_ y macrodatos](visualize-data/07-overplotting/)
+  - [Personaliza tus gráficos](visualize-data/08-customize/)
+- Ordenar datos
+  - [Modificar la forma de los datos](tidy-data/01-reshape-data/)

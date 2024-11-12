@@ -1,5 +1,5 @@
 ---
-title: "Aesthetics"
+title: "Aesthetics ⚠"
 format:
   html: 
     toc: false

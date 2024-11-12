@@ -1,5 +1,5 @@
 ---
-title: "Geometric objects"
+title: "Geometric objects ⚠"
 format:
   html: 
     toc: false
@@ -109,7 +109,7 @@ check_question(
   type = "radio", 
   button_label = "Registrar respuesta", 
   q_id = 1,
-  right = c("Correct!")
+  right = c("¡Correcto!")
 )
 ```
 :::
