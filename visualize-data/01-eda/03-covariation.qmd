@@ -1,5 +1,5 @@
 ---
-title: "Covariation ⚠"
+title: "Covariación"
 format:
   html: 
     toc: false
@@ -27,13 +27,13 @@ source(here::here("R", "helpers.R"))
 ```
 
 
-### What is covariation? {.no-hide}
+### ¿Qué es la covariación? {.no-hide}
 
-If variation describes the behavior _within_ a variable, covariation describes the behavior _between_ variables. **Covariation** is the tendency for the values of two or more variables to vary together in a related way. The best way to spot covariation is to visualise the relationship between two or more variables. How you do that should again depend on whether your variables are categorical or continuous.
+Si la variación describle el comportamiento _dentro_ de una variable, la covariación describe el comportamiento _entre_ variables. La **covariación** es la tendencia de los valores de dos o más variables a variar de manera conjunta de manera relacionada. La mejor manera de detectar covariación es visualizar la relación entre dos o más variables. Cómo hacerlo depende, una vez más, de si las variables son categóricas o continuas.
 
-### Two categorical variables
+### Dos variables categóricas
 
-You can plot the relationship between two categorical variables with a heatmap or with `geom_count()`:
+Puedes dibujar la relación entre dos variables categóricas con un mapa de calor o con  `geom_count()`:
 
 ```{r echo=FALSE, out.width="100%"}
 #| layout-ncol: 2
@@ -41,103 +41,98 @@ diamonds |>
   count(color, cut) |> 
   ggplot(mapping = aes(x = color, y = cut)) +
     geom_tile(mapping = aes(fill = n)) +
-    labs(title = "Color grade vs. cut quality for 53940 diamonds")
+    labs(title = "Grado de color vs. calidad de corte de 53940 diamantes")
 
 ggplot(diamonds) +
   geom_count(aes(color, cut)) +
-    labs(title = "Color grade vs. cut quality for 53940 diamonds")
+    labs(title = "Grado de color vs. calidad de corte de 53940 diamantes")
 ```
 
-Again, don't be concerned if you do not know how to make these graphs. For now, let's focus on the strategy of how to use visualizations in EDA. You'll learn how to make different types of plots in the tutorials that follow. 
+De nuevo, no te preocupes si no sabes cómo hacer estos gráficos. Por ahora, vamos a centrarnos en la estrategia para usar visualizaciones en EDA. Aprenderás cómo hacer diferentes tipos de gráficos en los siguientes tutoriales.
 
-### One continuous and one categorical variable
+### Una variable continua y una categórica
 
-You can plot the relationship between one continuous and one categorical variable with a boxplot:
+Puedes dibujar la relación entre una variable continua y una variable categórica con un diagrama de cajas:
 
 ```{r echo=FALSE, out.width="80%"}
 ggplot(mpg) +
   geom_boxplot(aes(reorder(class, hwy, median), hwy)) +
-    labs(title = "Pickup trucks and SUVs display the lowest fuel efficiency") +
+    labs(title = "Los pickups y los SUVs muestran la eficiencia de combustible más baja") +
     labs(x = "class")
 ```
 
-### Two continuous variables
+### Dos variables continuas
 
-You can plot the relationship between two continuous variables with a scatterplot:
+Puedes dibujar la relación entre dos variables continuas con un diagrama de dispersión:
 
 ```{r echo=FALSE, message=FALSE, out.width="80%"}
 ggplot(data = faithful) +
   geom_point(aes(x = eruptions, y = waiting)) + 
-  labs(title = "Length of eruption vs wait time before eruption")
+  labs(title = "Duración de la erupción vs. tiempo entre erupciones")
 ```
 
-### Patterns
+### Patrones
 
-Patterns in your data provide clues about relationships. If a systematic relationship exists between two variables it will appear as a pattern in the data. If you spot a pattern, ask yourself:
+Los patrones en tus datos te dan pistas sobre posibles relaciones. Si existe una relación sistemática entre dos variables, de mostrará como un patrón en los datos. Si detectas un patrón, pregúntate:
 
-+ Could this pattern be due to coincidence (i.e. random chance)?
+- ¿Podría este patrón deberse a una coincidencia (es decir, al azar)?
+- ¿Cómo podrías describir la relación sugerida por el patrón?
+- ¿Cómo de fuerte es la relación sugerida por el patrón?
+- ¿Qué otras variables podrían afectar a la relación?
+- ¿Cambia la relación si observas subgrupos de los datos aisladamente?
 
-+ How can you describe the relationship implied by the pattern?
+Recuerda que los clústers y los valores extremos son también un tipo de patrón. Los gráficos de dos dimensiones pueden revelar clústers y valores extremos que no serían visibles en un gráfico de una única dimensión. Si detectas cualquiera de los dos, pregúntate qué implican.
 
-+ How strong is the relationship implied by the pattern?
+### Repaso 6: Patrones
 
-+ What other variables might affect the relationship?
-
-+ Does the relationship change if you look at individual subgroups of the data?
-
-Remember that clusters and outliers are also a type of pattern. Two dimensional plots can reveal clusters and outliers that would not be visible in a one dimensional plot. If you spot either, ask yourself what they imply.
-
-### Review 6: Patterns
-
-The scatterplot below shows the relationship between the length of an eruption of Old Faithful and the wait time before the eruption (i.e. the amount of time that passed between it and the previous eruption).
+El diagrama de dispersión de debajo muestra la relación entre la duración de una erupción de Old Faithful y el tiempo de espera antes de la erupción (es decir, la cantidad de tiempo quuq pasó desde la erupción anterior).
 
 ```{r echo=FALSE, message=FALSE, out.width="80%"}
 ggplot(data = faithful) +
   geom_point(aes(x = eruptions, y = waiting)) + 
-  labs(title = "Length of eruption vs wait time before eruption")
+  labs(title = "Duración de la erupción vs. tiempo entre erupciones")
 ```
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-**Does the scatterplot above reveal a pattern that helps to explain the variation in lengths of Old Faithful eruptions?**
+**¿Revela el diagrama de dispersión de arriba algún patrón que ayude a explicar la variación en las duraciones de las erupcioes de Old Faithful?**
 
 ```{r echo=FALSE}
 check_question(
-  answer = "Yes. Long eruptions are associated with a _long_ wait before the eruption", 
+  answer = "Sí. Las erupciones largas se asocian con un tiempo de espera _largo_.", 
   options = c(
-    "No. There is no pattern.",
-    "Yes. Long eruptions are associated with a _short_ wait before the eruption",
-    "Yes. Long eruptions are associated with a _long_ wait before the eruption"
+    "No, no hay ningún patrón.",
+    "Sí. Las erupciones largas se asocian con un tiempo de espera _corto_.",
+    "Sí. Las erupciones largas se asocian con un tiempo de espera _largo_."
   ), 
   type = "radio", 
   button_label = "Registrar respuesta", 
   q_id = 1,
-  right = c("Correct! The data seems to suggest that a long build up before an eruption is associated with a long eruption. The plot also shows the two clusters that we saw before: there are long eruptions with a long build up and short eruptions with a short build up.")
+  right = c("¡Correcto! Los datos parecen sugerir que una acumulación de tiempo antes de una erupción está asociada con una erupción larga. El diagrama también muestra los dos clústers que ya habíamos visto antes: hay erupciones largas con mucha acumulación y erupciones cortas con poca acumulación.")
 )
 ```
 :::
 
 
-### Uncertainty 
+### Incertidumbre
 
-Patterns provide a useful tool for data scientists because they reveal covariation. If you think of variation as a phenomenon that creates uncertainty, covariation is a phenomenon that reduces it. When two variables covary, you can use the values of one variable to make better predictions about the values of the second. If the covariation is due to a causal relationship (a special case), you can use the value of one variable to control the value of the second.
+Los patrones son una herramienta muy útil en ciencia de datos porque revelan covariación. Si piensas en la variación como un fenónemo que crea incertidumbre, la covariación es un fenómeno que la reduce. Cuando dos variables varían conjuntamente, puedes usar los valores de una variable para hacer mejores predicciones acerca de los valores de otra. Si la covariación se debe a una relación causal (un caso especial), puedes usar el valor de una variable para controlar el valor de otra.
 
+### Recapitulación
 
-### Recap
+Has aprendido un montón en este tutorial. Aquí tienes lo que deberías recordar:
 
-You've learned a lot in this tutorial. Here's what you should keep with you:
+- El EDA es un ciclo iterativo que se construye en torno a plantear y refinar preguntas.
+- Estas dos preguntas son siempre útiles:
+    1. ¿Qué tipo de variación ocurre _dentro_ de las variables?
+    2. ¿Qué tipo de covariación ocurre _entre_ las variables?
+- Recuerda las definiciones de _variables_, _valores_, _observaciones_, _variación_, _covariación_, _categórica_ y _continua_. Las volverás a ver. Con frecuencia.
 
-* EDA is an iterative cycle built around asking and refining questions.
-* These two questions are always useful:
-    1. What type of variation occurs _within_ my variables?
-    1. What type of covariation occurs _between_ my variables?
-* Remember the definitions of _variables_, _values_, _observations_, _variation_, _covariation_, _categorical_, and _continuous_. You'll see them again. Frequently.
+A lo largo del tutorial, también te has encontrado con algunas recomendaciones sobre gráficos que visualizan variación y covariación para varialbes categóricas y continuas. Los gráficos son un poco como preguntas en el EDA: deberías hacer muchos y rápido, e intentar cualquier cosa que se te vaya ocurriendo. Puedes refinar tus gráficos más adelante, para compartirlos con otras personas. Mucho del refinamiento ocurrirá de manera natural según progresas en sucesivas iteraciones de EDA.
 
-Throughout the tutorial, you also encountered several recommendations for plots that visualize variation and covariation for categorical and continuous variables. Plots are a bit like questions in EDA: you should make many quickly and try anything that strikes your fancy. You can refine your plots later to share with others. A lot of refinement will occur naturally as you iterate during EDA. 
+Las sugerencias de aquí abajo pueden servir como punto de partida para visualizar datos. En los tutoriales que siguen, aprenderás cómo hacer cada uno de los tipos de gráficos, así como cómo emplear buenas prácticas y habilidades avanzadas para visualizar datos.
 
-The suggestions below can serve as starting point for visualizing data. In the tutorials that follow, you will learn how to make each type of plot, as well as how to use best practices and advanced skills when visualizing data.
-
-![](img/plots-table.png){width=80%}
+![](img/plots-table-es.png){width=80%}
 
 ##
 

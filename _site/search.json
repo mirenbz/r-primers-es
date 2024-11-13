@@ -1133,12 +1133,12 @@
     "href": "visualize-data/01-eda/03-covariation.html",
     "title": "Covariation ⚠",
     "section": "",
-    "text": "If variation describes the behavior within a variable, covariation describes the behavior between variables. Covariation is the tendency for the values of two or more variables to vary together in a related way. The best way to spot covariation is to visualise the relationship between two or more variables. How you do that should again depend on whether your variables are categorical or continuous.",
+    "text": "Si la variación describle el comportamiento dentro de una variable, la covariación describe el comportamiento entre variables. La covariación es la tendencia de los valores de dos o más variables a variar de manera conjunta de manera relacionada. La mejor manera de detectar covariación es visualizar la relación entre dos o más variables. Cómo hacerlo depende, una vez más, de si las variables son categóricas o continuas.",
     "crumbs": [
       "Acerca de este sitio",
       "Visualizar datos",
       "Análisis exploratorio de datos",
-      "Covariation ⚠"
+      "Covariación"
     ]
   },
   {
@@ -1151,7 +1151,7 @@
       "Acerca de este sitio",
       "Visualizar datos",
       "Análisis exploratorio de datos",
-      "Covariation ⚠"
+      "Covariación"
     ]
   },
   {

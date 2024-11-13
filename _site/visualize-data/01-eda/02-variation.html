@@ -378,7 +378,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../visualize-data/01-eda/03-covariation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Covariation ⚠</span></a>
+ <span class="menu-text">Covariación</span></a>
   </div>
 </li>
       </ul>
@@ -720,7 +720,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="repaso-4-frecuencias" class="level3">
 <h3 class="anchored" data-anchor-id="repaso-4-frecuencias">Repaso 4: Frecuencias</h3>
-<p>The bar chart below visualizes the distribution of the <code>class</code> variable in the <code>mpg</code> data set, which comes in the {ggplot2} package. The height of the bars reveal how many cars in the data set come from each class.</p>
+<p>El gráfico de barras de debajo muestra la distribución de la variable <code>clase</code> en el conjunto de datos <code>mpg</code>, que viene en el paquete {ggplot2}. La altura de las barras revela cuántos coches hay en el conjunto de datos de cada clase.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -736,7 +736,7 @@ ul.task-list li input[type="checkbox"] {
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<p><strong>What is the most common type of car in the <code>mpg</code> dataset?</strong></p>
+<p><strong>¿Cuál es el tipo de coche más común en el conjunto de datos <code>mpg</code>?</strong></p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <form name="form_3" onsubmit="return validate_form_3()" method="post">
@@ -764,9 +764,9 @@ ul.task-list li input[type="checkbox"] {
 <input type="submit" value="Registrar respuesta">
 <div id="result_3"></div>
 </form>
-<script>function validate_form_3() {var x, text; var x = document.forms['form_3']['answer_3'].value;if (x == 'suv'){text = 'Correct!';} else {text = 'I have a different answer';} document.getElementById('result_3').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_3() {var x, text; var x = document.forms['form_3']['answer_3'].value;if (x == 'suv'){text = '¡Correcto!';} else {text = 'I have a different answer';} document.getElementById('result_3').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_3').innerText == 'Correct!';text = res1;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_3').innerText == '¡Correcto!';text = res1;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -780,7 +780,7 @@ ul.task-list li input[type="checkbox"] {
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<p><strong>What is the least common type of car in the <code>mpg</code> dataset?</strong></p>
+<p><strong>¿Cuál es el tipo de coche menos común en el conjunto de datos <code>mpg</code>?</strong></p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <form name="form_4" onsubmit="return validate_form_4()" method="post">
@@ -808,9 +808,9 @@ ul.task-list li input[type="checkbox"] {
 <input type="submit" value="Registrar respuesta">
 <div id="result_4"></div>
 </form>
-<script>function validate_form_4() {var x, text; var x = document.forms['form_4']['answer_4'].value;if (x == '2seater'){text = 'Correct!';} else {text = 'I have a different answer';} document.getElementById('result_4').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_4() {var x, text; var x = document.forms['form_4']['answer_4'].value;if (x == '2seater'){text = '¡Correcto!';} else {text = 'I have a different answer';} document.getElementById('result_4').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_3').innerText == 'Correct!'; res2 = document.getElementById('result_4').innerText == 'Correct!';text = res1 + res2;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2;res1 = document.getElementById('result_3').innerText == '¡Correcto!'; res2 = document.getElementById('result_4').innerText == '¡Correcto!';text = res1 + res2;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -821,23 +821,23 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="section" class="level3">
 <h3 class="anchored" data-anchor-id="section"></h3>
-<p>Does the distribution of cars in the <code>mpg</code> dataset seem to reflect the distribution of cars that you see on the road? Would your answer shape how you use this data?</p>
+<p>¿Encaja la distribución de tipos de coches del conjunto de datos <code>mpg</code> con la distribución de los tipos de coches que sueles ver en carretera? ¿Dirías que tu respuesta afectaría a cómo utilizarías estos datos?</p>
 </section>
-<section id="clusters" class="level3">
-<h3 class="anchored" data-anchor-id="clusters">Clusters</h3>
-<p>For continuous variables, clusters of similar values suggest that subgroups exist in your data. To understand the subgroups, ask:</p>
+<section id="clústers" class="level3">
+<h3 class="anchored" data-anchor-id="clústers">Clústers</h3>
+<p>Para variables continuas, clústers o agrupaciones de valores similares sugieren que existen subgrupos en los datos. Para entender estos subgrupos, pregunta:</p>
 <ul>
-<li><p>How are the observations within each cluster similar to each other?</p></li>
-<li><p>How are the observations in separate clusters different from each other?</p></li>
-<li><p>How can you explain or describe the clusters?</p></li>
-<li><p>Why might the appearance of clusters be misleading?</p></li>
+<li>¿Qué similitud tienen entre sílas observaciones dentro de cada clúster?</li>
+<li>¿Qué diferencias tienen entre sí las observaciones de distintos clústers?</li>
+<li>¿Cómo puedes explicar o describir los clústers?</li>
+<li>¿Por qué podría ser engañosa la apariencia de los clústers?</li>
 </ul>
 </section>
-<section id="review-5-clusters" class="level3">
-<h3 class="anchored" data-anchor-id="review-5-clusters">Review 5: Clusters</h3>
-<p>The histogram below shows the distribution of the <code>eruptions</code> variable in the <code>faithful</code> data set, which comes with R. <code>eruptions</code> shows the lengths (in minutes) of 272 eruptions of the Old Faithful geyser in Yellowstone National Park.</p>
-<p>To interpret the histogram, look first at the x axis, which displays the lengths of eruptions recorded in the data. The range of the x axis shows that the shortest eruptions lasted for about one minute and the longest for about five minutes.</p>
-<p>To see how many eruptions lasted for a specific length of time, find the length of time on the x axis and then look at the height of the bar above the length of time. For example, according to the histogram, 30 eruptions lasted for about two minutes, but only three lasted for about three minutes (the height of the bar above two is 30, the height of the bar above three is three).</p>
+<section id="repaso-5-clústers" class="level3">
+<h3 class="anchored" data-anchor-id="repaso-5-clústers">Repaso 5: Clústers</h3>
+<p>El histograma de debajo muestra la distribución de la variable <code>eruptions</code> en el conjunto de datos <code>faithful</code>, que viene con R. <code>eruptions</code> muestra la duración (en minutos) de 272 erupciones del géiser Old Faithful en el Parque Nacional Yellowstone, en EE.UU.</p>
+<p>Para interpretar el histograma, mira primero al eje x, que muestra las duraciones de las erupciones recogidas en los datos. El rango del eje x muestra que la erupción más corta duró alrededor de un minuto, y la más larga unos cinco minutos.</p>
+<p>Para ver cuántas erupciones duraron un determinado núemro de minutos, encuentra la duración que te interesa en el eje x y entonces observa la altura de la barra en esa posición. Por ejemplo, según el histograma, 30 erupciones duraron alrededor de dos minutos, pero solamente tres duraron alrededor de tres minutos (la altura de la barra en el dos del eje x es 30, mientras que la altura de la barra en el tres es 3).</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -853,28 +853,28 @@ ul.task-list li input[type="checkbox"] {
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<p><strong>Do the eruption lengths cluster into groups? How many?</strong></p>
+<p><strong>¿Se agrupan las duraciones de las erupciones en clústers? ¿En cuántos?</strong></p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <form name="form_5" onsubmit="return validate_form_5()" method="post">
-<input type="radio" name="answer_5" id="answer_5_1" value="No. There are no clusters.">
-<label>No. There are no clusters.</label>
+<input type="radio" name="answer_5" id="answer_5_1" value="No, no hay clústers.">
+<label>No, no hay clústers.</label>
 <br>
-<input type="radio" name="answer_5" id="answer_5_2" value="Yes. Two clusters.">
-<label>Yes. Two clusters.</label>
+<input type="radio" name="answer_5" id="answer_5_2" value="Sí, dos clústers.">
+<label>Sí, dos clústers.</label>
 <br>
-<input type="radio" name="answer_5" id="answer_5_3" value="Yes. Three clusters.">
-<label>Yes. Three clusters.</label>
+<input type="radio" name="answer_5" id="answer_5_3" value="Sí, tres clústers.">
+<label>Sí, tres clústers.</label>
 <br>
-<input type="radio" name="answer_5" id="answer_5_4" value="Yes. Four clusters.">
-<label>Yes. Four clusters.</label>
+<input type="radio" name="answer_5" id="answer_5_4" value="Sí, cuatro clústers.">
+<label>Sí, cuatro clústers.</label>
 <br>
 <input type="submit" value="Registrar respuesta">
 <div id="result_5"></div>
 </form>
-<script>function validate_form_5() {var x, text; var x = document.forms['form_5']['answer_5'].value;if (x == 'Correct thing'){text = 'Correct! Eruption lengths appear to be clustered into two groups: there are short eruptions (of around 2 minutes) and long eruptions (4-5 minutes), but few eruptions in between.';} else {text = 'I have a different answer';} document.getElementById('result_5').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_5() {var x, text; var x = document.forms['form_5']['answer_5'].value;if (x == 'Sí, dos clústers.'){text = '¡Correcto! Las duraciones de las erupciones parecen agruparse en dos clústers: hay erupciones cortas (de alrededor de 2 minutos) y erupciones largas (4-5 minutos), pero pocas erupciones entre medias.';} else {text = 'I have a different answer';} document.getElementById('result_5').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_3').innerText == 'Correct!'; res2 = document.getElementById('result_4').innerText == 'Correct!'; res3 = document.getElementById('result_5').innerText == 'Correct! Eruption lengths appear to be clustered into two groups: there are short eruptions (of around 2 minutes) and long eruptions (4-5 minutes), but few eruptions in between.';text = res1 + res2 + res3;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1, res2, res3;res1 = document.getElementById('result_3').innerText == '¡Correcto!'; res2 = document.getElementById('result_4').innerText == '¡Correcto!'; res3 = document.getElementById('result_5').innerText == '¡Correcto! Las duraciones de las erupciones parecen agruparse en dos clústers: hay erupciones cortas (de alrededor de 2 minutos) y erupciones largas (4-5 minutos), pero pocas erupciones entre medias.';text = res1 + res2 + res3;element.innerHTML = text;
          return false;
          }}</script>
 </div>

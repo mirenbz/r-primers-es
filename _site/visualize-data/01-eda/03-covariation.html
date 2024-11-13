@@ -378,7 +378,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../visualize-data/01-eda/03-covariation.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Covariation ⚠</span></a>
+ <span class="menu-text">Covariación</span></a>
   </div>
 </li>
       </ul>
@@ -674,17 +674,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="what-is-covariation" class="level3 no-hide">
-<h3 class="no-hide anchored" data-anchor-id="what-is-covariation">What is covariation?</h3>
-<p>If variation describes the behavior <em>within</em> a variable, covariation describes the behavior <em>between</em> variables. <strong>Covariation</strong> is the tendency for the values of two or more variables to vary together in a related way. The best way to spot covariation is to visualise the relationship between two or more variables. How you do that should again depend on whether your variables are categorical or continuous.</p>
+<section id="qué-es-la-covariación" class="level3 no-hide">
+<h3 class="no-hide anchored" data-anchor-id="qué-es-la-covariación">¿Qué es la covariación?</h3>
+<p>Si la variación describle el comportamiento <em>dentro</em> de una variable, la covariación describe el comportamiento <em>entre</em> variables. La <strong>covariación</strong> es la tendencia de los valores de dos o más variables a variar de manera conjunta de manera relacionada. La mejor manera de detectar covariación es visualizar la relación entre dos o más variables. Cómo hacerlo depende, una vez más, de si las variables son categóricas o continuas.</p>
 </section>
-<section id="two-categorical-variables" class="level3">
-<h3 class="anchored" data-anchor-id="two-categorical-variables">Two categorical variables</h3>
-<p>You can plot the relationship between two categorical variables with a heatmap or with <code>geom_count()</code>:</p>
+<section id="dos-variables-categóricas" class="level3">
+<h3 class="anchored" data-anchor-id="dos-variables-categóricas">Dos variables categóricas</h3>
+<p>Puedes dibujar la relación entre dos variables categóricas con un mapa de calor o con <code>geom_count()</code>:</p>
 <div>
 
 </div>
-<div class="cell quarto-layout-panel" data-layout-align="center" data-layout-ncol="2">
+<div class="cell quarto-layout-panel" data-layout-ncol="2" data-layout-align="center">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
@@ -702,11 +702,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>Again, don’t be concerned if you do not know how to make these graphs. For now, let’s focus on the strategy of how to use visualizations in EDA. You’ll learn how to make different types of plots in the tutorials that follow.</p>
+<p>De nuevo, no te preocupes si no sabes cómo hacer estos gráficos. Por ahora, vamos a centrarnos en la estrategia para usar visualizaciones en EDA. Aprenderás cómo hacer diferentes tipos de gráficos en los siguientes tutoriales.</p>
 </section>
-<section id="one-continuous-and-one-categorical-variable" class="level3">
-<h3 class="anchored" data-anchor-id="one-continuous-and-one-categorical-variable">One continuous and one categorical variable</h3>
-<p>You can plot the relationship between one continuous and one categorical variable with a boxplot:</p>
+<section id="una-variable-continua-y-una-categórica" class="level3">
+<h3 class="anchored" data-anchor-id="una-variable-continua-y-una-categórica">Una variable continua y una categórica</h3>
+<p>Puedes dibujar la relación entre una variable continua y una variable categórica con un diagrama de cajas:</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -717,9 +717,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="two-continuous-variables" class="level3">
-<h3 class="anchored" data-anchor-id="two-continuous-variables">Two continuous variables</h3>
-<p>You can plot the relationship between two continuous variables with a scatterplot:</p>
+<section id="dos-variables-continuas" class="level3">
+<h3 class="anchored" data-anchor-id="dos-variables-continuas">Dos variables continuas</h3>
+<p>Puedes dibujar la relación entre dos variables continuas con un diagrama de dispersión:</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -730,21 +730,21 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="patterns" class="level3">
-<h3 class="anchored" data-anchor-id="patterns">Patterns</h3>
-<p>Patterns in your data provide clues about relationships. If a systematic relationship exists between two variables it will appear as a pattern in the data. If you spot a pattern, ask yourself:</p>
+<section id="patrones" class="level3">
+<h3 class="anchored" data-anchor-id="patrones">Patrones</h3>
+<p>Los patrones en tus datos te dan pistas sobre posibles relaciones. Si existe una relación sistemática entre dos variables, de mostrará como un patrón en los datos. Si detectas un patrón, pregúntate:</p>
 <ul>
-<li><p>Could this pattern be due to coincidence (i.e.&nbsp;random chance)?</p></li>
-<li><p>How can you describe the relationship implied by the pattern?</p></li>
-<li><p>How strong is the relationship implied by the pattern?</p></li>
-<li><p>What other variables might affect the relationship?</p></li>
-<li><p>Does the relationship change if you look at individual subgroups of the data?</p></li>
+<li>¿Podría este patrón deberse a una coincidencia (es decir, al azar)?</li>
+<li>¿Cómo podrías describir la relación sugerida por el patrón?</li>
+<li>¿Cómo de fuerte es la relación sugerida por el patrón?</li>
+<li>¿Qué otras variables podrían afectar a la relación?</li>
+<li>¿Cambia la relación si observas subgrupos de los datos aisladamente?</li>
 </ul>
-<p>Remember that clusters and outliers are also a type of pattern. Two dimensional plots can reveal clusters and outliers that would not be visible in a one dimensional plot. If you spot either, ask yourself what they imply.</p>
+<p>Recuerda que los clústers y los valores extremos son también un tipo de patrón. Los gráficos de dos dimensiones pueden revelar clústers y valores extremos que no serían visibles en un gráfico de una única dimensión. Si detectas cualquiera de los dos, pregúntate qué implican.</p>
 </section>
-<section id="review-6-patterns" class="level3">
-<h3 class="anchored" data-anchor-id="review-6-patterns">Review 6: Patterns</h3>
-<p>The scatterplot below shows the relationship between the length of an eruption of Old Faithful and the wait time before the eruption (i.e.&nbsp;the amount of time that passed between it and the previous eruption).</p>
+<section id="repaso-6-patrones" class="level3">
+<h3 class="anchored" data-anchor-id="repaso-6-patrones">Repaso 6: Patrones</h3>
+<p>El diagrama de dispersión de debajo muestra la relación entre la duración de una erupción de Old Faithful y el tiempo de espera antes de la erupción (es decir, la cantidad de tiempo quuq pasó desde la erupción anterior).</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -760,25 +760,25 @@ ul.task-list li input[type="checkbox"] {
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<p><strong>Does the scatterplot above reveal a pattern that helps to explain the variation in lengths of Old Faithful eruptions?</strong></p>
+<p><strong>¿Revela el diagrama de dispersión de arriba algún patrón que ayude a explicar la variación en las duraciones de las erupcioes de Old Faithful?</strong></p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <form name="form_1" onsubmit="return validate_form_1()" method="post">
-<input type="radio" name="answer_1" id="answer_1_1" value="No. There is no pattern.">
-<label>No. There is no pattern.</label>
+<input type="radio" name="answer_1" id="answer_1_1" value="No, no hay ningún patrón.">
+<label>No, no hay ningún patrón.</label>
 <br>
-<input type="radio" name="answer_1" id="answer_1_2" value="Yes. Long eruptions are associated with a _short_ wait before the eruption">
-<label>Yes. Long eruptions are associated with a _short_ wait before the eruption</label>
+<input type="radio" name="answer_1" id="answer_1_2" value="Sí. Las erupciones largas se asocian con un tiempo de espera _corto_.">
+<label>Sí. Las erupciones largas se asocian con un tiempo de espera _corto_.</label>
 <br>
-<input type="radio" name="answer_1" id="answer_1_3" value="Yes. Long eruptions are associated with a _long_ wait before the eruption">
-<label>Yes. Long eruptions are associated with a _long_ wait before the eruption</label>
+<input type="radio" name="answer_1" id="answer_1_3" value="Sí. Las erupciones largas se asocian con un tiempo de espera _largo_.">
+<label>Sí. Las erupciones largas se asocian con un tiempo de espera _largo_.</label>
 <br>
 <input type="submit" value="Registrar respuesta">
 <div id="result_1"></div>
 </form>
-<script>function validate_form_1() {var x, text; var x = document.forms['form_1']['answer_1'].value;if (x == 'Yes. Long eruptions are associated with a _long_ wait before the eruption'){text = 'Correct! The data seems to suggest that a long build up before an eruption is associated with a long eruption. The plot also shows the two clusters that we saw before: there are long eruptions with a long build up and short eruptions with a short build up.';} else {text = 'I have a different answer';} document.getElementById('result_1').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
+<script>function validate_form_1() {var x, text; var x = document.forms['form_1']['answer_1'].value;if (x == 'Sí. Las erupciones largas se asocian con un tiempo de espera _largo_.'){text = '¡Correcto! Los datos parecen sugerir que una acumulación de tiempo antes de una erupción está asociada con una erupción larga. El diagrama también muestra los dos clústers que ya habíamos visto antes: hay erupciones largas con mucha acumulación y erupciones cortas con poca acumulación.';} else {text = 'I have a different answer';} document.getElementById('result_1').innerHTML = text; evaluate_final_score(); return false;}function evaluate_final_score(){
          element = document.getElementById('checkdown_final_score');
-         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_1').innerText == 'Correct! The data seems to suggest that a long build up before an eruption is associated with a long eruption. The plot also shows the two clusters that we saw before: there are long eruptions with a long build up and short eruptions with a short build up.';text = res1;element.innerHTML = text;
+         if(element === null){return false;} else {var element, text, res1;res1 = document.getElementById('result_1').innerText == '¡Correcto! Los datos parecen sugerir que una acumulación de tiempo antes de una erupción está asociada con una erupción larga. El diagrama también muestra los dos clústers que ya habíamos visto antes: hay erupciones largas con mucha acumulación y erupciones cortas con poca acumulación.';text = res1;element.innerHTML = text;
          return false;
          }}</script>
 </div>
@@ -787,24 +787,24 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="uncertainty" class="level3">
-<h3 class="anchored" data-anchor-id="uncertainty">Uncertainty</h3>
-<p>Patterns provide a useful tool for data scientists because they reveal covariation. If you think of variation as a phenomenon that creates uncertainty, covariation is a phenomenon that reduces it. When two variables covary, you can use the values of one variable to make better predictions about the values of the second. If the covariation is due to a causal relationship (a special case), you can use the value of one variable to control the value of the second.</p>
+<section id="incertidumbre" class="level3">
+<h3 class="anchored" data-anchor-id="incertidumbre">Incertidumbre</h3>
+<p>Los patrones son una herramienta muy útil en ciencia de datos porque revelan covariación. Si piensas en la variación como un fenónemo que crea incertidumbre, la covariación es un fenómeno que la reduce. Cuando dos variables varían conjuntamente, puedes usar los valores de una variable para hacer mejores predicciones acerca de los valores de otra. Si la covariación se debe a una relación causal (un caso especial), puedes usar el valor de una variable para controlar el valor de otra.</p>
 </section>
-<section id="recap" class="level3">
-<h3 class="anchored" data-anchor-id="recap">Recap</h3>
-<p>You’ve learned a lot in this tutorial. Here’s what you should keep with you:</p>
+<section id="recapitulación" class="level3">
+<h3 class="anchored" data-anchor-id="recapitulación">Recapitulación</h3>
+<p>Has aprendido un montón en este tutorial. Aquí tienes lo que deberías recordar:</p>
 <ul>
-<li>EDA is an iterative cycle built around asking and refining questions.</li>
-<li>These two questions are always useful:
+<li>El EDA es un ciclo iterativo que se construye en torno a plantear y refinar preguntas.</li>
+<li>Estas dos preguntas son siempre útiles:
 <ol type="1">
-<li>What type of variation occurs <em>within</em> my variables?</li>
-<li>What type of covariation occurs <em>between</em> my variables?</li>
+<li>¿Qué tipo de variación ocurre <em>dentro</em> de las variables?</li>
+<li>¿Qué tipo de covariación ocurre <em>entre</em> las variables?</li>
 </ol></li>
-<li>Remember the definitions of <em>variables</em>, <em>values</em>, <em>observations</em>, <em>variation</em>, <em>covariation</em>, <em>categorical</em>, and <em>continuous</em>. You’ll see them again. Frequently.</li>
+<li>Recuerda las definiciones de <em>variables</em>, <em>valores</em>, <em>observaciones</em>, <em>variación</em>, <em>covariación</em>, <em>categórica</em> y <em>continua</em>. Las volverás a ver. Con frecuencia.</li>
 </ul>
-<p>Throughout the tutorial, you also encountered several recommendations for plots that visualize variation and covariation for categorical and continuous variables. Plots are a bit like questions in EDA: you should make many quickly and try anything that strikes your fancy. You can refine your plots later to share with others. A lot of refinement will occur naturally as you iterate during EDA.</p>
-<p>The suggestions below can serve as starting point for visualizing data. In the tutorials that follow, you will learn how to make each type of plot, as well as how to use best practices and advanced skills when visualizing data.</p>
+<p>A lo largo del tutorial, también te has encontrado con algunas recomendaciones sobre gráficos que visualizan variación y covariación para varialbes categóricas y continuas. Los gráficos son un poco como preguntas en el EDA: deberías hacer muchos y rápido, e intentar cualquier cosa que se te vaya ocurriendo. Puedes refinar tus gráficos más adelante, para compartirlos con otras personas. Mucho del refinamiento ocurrirá de manera natural según progresas en sucesivas iteraciones de EDA.</p>
+<p>Las sugerencias de aquí abajo pueden servir como punto de partida para visualizar datos. En los tutoriales que siguen, aprenderás cómo hacer cada uno de los tipos de gráficos, así como cómo emplear buenas prácticas y habilidades avanzadas para visualizar datos.</p>
 <p><img src="img/plots-table.png" class="img-fluid" style="width:80.0%"></p>
 </section>
 <section id="section" class="level2">

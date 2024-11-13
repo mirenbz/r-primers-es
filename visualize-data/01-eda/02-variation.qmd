@@ -70,7 +70,7 @@ Muchas de estas preguntas te llevarán a explorar relaciones _entre_ variables, 
 
 ### Repaso 4: Frecuencias
 
-The bar chart below visualizes the distribution of the `class` variable in the `mpg` data set, which comes in the {ggplot2} package. The height of the bars reveal how many cars in the data set come from each class. 
+El gráfico de barras de debajo muestra la distribución de la variable `clase` en el conjunto de datos `mpg`, que viene en el paquete {ggplot2}. La altura de las barras revela cuántos coches hay en el conjunto de datos de cada clase.
 
 ```{r echo=FALSE, out.width="80%"}
 ggplot(data = mpg) +
@@ -80,7 +80,7 @@ ggplot(data = mpg) +
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-**What is the most common type of car in the `mpg` dataset?**
+**¿Cuál es el tipo de coche más común en el conjunto de datos `mpg`?**
 
 ```{r echo=FALSE}
 check_question(
@@ -97,14 +97,15 @@ check_question(
   type = "radio", 
   button_label = "Registrar respuesta", 
   q_id = 3,
-  right = c("Correct!")
+  right = c("¡Correcto!")
 )
 ```
 :::
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-**What is the least common type of car in the `mpg` dataset?**
+
+**¿Cuál es el tipo de coche menos común en el conjunto de datos `mpg`?**
 
 ```{r echo=FALSE}
 check_question(
@@ -121,59 +122,56 @@ check_question(
   type = "radio", 
   button_label = "Registrar respuesta", 
   q_id = 4,
-  right = c("Correct!")
+  right = c("¡Correcto!")
 )
 ```
 :::
 
 ###
 
-Does the distribution of cars in the `mpg` dataset seem to reflect the distribution of cars that you see on the road? Would your answer shape how you use this data?
+¿Encaja la distribución de tipos de coches del conjunto de datos `mpg` con la distribución de los tipos de coches que sueles ver en carretera? ¿Dirías que tu respuesta afectaría a cómo utilizarías estos datos?
 
-### Clusters
+### Clústers
 
-For continuous variables, clusters of similar values suggest that subgroups exist in your data. To understand the subgroups, ask:
+Para variables continuas, clústers o agrupaciones de valores similares sugieren que existen subgrupos en los datos. Para entender estos subgrupos, pregunta:
 
-* How are the observations within each cluster similar to each other?
+- ¿Qué similitud tienen entre sílas observaciones dentro de cada clúster?
+- ¿Qué diferencias tienen entre sí las observaciones de distintos clústers?
+- ¿Cómo puedes explicar o describir los clústers?
+- ¿Por qué podría ser engañosa la apariencia de los clústers?
 
-* How are the observations in separate clusters different from each other?
+### Repaso 5: Clústers
 
-* How can you explain or describe the clusters?
+El histograma de debajo muestra la distribución de la variable `eruptions` en el conjunto de datos `faithful`, que viene con R. `eruptions` muestra la duración (en minutos) de 272 erupciones del géiser Old Faithful en el Parque Nacional Yellowstone, en EE.UU.
 
-* Why might the appearance of clusters be misleading?
+Para interpretar el histograma, mira primero al eje x, que muestra las duraciones de las erupciones recogidas en los datos. El rango del eje x muestra que la erupción más corta duró alrededor de un minuto, y la más larga unos cinco minutos.
 
+Para ver cuántas erupciones duraron un determinado núemro de minutos, encuentra la duración que te interesa en el eje x y entonces observa la altura de la barra en esa posición. Por ejemplo, según el histograma, 30 erupciones duraron alrededor de dos minutos, pero solamente tres duraron alrededor de tres minutos (la altura de la barra en el dos del eje x es 30, mientras que la altura de la barra en el tres es 3).
 
-### Review 5: Clusters
-
-The histogram below shows the distribution of the `eruptions` variable in the `faithful` data set, which comes with R. `eruptions` shows the lengths (in minutes) of 272 eruptions of the Old Faithful geyser in Yellowstone National Park.
-
-To interpret the histogram, look first at the x axis, which displays the lengths of eruptions recorded in the data. The range of the x axis shows that the shortest eruptions lasted for about one minute and the longest for about five minutes. 
-
-To see how many eruptions lasted for a specific length of time, find the length of time on the x axis and then look at the height of the bar above the length of time. For example, according to the histogram, 30 eruptions lasted for about two minutes, but only three lasted for about three minutes (the height of the bar above two is 30, the height of the bar above three is three).
 
 ```{r echo=FALSE, message=FALSE, out.width="80%"}
 ggplot(data = faithful) +
   geom_histogram(aes(x = eruptions), binwidth = 0.25, color = "white", linewidth = 0.25) + 
-  labs(title = "Lengths of 272 eruptions of Old Faithful")
+  labs(title = "Duración de 272 erupciones de Old Faithful")
 ```
 
 ::: {.callout-note appearance="simple" icon=false .question}
 
-**Do the eruption lengths cluster into groups? How many?**
+**¿Se agrupan las duraciones de las erupciones en clústers? ¿En cuántos?**
 
 ```{r echo=FALSE}
 check_question(
-  answer = "Correct thing", 
+  answer = "Sí, dos clústers.", 
   options = c(
-    "No. There are no clusters.",
-    "Yes. Two clusters.",
-    "Yes. Three clusters.",
-    "Yes. Four clusters."
+    "No, no hay clústers.",
+    "Sí, dos clústers.",
+    "Sí, tres clústers.",
+    "Sí, cuatro clústers."
   ), 
   type = "radio", 
   button_label = "Registrar respuesta", 
   q_id = 5,
-  right = c("Correct! Eruption lengths appear to be clustered into two groups: there are short eruptions (of around 2 minutes) and long eruptions (4-5 minutes), but few eruptions in between.")
+  right = c("¡Correcto! Las duraciones de las erupciones parecen agruparse en dos clústers: hay erupciones cortas (de alrededor de 2 minutos) y erupciones largas (4-5 minutos), pero pocas erupciones entre medias.")
 )
 ```
 :::
