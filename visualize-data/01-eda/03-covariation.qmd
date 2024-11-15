@@ -114,7 +114,7 @@ check_question(
 :::
 
 
-### Incertidumbre
+### Incertidumbre 
 
 Los patrones son una herramienta muy útil en ciencia de datos porque revelan covariación. Si piensas en la variación como un fenónemo que crea incertidumbre, la covariación es un fenómeno que la reduce. Cuando dos variables varían conjuntamente, puedes usar los valores de una variable para hacer mejores predicciones acerca de los valores de otra. Si la covariación se debe a una relación causal (un caso especial), puedes usar el valor de una variable para controlar el valor de otra.
 

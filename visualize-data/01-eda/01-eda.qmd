@@ -59,9 +59,7 @@ Tu objetivo durante el EDA es llegar a comprender tus datos. La manera más fác
 
 ### Cantidad _vs._ calidad
 
-El EDA es, fundamentalmente, un proceso creativo. Y como la mayoría de los procesos creativos, la clave para hacer preguntas de _calidad_ es generar una gran _cantidad_ de preguntas. Es difícil hacer preguntas reveladoras al comienzo de tu análisis porque no sabes qué perspectivas o informaciones puede contener tu conjunto de datos. Por otro lado, cada nueva pregunta que haces resaltará un nuevo aspecto de tus datos y aumentará tus posibilidades de hacer un descubrimiento. 
-
-EDA is, fundamentally, a creative process. And like most creative processes, the key to asking _quality_ questions is to generate a large _quantity_ of questions. It is difficult to ask revealing questions at the start of your analysis because you do not know what insights are contained in your dataset. On the other hand, each new question that you ask will highlight a new aspect of your data and increase your chance of making a discovery. Puedes desglosar rápidamente las partes más interesantes de tus datos---y plantear una serie de preguntas que inviten a la reflexión---si continúas, después de cada pregunta, planteando nuevas preguntas basadas en lo que descubras.
+El EDA es, fundamentalmente, un proceso creativo. Y como la mayoría de los procesos creativos, la clave para hacer preguntas de _calidad_ es generar una gran _cantidad_ de preguntas. Es difícil hacer preguntas reveladoras al comienzo de tu análisis porque no sabes qué perspectivas o informaciones puede contener tu conjunto de datos. Por otro lado, cada nueva pregunta que haces resaltará un nuevo aspecto de tus datos y aumentará tus posibilidades de hacer un descubrimiento. Puedes desglosar rápidamente las partes más interesantes de tus datos---y plantear una serie de preguntas que inviten a la reflexión---si continúas, después de cada pregunta, planteando nuevas preguntas basadas en lo que descubras.
 
 > «No hay preguntas estadísticas rutinarias, sólo rutinas estadísticas cuestionables». 
 > 

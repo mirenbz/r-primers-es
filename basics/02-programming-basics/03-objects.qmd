@@ -7,6 +7,7 @@ format:
     include-after-body: 
       - text: |
           <script src="/js/progressive-reveal.js"></script>
+          <script src="/js/bootstrapify.js"></script>
 
 engine: knitr
 filters:
@@ -153,6 +154,7 @@ mtcars
 ###
 
 ¡Bien hecho! Desafortunadamente, `rm()` no puede ayudarte si sobreescribes uno de tus propios objetos.
+
 ##
 
 ```{r}
